@@ -181,6 +181,7 @@ const Payment: React.FC<PaymentProps> = ({
                 <p><strong>Account Name:</strong> SEVENTH-DAY ADVENTIST CORPORATION (MALAYSIA) BHD - AOY</p>
                 <p><strong>Account Number:</strong> 800 1771 092</p>
                 <p><strong>SWIFT code:</strong> CIBBMYKL</p>
+                <p><strong>Reference:</strong> AOY 2025</p>
                 <p className="text-xs mt-4">Include your full name as reference when making the transfer</p>
               </div>
 

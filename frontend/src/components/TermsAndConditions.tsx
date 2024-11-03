@@ -102,6 +102,20 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
             <p><strong>Email:</strong> {formData.email}</p>
             <p><strong>Phone:</strong> {formData.phone}</p>
             <p><strong>Registration Category:</strong> {formData.occupationType.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</p>
+            {formData.volunteer && (
+              <div>
+                <p><strong>Volunteering For:</strong></p>
+                <ul className="list-disc ml-6 mt-1">
+                  {formData.volunteerRoles.map((role, index) => (
+                    <li key={index}>
+                      {role.split('_').map(word => 
+                        word.charAt(0).toUpperCase() + word.slice(1)
+                      ).join(' ')}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {formData.hasKids && (
               <p><strong>Children Registered:</strong> {formData.kidsDetails.length}</p>
             )}
