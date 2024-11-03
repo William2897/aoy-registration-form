@@ -1,6 +1,13 @@
 import { FormData } from '../App';
 
-export type OccupationType = 'adult' | 'student' | 'ministry-stipend' | 'ministry-salary';
+export type OccupationType = 
+  | 'working_adult'
+  | 'homemaker'
+  | 'student'
+  | 'ministry_salary'
+  | 'ministry_stipend'
+  | 'walk_in_full'
+  | 'walk_in_partial';
 
 interface PricingConfig {
   baseRates: {
@@ -13,14 +20,39 @@ interface PricingConfig {
 
 export const PRICING_CONFIG: PricingConfig = {
   baseRates: {
-    'adult': 210,
-    'student': 160,
-    'ministry-stipend': 170,
-    'ministry-salary': 190
+    'working_adult': 240,
+    'homemaker': 240,
+    'student': 180,
+    'ministry_salary': 240,
+    'ministry_stipend': 180,
+    'walk_in_full': 240, // This will be dynamically calculated
+    'walk_in_partial': 100
   },
-  kidsRate: 150,
+  kidsRate: 50,
   tshirtRate: 30,
-  earlyBirdDiscount: 0.15 // 15%
+  earlyBirdDiscount: 20 // Changed from 0.15 to 20 (RM)
+};
+
+export const WALK_IN_DATES = {
+  start: new Date('2025-06-05'),
+  end: new Date('2025-06-08')
+};
+
+export const formatDate = (date: Date): string => {
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  }).split('/').join('/');
+};
+
+export const isWalkInPeriod = (): boolean => {
+  const now = new Date();
+  return now >= WALK_IN_DATES.start && now <= WALK_IN_DATES.end;
+};
+
+export const getWalkInDateRangeText = (): string => {
+  return `${formatDate(WALK_IN_DATES.start)} to ${formatDate(WALK_IN_DATES.end)}`;
 };
 
 export const calculateTotalPrice = (formData: FormData): {
@@ -31,26 +63,27 @@ export const calculateTotalPrice = (formData: FormData): {
   discount: number;
   finalTotal: number;
 } => {
-  // Base registration fee
-  const basePrice = PRICING_CONFIG.baseRates[formData.occupationType as OccupationType] || PRICING_CONFIG.baseRates.adult;
+  let basePrice;
+  
+  if (formData.occupationType === 'walk_in_full') {
+    // Use the selected sub-category rate for walk-in full conference
+    basePrice = formData.walkInCategory ? 
+      PRICING_CONFIG.baseRates[formData.walkInCategory as keyof typeof PRICING_CONFIG.baseRates] : 
+      PRICING_CONFIG.baseRates.working_adult;
+  } else {
+    basePrice = PRICING_CONFIG.baseRates[formData.occupationType as OccupationType];
+  }
 
-  // Kids registration total
+  // Rest of the calculation remains the same
   const kidsTotal = formData.hasKids ? formData.kidsDetails.length * PRICING_CONFIG.kidsRate : 0;
-
-  // T-shirt order total
   const tshirtTotal = formData.orderTshirt
     ? formData.tshirtOrders.reduce((sum, order) => sum + (order.quantity * PRICING_CONFIG.tshirtRate), 0)
     : 0;
 
-  // Calculate subtotal before early bird discount
   const baseSubtotal = basePrice + kidsTotal + tshirtTotal;
-  const earlyBirdSubtotal = basePrice + kidsTotal;
-
-  // Apply early bird discount if applicable
   const isEarlyBird = checkEarlyBirdEligibility();
-  const discount = isEarlyBird ? earlyBirdSubtotal * PRICING_CONFIG.earlyBirdDiscount : 0;
+  const discount = isEarlyBird ? PRICING_CONFIG.earlyBirdDiscount : 0;
 
-  // Calculate final total
   const subtotal = baseSubtotal;
   const finalTotal = subtotal - discount;
 

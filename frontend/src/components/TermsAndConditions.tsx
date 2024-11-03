@@ -6,40 +6,47 @@ import { calculateTotalPrice } from '../utils/pricing';
 interface TermsAndConditionsProps {
   formData: FormData;
   setFormData: React.Dispatch<React.SetStateAction<FormData>>;
-  onSubmit: (e: React.FormEvent) => void;
+  onNext: () => void;
   onBack: () => void;
 }
 
 const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
   formData,
   setFormData,
-  onSubmit,
+  onNext,
   onBack,
 }) => {
   const pricing = calculateTotalPrice(formData);
 
   const terms = [
     {
-      title: 'No Refunds Policy',
-      content: 'All registration fees are non-refundable once payment is processed.'
+      title: 'No Refunds',
+      content: 'Registration fees are non-refundable once payment is processed.'
     },
     {
       title: 'Receipt Requirements',
-      content: 'Only official bank receipts are accepted as proof of payment. Screenshots or photos of transactions are acceptable.'
+      content: 'Only official bank receipts are accepted as proof of payment. Screenshots or transaction photos are allowed.'
     },
     {
-      title: 'Payment for Overseas Participants',
-      content: 'Overseas participants are encouraged to pay in cash on-site or via online transfer.'
+      title: 'Overseas Payments',
+      content: 'Overseas participants should pay in cash on-site or via online transfer.'
     },
     {
-      title: 'Payment Confirmation',
-      content: 'All participants must confirm their payment after registration. For payment inquiries, please contact registration@aoy2025.com'
+      title: 'Substitution Policy',
+      content: 'If you cannot attend, contact our registration team to allow another participant to take your spot.'
     },
     {
-      title: 'Registration Policy',
-      content: 'One registration form per participant. Each participant must register individually.'
+      title: 'Registration',
+      content: 'One registration form per participant. Each must register individually.'
     }
   ];
+
+  const handleAgree = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (formData.termsAccepted) {
+      onNext();
+    }
+  };
 
   return (
     <div className="animate-fade-in">
@@ -130,12 +137,12 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
             Back
           </button>
           <button
-            type="submit"
-            onClick={onSubmit}
+            type="button"
+            onClick={handleAgree}
             disabled={!formData.termsAccepted}
             className="btn-primary"
           >
-            Complete Registration
+            I Agree & Continue
           </button>
         </div>
       </div>

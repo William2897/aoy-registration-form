@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Calendar, Mail, CreditCard } from 'lucide-react';
+import { Users, Calendar, Mail, CreditCard, MapPin } from 'lucide-react';
 
 interface WelcomeSectionProps {
   onNext: () => void;
@@ -19,15 +19,15 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
             <div className="flex items-start space-x-3">
               <Calendar className="w-5 h-5 text-orange-500 mt-1" />
               <div>
-                <h4 className="font-medium">Date & Location</h4>
-                <p className="text-gray-600 dark:text-gray-300"> 5-8 June, 2025, Penang, Malaysia</p>
+                <h4 className="font-medium">Date</h4>
+                <p className="text-gray-600 dark:text-gray-300"> 5-8 June, 2025</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <Users className="w-5 h-5 text-orange-500 mt-1" />
+              <MapPin className="w-5 h-5 text-orange-500 mt-1" />
               <div>
-                <h4 className="font-medium">Participant Age</h4>
-                <p className="text-gray-600 dark:text-gray-300">13 years and above</p>
+                <h4 className="font-medium">Location</h4>
+                <p className="text-gray-600 dark:text-gray-300">Rainbow Paradise Beach Resort, Penang, Malaysia</p>
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
             Early Bird Special!
           </h3>
           <p className="text-gray-700 dark:text-gray-300">
-            Get 15% off when you register early! Limited time offer.
+            Get RM20 off when you register early! Limited time offer ends <strong>31st January, 2025</strong>.
           </p>
           <div className="mt-4 flex items-center space-x-2">
             <CreditCard className="w-5 h-5 text-green-500" />

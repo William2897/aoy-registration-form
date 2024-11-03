@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FormData } from '../App';
 import { Plus, Trash2 } from 'lucide-react';
 
@@ -15,6 +15,7 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
   onNext,
   onBack,
 }) => {
+  const [showError, setShowError] = useState(false);
   const maxDate = new Date().toISOString().split('T')[0];
 
   const addChild = () => {
@@ -60,7 +61,7 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
 
   return (
     <div className="animate-fade-in">
-      <h2 className="section-title">Chlidren Registration</h2>
+      <h2 className="section-title">Children Registration</h2>
       <p className="section-subtitle">Register children aged 5-12 years old</p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -75,6 +76,7 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
                 hasKids: e.target.checked,
                 kidsDetails: e.target.checked ? prev.kidsDetails : []
               }));
+              setShowError(e.target.checked && formData.kidsDetails.length === 0);
             }}
             className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
           />
@@ -82,6 +84,10 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
             I have children aged 5-12 to register
           </label>
         </div>
+
+        {formData.hasKids && formData.kidsDetails.length === 0 && (
+          <p className="text-red-500">Please add at least one child.</p>
+        )}
 
         {formData.hasKids && (
           <div className="space-y-6">
@@ -153,7 +159,7 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
           <button type="button" onClick={onBack} className="btn-secondary">
             Back
           </button>
-          <button type="submit" className="btn-primary">
+          <button type="submit" className="btn-primary" disabled={formData.hasKids && formData.kidsDetails.length === 0}>
             Next
           </button>
         </div>

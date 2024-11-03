@@ -10,6 +10,16 @@ import TermsAndConditions from './components/TermsAndConditions';
 import ProgressBar from './components/ProgressBar';
 import { OccupationType } from './utils/pricing';
 
+export type VolunteerRole = 
+  | 'food_team'
+  | 'registration_team'
+  | 'treasury_team'
+  | 'prayer_team'
+  | 'pa_av_team'
+  | 'emergency_medical_team'
+  | 'children_program'
+  | 'usher';
+
 export type FormData = {
   step: number;
   email: string;
@@ -23,6 +33,7 @@ export type FormData = {
   otherConference: string;
   church: string;
   volunteer: boolean;
+  volunteerRoles: VolunteerRole[]; // Add this line
   hasKids: boolean;
   kidsDetails: Array<{
     fullName: string;
@@ -41,6 +52,7 @@ export type FormData = {
   paymentMethod: string;
   paymentProof: File | null;
   termsAccepted: boolean;
+  walkInCategory?: OccupationType; // Add this line
 };
 
 const initialFormData: FormData = {
@@ -51,11 +63,12 @@ const initialFormData: FormData = {
   gender: '',
   country: '',
   phone: '',
-  occupationType: 'adult',
+  occupationType: 'working_adult',
   conference: '',
   otherConference: '',
   church: '',
   volunteer: false,
+  volunteerRoles: [], // Add this line
   hasKids: false,
   kidsDetails: [],
   orderTshirt: false,
@@ -67,6 +80,7 @@ const initialFormData: FormData = {
   paymentMethod: '',
   paymentProof: null,
   termsAccepted: false,
+  walkInCategory: undefined, // Add this line
 };
 
 const App: React.FC = () => {
@@ -208,7 +222,7 @@ const handleSubmit = async (e: FormEvent) => {
       />
     ),
     5: (
-      <Payment
+      <TermsAndConditions
         formData={formData}
         setFormData={setFormData}
         onNext={handleNext}
@@ -216,7 +230,7 @@ const handleSubmit = async (e: FormEvent) => {
       />
     ),
     6: (
-      <TermsAndConditions
+      <Payment
         formData={formData}
         setFormData={setFormData}
         onSubmit={handleSubmit}
