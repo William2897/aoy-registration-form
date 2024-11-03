@@ -1,8 +1,7 @@
 import { FormData } from '../App';
 
 export type OccupationType = 
-  | 'working_adult'
-  | 'homemaker'
+  | 'adult'
   | 'student'
   | 'ministry_salary'
   | 'ministry_stipend'
@@ -20,12 +19,11 @@ interface PricingConfig {
 
 export const PRICING_CONFIG: PricingConfig = {
   baseRates: {
-    'working_adult': 240,
-    'homemaker': 240,
-    'student': 180,
-    'ministry_salary': 240,
-    'ministry_stipend': 180,
-    'walk_in_full': 240, // This will be dynamically calculated
+    'adult': 260,
+    'student': 200,
+    'ministry_salary': 260,
+    'ministry_stipend': 200,
+    'walk_in_full': 260, // This will be dynamically calculated
     'walk_in_partial': 100
   },
   kidsRate: 50,
@@ -69,7 +67,7 @@ export const calculateTotalPrice = (formData: FormData): {
     // Use the selected sub-category rate for walk-in full conference
     basePrice = formData.walkInCategory ? 
       PRICING_CONFIG.baseRates[formData.walkInCategory as keyof typeof PRICING_CONFIG.baseRates] : 
-      PRICING_CONFIG.baseRates.working_adult;
+      PRICING_CONFIG.baseRates.adult;
   } else {
     basePrice = PRICING_CONFIG.baseRates[formData.occupationType as OccupationType];
   }
