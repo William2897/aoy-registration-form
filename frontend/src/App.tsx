@@ -63,7 +63,7 @@ const initialFormData: FormData = {
   gender: '',
   country: '',
   phone: '',
-  occupationType: 'working_adult',
+  occupationType: 'adult',
   conference: '',
   otherConference: '',
   church: '',
