@@ -104,7 +104,7 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
   const maxDate = new Date().toISOString().split('T')[0];
 
   // Convert countries object to array of options for react-select
-  const countryOptions: CountryOption[] = Object.entries(countries).map(([code, country]) => ({
+  const countryOptions: CountryOption[] = Object.entries(countries).map(([, country]) => ({
     value: country.name,
     label: country.name
   })).sort((a, b) => a.label.localeCompare(b.label));

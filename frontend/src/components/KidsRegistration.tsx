@@ -15,7 +15,7 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
   onNext,
   onBack,
 }) => {
-  const [showError, setShowError] = useState(false);
+  const [, setShowError] = useState(false);
   const maxDate = new Date().toISOString().split('T')[0];
 
   const addChild = () => {

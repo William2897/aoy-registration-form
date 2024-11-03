@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Calendar, Mail, CreditCard, MapPin } from 'lucide-react';
+import {Calendar, Mail, CreditCard, MapPin } from 'lucide-react';
 
 interface WelcomeSectionProps {
   onNext: () => void;

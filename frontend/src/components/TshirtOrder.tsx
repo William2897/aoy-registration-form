@@ -15,7 +15,7 @@ const TshirtOrder: React.FC<TshirtOrderProps> = ({
   onNext,
   onBack,
 }) => {
-  const [showError, setShowError] = useState(false);
+  const [, setShowError] = useState(false);
   const sizes = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'];
 
   const addOrder = () => {
