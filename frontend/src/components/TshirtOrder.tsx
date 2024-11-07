@@ -59,7 +59,7 @@ const TshirtOrder: React.FC<TshirtOrderProps> = ({
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">T-shirt Order</h2>
-      <p className="section-subtitle">Order your AOY 2025 T-shirt (RM30 each)</p>
+      <p className="section-subtitle">Order your AOY 2025 T-shirt <strong>(RM30 each)</strong></p>
 
       <div className="mb-8 grid grid-cols-2 gap-4">
         <img

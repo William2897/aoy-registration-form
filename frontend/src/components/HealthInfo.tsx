@@ -29,7 +29,11 @@ const HealthInfo: React.FC<HealthInfoProps> = ({
         <div>
           <p className="text-blue-700 dark:text-blue-300 font-medium">Important Notice</p>
           <p className="text-blue-600 dark:text-blue-200 text-sm">
-            Vegan food will be served throughout the event. Please let us know about any allergies or health concerns.
+        Vegan food will be served throughout the event. Please let us know about any allergies or health concerns.
+          </p>
+          <br />
+          <p className="text-blue-600 dark:text-blue-200 text-sm">
+          The AOY team will strive to provide suitable options to accommodate participants with dietary restrictions and food allergies. However, please be advised that we cannot guarantee that any food is 100% free of any specific allergen. Participants with severe allergies or specific dietary concerns should take caution.
           </p>
         </div>
       </div>

@@ -75,7 +75,7 @@ const Payment: React.FC<PaymentProps> = ({
             {formData.hasKids && (
               <div className="border-b pb-3">
                 <div className="flex justify-between">
-                  <span>Children Registration ({formData.kidsDetails.length} × RM {PRICING_CONFIG.kidsRate}):</span>
+                  <span>Children Registration (5-12 Years) ({formData.kidsDetails.length} × RM {PRICING_CONFIG.kidsRate}):</span>
                   <span className="font-medium">RM {pricing.kidsTotal.toFixed(2)}</span>
                 </div>
               </div>

@@ -12,8 +12,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep, totalSteps }) =>
     'Children',
     'T-Shirt',
     'Health',
-    'Payment',
-    'Terms'
+    'TnC',
+    'Payment'
   ];
 
   const progress = (currentStep / (totalSteps - 1)) * 100;

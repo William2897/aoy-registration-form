@@ -62,7 +62,7 @@ const KidsRegistration: React.FC<KidsRegistrationProps> = ({
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">Children Registration</h2>
-      <p className="section-subtitle">Register children aged 5-12 years old</p>
+      <p className="section-subtitle">Register children aged 5-12 years old <strong>(RM50 per Child)</strong></p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="flex items-center space-x-2 mb-6">

@@ -81,9 +81,7 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
             Make a Difference - Volunteer!
           </h3>
           <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
-            Join our volunteer team and be part of making AOY 2025 an incredible experience for everyone. 
-            Your service will not only help the conference run smoothly but also create lasting connections 
-            and memories.
+            Join our volunteer team and be part of making AOY 2025 an incredible experience for everyone. Participants that have indicated their interest will be personally contacted by the respective team leaders.
           </p>
         </div>
       </div>

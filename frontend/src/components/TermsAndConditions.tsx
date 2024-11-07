@@ -29,7 +29,7 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
     },
     {
       title: 'Overseas Payments',
-      content: 'Overseas participants should pay in cash on-site or via online transfer.'
+      content: 'Overseas participants to pay via online transfer or select our deferred payment option.'
     },
     {
       title: 'Substitution Policy',
@@ -38,6 +38,10 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
     {
       title: 'Registration',
       content: 'One registration form per participant. Each must register individually.'
+    },
+    {
+      title: 'Limitation of Liability',
+      content: 'Participants release and hold harmless the organisers of AOY Conference 2025 (“AOY”) from any and all claims, demands, losses, damages or liability arising from your participation in the conference. In no event will AOY be liable for any special, indirect or consequential loss.'
     }
   ];
 
