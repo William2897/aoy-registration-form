@@ -8,9 +8,7 @@ interface RegistrationCountdownProps {
 const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    hours: 0
   });
 
   const registrationStartDate = new Date('2025-02-03T00:00:00Z');
@@ -23,13 +21,11 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
       if (difference > 0) {
         setTimeLeft({
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60)
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24)
         });
       } else {
         // Registration is open
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        setTimeLeft({ days: 0, hours: 0 });
       }
     };
 
@@ -61,7 +57,7 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
               Mark your calendar for February 3rd, 2025
             </p>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
                 <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
                   {timeLeft.days}
@@ -73,18 +69,6 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
                   {timeLeft.hours}
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Hours</div>
-              </div>
-              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
-                <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
-                  {timeLeft.minutes}
-                </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Mins</div>
-              </div>
-              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
-                <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
-                  {timeLeft.seconds}
-                </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Secs</div>
               </div>
             </div>
           </div>
