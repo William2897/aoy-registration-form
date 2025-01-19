@@ -188,14 +188,13 @@ const handleSubmit = async (e: FormEvent) => {
   }
 };
 
-  // const stepsComponents: { [key: number]: JSX.Element } = {
-  //   0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-  //     <WelcomeSection onNext={handleNext} />
-  //   ) : (
-  //     <RegistrationCountdown onStart={handleNext} />
-  //   ),  Use this code to replace the  2 lines of code below to add the RegistrationCountdown component
-const stepsComponents: { [key: number]: JSX.Element } = {
-    0: <WelcomeSection onNext={handleNext} />,
+
+  const stepsComponents: { [key: number]: JSX.Element } = {
+    0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
+      <WelcomeSection onNext={handleNext} />
+    ) : (
+      <RegistrationCountdown onStart={handleNext} />
+    ),  
     1: (
       <ParticipantInfo
         formData={formData}
