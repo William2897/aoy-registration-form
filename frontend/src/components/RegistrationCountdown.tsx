@@ -78,13 +78,13 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
                 <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
                   {timeLeft.minutes}
                 </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Minutes</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Mins</div>
               </div>
               <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
                 <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
                   {timeLeft.seconds}
                 </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Seconds</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Secs</div>
               </div>
             </div>
           </div>
