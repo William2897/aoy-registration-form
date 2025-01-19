@@ -279,10 +279,10 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
               className="input-field mt-1"
             >
               <option value="">Select category</option>
-              <option value="adult">Adult (RM 260)</option>
-              <option value="student">Student (RM 200)</option>
-              <option value="ministry_salary">Ministry Worker - Salaried (RM 260)</option>
-              <option value="ministry_stipend">Ministry Worker - Stipend (RM 200)</option>
+              <option value="adult">Adult (RM 240)</option>
+              <option value="student">Student (RM 180)</option>
+              <option value="ministry_salary">Ministry Worker - Salaried (RM 240)</option>
+              <option value="ministry_stipend">Ministry Worker - Stipend (RM 180)</option>
               <option value="walk_in_full">Walk-in (Full Conference)</option>
               <option value="walk_in_partial">Walk-in (Partial Conference) - RM 100/day</option>
             </select>
@@ -304,10 +304,10 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
                   className="input-field mt-1"
                 >
                   <option value="">Select category</option>
-                  <option value="adult">Adult (RM 260)</option>
-                  <option value="student">Student (RM 200)</option>
-                  <option value="ministry_salary">Ministry Worker - Salaried (RM 260)</option>
-                  <option value="ministry_stipend">Ministry Worker - Stipend (RM 200)</option>
+                  <option value="adult">Adult (RM 240)</option>
+                  <option value="student">Student (RM 180)</option>
+                  <option value="ministry_salary">Ministry Worker - Salaried (RM 240)</option>
+                  <option value="ministry_stipend">Ministry Worker - Stipend (RM 180)</option>
                 </select>
               </div>
             )}

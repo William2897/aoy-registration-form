@@ -38,7 +38,7 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
             Early Bird Special!
           </h3>
           <p className="text-gray-700 dark:text-gray-300">
-            Get RM20 off when you register early! Limited time offer ends <strong>31st January, 2025</strong>.
+            Get RM20 off when you register early! Limited time offer ends <strong>2nd March, 2025</strong>.
           </p>
           <div className="mt-4 flex items-center space-x-2">
             <CreditCard className="w-5 h-5 text-green-500" />

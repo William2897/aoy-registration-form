@@ -19,11 +19,11 @@ interface PricingConfig {
 
 export const PRICING_CONFIG: PricingConfig = {
   baseRates: {
-    'adult': 260,
-    'student': 200,
-    'ministry_salary': 260,
-    'ministry_stipend': 200,
-    'walk_in_full': 260, // This will be dynamically calculated
+    'adult': 240,
+    'student': 180,
+    'ministry_salary': 240,
+    'ministry_stipend': 180,
+    'walk_in_full': 240, // This will be dynamically calculated
     'walk_in_partial': 100
   },
   kidsRate: 50,
@@ -96,6 +96,6 @@ export const calculateTotalPrice = (formData: FormData): {
 };
 
 export const checkEarlyBirdEligibility = (): boolean => {
-  const earlyBirdEndDate = new Date('2025-01-31'); // Example date
+  const earlyBirdEndDate = new Date('2025-03-02'); // Ends 2nd March 2025
   return new Date() <= earlyBirdEndDate;
 };
