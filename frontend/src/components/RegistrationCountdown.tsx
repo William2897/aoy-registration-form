@@ -11,7 +11,7 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
     hours: 0
   });
 
-  const registrationStartDate = new Date('2025-02-03T00:00:00Z');
+  const registrationStartDate = new Date('2025-02-02T00:00:00Z'); // February 2nd, 2025
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -54,7 +54,7 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
               Registration Opens Soon!
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              Mark your calendar for February 3rd, 2025
+              Mark your calendar for February 2nd, 2025
             </p>
 
             <div className="grid grid-cols-2 gap-4">
