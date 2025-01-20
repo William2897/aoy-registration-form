@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { Sun, Moon, Loader2 } from 'lucide-react';
-import RegistrationCountdown from './components/RegistrationCountdown';
+//import RegistrationCountdown from './components/RegistrationCountdown';
 import WelcomeSection from './components/WelcomeSection';
 import ParticipantInfo from './components/ParticipantInfo';
 import KidsRegistration from './components/KidsRegistration';
