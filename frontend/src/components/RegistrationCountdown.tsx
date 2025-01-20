@@ -81,7 +81,7 @@ const RegistrationCountdown: React.FC<RegistrationCountdownProps> = ({ onStart }
                   Early Bird Special
                 </h4>
                 <p className="text-sm text-blue-600 dark:text-blue-200 mt-1">
-                  Register early to get RM20 off! Special discount available until March  2nd, 2025.
+                  Register early to get RM20 off! Special discount available until March 2nd, 2025.
                 </p>
               </div>
             </div>

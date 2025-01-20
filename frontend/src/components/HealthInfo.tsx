@@ -20,6 +20,14 @@ const HealthInfo: React.FC<HealthInfoProps> = ({
     onNext();
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value, checked, type } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
+
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">Health Information</h2>
@@ -39,6 +47,76 @@ const HealthInfo: React.FC<HealthInfoProps> = ({
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Food Preferences Section */}
+        <div className="bg-white dark:bg-gray-700/30 p-6 rounded-lg border">
+          <h3 className="text-lg font-semibold mb-4">Food Preferences</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+            Please select your food preferences below for the base and portion size to help us minimise food waste:
+          </p>
+          
+          <div className="space-y-6">
+            <div>
+              <label className="form-label">Rice Type *</label>
+              <div className="flex space-x-4 mt-4">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="riceType"
+                    value="brown"
+                    checked={formData.riceType === 'brown'}
+                    onChange={handleChange}
+                    className="text-orange-600 focus:ring-orange-500"
+                    required
+                  />
+                  <span>Brown Rice</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="riceType"
+                    value="white"
+                    checked={formData.riceType === 'white'}
+                    onChange={handleChange}
+                    className="text-orange-600 focus:ring-orange-500"
+                    required
+                  />
+                  <span>White Rice</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label className="form-label">Portion Size *</label>
+              <div className="flex space-x-4 mt-4">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="portionSize"
+                    value="small"
+                    checked={formData.portionSize === 'small'}
+                    onChange={handleChange}
+                    className="text-orange-600 focus:ring-orange-500"
+                    required
+                  />
+                  <span>Small Portion</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="portionSize"
+                    value="big"
+                    checked={formData.portionSize === 'big'}
+                    onChange={handleChange}
+                    className="text-orange-600 focus:ring-orange-500"
+                    required
+                  />
+                  <span>Big Portion</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-6">
           <div>
             <div className="flex items-center space-x-2 mb-4">

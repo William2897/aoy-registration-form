@@ -54,6 +54,8 @@ export type FormData = {
   paymentProof: File | null;
   termsAccepted: boolean;
   walkInCategory?: OccupationType; // Add this line
+  riceType: 'brown' | 'white' | '';
+  portionSize: 'small' | 'big' | '';
 };
 
 const initialFormData: FormData = {
@@ -82,6 +84,8 @@ const initialFormData: FormData = {
   paymentProof: null,
   termsAccepted: false,
   walkInCategory: undefined, // Add this line
+  riceType: '',
+  portionSize: '',
 };
 
 const App: React.FC = () => {
@@ -166,6 +170,10 @@ const handleSubmit = async (e: FormEvent) => {
   
   formDataToSubmit.append('termsAccepted', String(formData.termsAccepted));
 
+  // Add food preferences to form data
+  formDataToSubmit.append('riceType', formData.riceType);
+  formDataToSubmit.append('portionSize', formData.portionSize);
+
   try {
     const response = await fetch(`${import.meta.env.VITE_API_URL}/api/registration`, {
       method: 'POST',
@@ -190,11 +198,12 @@ const handleSubmit = async (e: FormEvent) => {
 
 
   const stepsComponents: { [key: number]: JSX.Element } = {
-    0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-      <WelcomeSection onNext={handleNext} />
-    ) : (
-      <RegistrationCountdown onStart={handleNext} />
-    ),  
+    0: <WelcomeSection onNext={handleNext} />,
+    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
+    //   <WelcomeSection onNext={handleNext} />
+    // ) : (
+    //   <RegistrationCountdown onStart={handleNext} />
+    // ),  
     1: (
       <ParticipantInfo
         formData={formData}

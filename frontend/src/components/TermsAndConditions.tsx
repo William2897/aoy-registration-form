@@ -106,6 +106,14 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
             <p><strong>Email:</strong> {formData.email}</p>
             <p><strong>Phone:</strong> {formData.phone}</p>
             <p><strong>Registration Category:</strong> {formData.occupationType.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</p>
+            <div className="summary-item">
+              <span className="summary-label">Rice Type:</span>
+              <span className="summary-value">{formData.riceType.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+            </div>
+            <div className="summary-item">
+              <span className="summary-label">Portion Size:</span>
+              <span className="summary-value">{formData.portionSize.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+            </div>
             {formData.volunteer && (
               <div>
                 <p><strong>Volunteering For:</strong></p>
