@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { Sun, Moon, Loader2 } from 'lucide-react';
-//import RegistrationCountdown from './components/RegistrationCountdown';
+import RegistrationCountdown from './components/RegistrationCountdown';
 import WelcomeSection from './components/WelcomeSection';
 import ParticipantInfo from './components/ParticipantInfo';
 import KidsRegistration from './components/KidsRegistration';
@@ -198,12 +198,12 @@ const handleSubmit = async (e: FormEvent) => {
 
 
   const stepsComponents: { [key: number]: JSX.Element } = {
-    0: <WelcomeSection onNext={handleNext} />,
-    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-    //   <WelcomeSection onNext={handleNext} />
-    // ) : (
-    //   <RegistrationCountdown onStart={handleNext} />
-    // ),  
+    //0: <WelcomeSection onNext={handleNext} />,
+    0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
+      <WelcomeSection onNext={handleNext} />
+    ) : (
+      <RegistrationCountdown onStart={handleNext} />
+    ),  
     1: (
       <ParticipantInfo
         formData={formData}
