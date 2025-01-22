@@ -1,9 +1,9 @@
 import React, { useState, FormEvent } from 'react';
 import { Sun, Moon, Loader2 } from 'lucide-react';
-import RegistrationCountdown from './components/RegistrationCountdown';
+//import RegistrationCountdown from './components/RegistrationCountdown';
 import WelcomeSection from './components/WelcomeSection';
 import ParticipantInfo from './components/ParticipantInfo';
-import KidsRegistration from './components/KidsRegistration';
+import FamilyRegistration from './components/FamilyRegistration';
 import TshirtOrder from './components/TshirtOrder';
 import HealthInfo from './components/HealthInfo';
 import Payment from './components/Payment';
@@ -35,11 +35,18 @@ export type FormData = {
   church: string;
   volunteer: boolean;
   volunteerRoles: VolunteerRole[]; // Add this line
-  hasKids: boolean;
-  kidsDetails: Array<{
+  hasFamily: boolean; // Changed from hasKids
+  familyDetails: Array<{ // Changed from kidsDetails
     fullName: string;
     dateOfBirth: string;
-    healthInfo: string;
+    foodAllergies: boolean;
+    allergiesDetails: string;
+    healthIssues: boolean;
+    healthDetails: string;
+    riceType: 'brown' | 'white' | '';
+    portionSize: 'small' | 'big' | '';
+    occupationType: OccupationType; // Add this line
+    phone?: string; // Add this field
   }>;
   orderTshirt: boolean;
   tshirtOrders: Array<{
@@ -72,8 +79,8 @@ const initialFormData: FormData = {
   church: '',
   volunteer: false,
   volunteerRoles: [], // Add this line
-  hasKids: false,
-  kidsDetails: [],
+  hasFamily: false, // Changed from hasKids
+  familyDetails: [], // Changed from kidsDetails
   orderTshirt: false,
   tshirtOrders: [],
   foodAllergies: false,
@@ -114,8 +121,6 @@ const App: React.FC = () => {
     setSubmitSuccess(false);
   };
 
-// frontend/src/App.tsx
-
 const handleSubmit = async (e: FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
@@ -133,17 +138,23 @@ const handleSubmit = async (e: FormEvent) => {
   formDataToSubmit.append('otherConference', formData.otherConference);
   formDataToSubmit.append('church', formData.church);
   formDataToSubmit.append('volunteer', String(formData.volunteer));
-  formDataToSubmit.append('hasKids', String(formData.hasKids));
+  formDataToSubmit.append('hasFamily', String(formData.hasFamily)); // Changed from hasKids
   
-  // Ensure kidsDetails is always an array
-  if (formData.hasKids) {
-    formData.kidsDetails.forEach((child, index) => {
-      formDataToSubmit.append(`kidsDetails[${index}][fullName]`, child.fullName);
-      formDataToSubmit.append(`kidsDetails[${index}][dateOfBirth]`, child.dateOfBirth);
-      formDataToSubmit.append(`kidsDetails[${index}][healthInfo]`, child.healthInfo);
+  // Ensure familyDetails is always an array
+  if (formData.hasFamily) { // Changed from hasKids
+    formData.familyDetails.forEach((child, index) => { // Changed from kidsDetails
+      formDataToSubmit.append(`familyDetails[${index}][fullName]`, child.fullName); // Changed from kidsDetails
+      formDataToSubmit.append(`familyDetails[${index}][dateOfBirth]`, child.dateOfBirth); // Changed from kidsDetails
+      formDataToSubmit.append(`familyDetails[${index}][foodAllergies]`, String(child.foodAllergies));
+      formDataToSubmit.append(`familyDetails[${index}][allergiesDetails]`, child.allergiesDetails);
+      formDataToSubmit.append(`familyDetails[${index}][healthIssues]`, String(child.healthIssues));
+      formDataToSubmit.append(`familyDetails[${index}][healthDetails]`, child.healthDetails);
+      formDataToSubmit.append(`familyDetails[${index}][riceType]`, child.riceType);
+      formDataToSubmit.append(`familyDetails[${index}][portionSize]`, child.portionSize);
+      formDataToSubmit.append(`familyDetails[${index}][occupationType]`, child.occupationType); // Add this line
     });
   } else {
-    formDataToSubmit.append('kidsDetails', JSON.stringify([]));
+    formDataToSubmit.append('familyDetails', JSON.stringify([])); // Changed from kidsDetails
   }
 
   formDataToSubmit.append('orderTshirt', String(formData.orderTshirt));
@@ -198,12 +209,12 @@ const handleSubmit = async (e: FormEvent) => {
 
 
   const stepsComponents: { [key: number]: JSX.Element } = {
-    //0: <WelcomeSection onNext={handleNext} />,
-    0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-      <WelcomeSection onNext={handleNext} />
-    ) : (
-      <RegistrationCountdown onStart={handleNext} />
-    ),  
+    0: <WelcomeSection onNext={handleNext} />,
+    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
+    //   <WelcomeSection onNext={handleNext} />
+    // ) : (
+    //   <RegistrationCountdown onStart={handleNext} />
+    // ),  
     1: (
       <ParticipantInfo
         formData={formData}
@@ -213,7 +224,7 @@ const handleSubmit = async (e: FormEvent) => {
       />
     ),
     2: (
-      <KidsRegistration
+      <HealthInfo
         formData={formData}
         setFormData={setFormData}
         onNext={handleNext}
@@ -221,7 +232,7 @@ const handleSubmit = async (e: FormEvent) => {
       />
     ),
     3: (
-      <TshirtOrder
+      <FamilyRegistration
         formData={formData}
         setFormData={setFormData}
         onNext={handleNext}
@@ -229,7 +240,7 @@ const handleSubmit = async (e: FormEvent) => {
       />
     ),
     4: (
-      <HealthInfo
+      <TshirtOrder
         formData={formData}
         setFormData={setFormData}
         onNext={handleNext}

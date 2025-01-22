@@ -38,7 +38,10 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
             Early Bird Special!
           </h3>
           <p className="text-gray-700 dark:text-gray-300">
-            Get RM20 off when you register early! Limited time offer ends <strong>2nd March, 2025</strong>.
+            Get <strong>RM20 off</strong> when you register early! Limited time offer ends <strong>2nd March, 2025</strong>.
+          </p>
+          <p className="text-gray-700 dark:text-gray-300">
+            Get <strong>5% off</strong> when you register your family!
           </p>
           <div className="mt-4 flex items-center space-x-2">
             <CreditCard className="w-5 h-5 text-green-500" />
@@ -53,10 +56,10 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
             Important Information
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li>One registration form per participant</li>
-            <li>Married couples should register separately</li>
-            <li>Children aged 5-12 can be registered under one parent</li>
-            <li>Children below 4 years old: Free admission</li>
+            <li>Register at least 2 additional family members to qualify for the family package discount.</li>
+            <li>Children below 4 years old: Free admission.</li>
+            <li>Volunteering opportunities are limited to a maximum of 5 roles per participant.</li>
+            <li>Provide valid proof of payment if selecting Bank Transfer as the payment method.</li>
           </ul>
         </div>
 

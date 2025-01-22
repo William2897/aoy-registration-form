@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { FormData } from '../App';
 import { Upload, AlertCircle, CreditCard, Receipt } from 'lucide-react';
-import { calculateTotalPrice, checkEarlyBirdEligibility, PRICING_CONFIG } from '../utils/pricing';
+import { calculateTotalPrice, checkEarlyBirdEligibility, PRICING_CONFIG, OccupationType } from '../utils/pricing';
 
 interface PaymentProps {
   formData: FormData;
@@ -20,6 +20,11 @@ const Payment: React.FC<PaymentProps> = ({
   const pricing = calculateTotalPrice(formData);
   const isEarlyBird = checkEarlyBirdEligibility();
   const [paymentError, setPaymentError] = useState<string>('');
+  const [totalAmount, setTotalAmount] = useState<number>(0);
+
+  useEffect(() => {
+    updateTotalAmount();
+  }, [formData]);
 
   const formatOccupationType = (type: string): string => {
     return type.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
@@ -48,6 +53,24 @@ const Payment: React.FC<PaymentProps> = ({
     onSubmit(e);
   };
 
+  const updateTotalAmount = () => {
+    const basePrice = PRICING_CONFIG.baseRates[formData.occupationType as keyof typeof PRICING_CONFIG.baseRates];
+    let total = basePrice;
+
+    // Update references from kids to family
+    if (formData.hasFamily) {
+      total += formData.familyDetails.reduce((sum, member) => 
+        sum + PRICING_CONFIG.baseRates[member.occupationType as keyof typeof PRICING_CONFIG.baseRates], 0);
+    }
+
+    if (formData.orderTshirt) {
+      total += formData.tshirtOrders.reduce((sum, order) => 
+        sum + (order.quantity * PRICING_CONFIG.tshirtRate), 0);
+    }
+
+    setTotalAmount(total);
+  };
+
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">Payment Details</h2>
@@ -71,12 +94,12 @@ const Payment: React.FC<PaymentProps> = ({
               </div>
             </div>
 
-            {/* Kids Registration */}
-            {formData.hasKids && (
+            {/* Family Registration */}
+            {formData.hasFamily && (
               <div className="border-b pb-3">
                 <div className="flex justify-between">
-                  <span>Children Registration (5-12 Years) ({formData.kidsDetails.length} × RM {PRICING_CONFIG.kidsRate}):</span>
-                  <span className="font-medium">RM {pricing.kidsTotal.toFixed(2)}</span>
+                  <span>Family Registration:</span>
+                  <span className="font-medium">RM {pricing.familyTotal.toFixed(2)}</span>
                 </div>
               </div>
             )}
@@ -108,6 +131,18 @@ const Payment: React.FC<PaymentProps> = ({
               <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                 Fixed discount for early registration
               </div>
+              </div>
+            )}
+
+            {pricing.familyDiscount > 0 && (
+              <div>
+                <div className="flex justify-between text-blue-600 dark:text-blue-400">
+                  <span>Family Discount (5%):</span>
+                  <span>-RM {pricing.familyDiscount.toFixed(2)}</span>
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    Fixed discount for family registration
+                </div>
               </div>
             )}
 

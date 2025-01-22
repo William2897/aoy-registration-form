@@ -9,9 +9,9 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep, totalSteps }) =>
   const steps = [
     'Welcome',
     'Personal Info',
-    'Children',
-    'T-Shirt',
     'Health',
+    'Family',
+    'T-Shirt',
     'TnC',
     'Payment'
   ];

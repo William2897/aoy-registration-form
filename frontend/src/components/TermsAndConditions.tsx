@@ -128,8 +128,8 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
                 </ul>
               </div>
             )}
-            {formData.hasKids && (
-              <p><strong>Children Registered:</strong> {formData.kidsDetails.length}</p>
+            {formData.hasFamily && (
+              <p><strong>Family Registered:</strong> {formData.familyDetails.length}</p>
             )}
             {formData.orderTshirt && (
               <p><strong>T-shirts Ordered:</strong> {formData.tshirtOrders.reduce((sum, order) => sum + order.quantity, 0)}</p>
@@ -140,8 +140,8 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
               <h4 className="font-semibold mb-2">Fee Breakdown</h4>
               <div className="space-y-1">
                 <p>Base Registration: RM {pricing.basePrice.toFixed(2)}</p>
-                {formData.hasKids && (
-                  <p>Child Registration: RM {pricing.kidsTotal.toFixed(2)}</p>
+                {formData.hasFamily && (
+                  <p>Family Registration: RM {pricing.familyTotal.toFixed(2)}</p>
                 )}
 
                 {formData.orderTshirt && (
@@ -149,8 +149,16 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
                 )}
                 
                 <p>Subtotal: RM {pricing.subtotal.toFixed(2)}</p>
-                <p className="text-green-600 dark:text-green-400">Early Bird Discount: -RM {pricing.discount.toFixed(2)}</p>
-
+                {pricing.discount > 0 && (
+                  <p className="text-green-600 dark:text-green-400">
+                    Early Bird Discount: -RM {pricing.discount.toFixed(2)}
+                  </p>
+                )}
+                {pricing.familyDiscount > 0 && (
+                  <p className="text-blue-600 dark:text-blue-400">
+                    Family Discount (5%): -RM {pricing.familyDiscount.toFixed(2)}
+                  </p>
+                )}
                 <p className="font-bold">Final Total: RM {pricing.finalTotal.toFixed(2)}</p>
               </div>
             </div>
