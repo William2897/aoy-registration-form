@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FormData } from '../App';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { calculateTotalPrice } from '../utils/pricing';
 
 interface TermsAndConditionsProps {
@@ -9,6 +9,99 @@ interface TermsAndConditionsProps {
   onNext: () => void;
   onBack: () => void;
 }
+
+const RegistrantSummary: React.FC<{
+  name: string;
+  details: {
+    dateOfBirth: string;
+    occupationType: string;
+    volunteer: boolean;
+    volunteerRoles: string[];
+    riceType: string;
+    portionSize: string;
+    foodAllergies: boolean;
+    allergiesDetails?: string;
+    healthIssues: boolean;
+    healthDetails?: string;
+  };
+  isMainRegistrant?: boolean;
+}> = ({ name, details, isMainRegistrant }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const formatDate = (dateStr: string) => {
+    return new Date(dateStr).toLocaleDateString('en-MY', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
+
+  const formatRole = (role: string) => {
+    return role.split('_')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
+  return (
+    <div className="border rounded-lg mb-4">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full p-4 flex items-center justify-between bg-orange-50 dark:bg-gray-700/50 rounded-lg hover:bg-orange-100 dark:hover:bg-gray-600/50 transition-colors"
+      >
+        <div className="flex items-center space-x-2">
+          <span className="font-semibold">{name}</span>
+          {isMainRegistrant && (
+            <span className="text-xs bg-orange-200 dark:bg-orange-500/20 text-orange-700 dark:text-orange-300 px-2 py-1 rounded">
+              Main Registrant
+            </span>
+          )}
+        </div>
+        {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+      </button>
+      
+      {isOpen && (
+        <div className="p-4 space-y-3 text-sm">
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <span className="text-gray-500 dark:text-gray-400">Date of Birth:</span>
+              <p className="font-medium">{formatDate(details.dateOfBirth)}</p>
+            </div>
+            <div>
+              <span className="text-gray-500 dark:text-gray-400">Category:</span>
+              <p className="font-medium">{details.occupationType.split('_').join(' ').toUpperCase()}</p>
+            </div>
+            <div>
+              <span className="text-gray-500 dark:text-gray-400">Rice Preference:</span>
+              <p className="font-medium capitalize">{details.riceType} Rice ({details.portionSize} portion)</p>
+            </div>
+            {details.volunteer && (
+              <div className="col-span-2">
+                <span className="text-gray-500 dark:text-gray-400">Volunteer Roles:</span>
+                <ul className="list-disc list-inside font-medium">
+                  {details.volunteerRoles.map((role, idx) => (
+                    <li key={idx}>{formatRole(role)}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {details.foodAllergies && (
+              <div className="col-span-2">
+                <span className="text-gray-500 dark:text-gray-400">Food Allergies:</span>
+                <p className="font-medium">{details.allergiesDetails}</p>
+              </div>
+            )}
+            {details.healthIssues && (
+              <div className="col-span-2">
+                <span className="text-gray-500 dark:text-gray-400">Health Issues:</span>
+                <p className="font-medium">{details.healthDetails}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
   formData,
@@ -102,37 +195,46 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
             <span>Registration Summary</span>
           </h3>
           <div className="space-y-3 text-sm">
-            <p><strong>Name:</strong> {formData.fullName}</p>
-            <p><strong>Email:</strong> {formData.email}</p>
-            <p><strong>Phone:</strong> {formData.phone}</p>
-            <p><strong>Registration Category:</strong> {formData.occupationType.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</p>
-            <div className="summary-item">
-              <span className="summary-label">Rice Type:</span>
-              <span className="summary-value">{formData.riceType.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
-            </div>
-            <div className="summary-item">
-              <span className="summary-label">Portion Size:</span>
-              <span className="summary-value">{formData.portionSize.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
-            </div>
-            {formData.volunteer && (
-              <div>
-                <p><strong>Volunteering For:</strong></p>
-                <ul className="list-disc ml-6 mt-1">
-                  {formData.volunteerRoles.map((role, index) => (
-                    <li key={index}>
-                      {role.split('_').map(word => 
-                        word.charAt(0).toUpperCase() + word.slice(1)
-                      ).join(' ')}
-                    </li>
-                  ))}
-                </ul>
+            <RegistrantSummary
+              name={formData.fullName}
+              details={{
+                dateOfBirth: formData.dateOfBirth,
+                occupationType: formData.occupationType,
+                volunteer: formData.volunteer,
+                volunteerRoles: formData.volunteerRoles,
+                riceType: formData.riceType,
+                portionSize: formData.portionSize,
+                foodAllergies: formData.foodAllergies,
+                allergiesDetails: formData.allergiesDetails,
+                healthIssues: formData.healthIssues,
+                healthDetails: formData.healthDetails,
+              }}
+              isMainRegistrant
+            />
+
+            {/* Family Members Summary */}
+            {formData.hasFamily && formData.familyDetails.length > 0 && (
+              <div className="mt-4">
+                <h4 className="font-medium mb-2">Family Members</h4>
+                {formData.familyDetails.map((member, index) => (
+                  <RegistrantSummary
+                    key={index}
+                    name={member.fullName}
+                    details={{
+                      dateOfBirth: member.dateOfBirth,
+                      occupationType: member.occupationType,
+                      volunteer: member.volunteer,
+                      volunteerRoles: member.volunteerRoles,
+                      riceType: member.riceType,
+                      portionSize: member.portionSize,
+                      foodAllergies: member.foodAllergies,
+                      allergiesDetails: member.allergiesDetails,
+                      healthIssues: member.healthIssues,
+                      healthDetails: member.healthDetails,
+                    }}
+                  />
+                ))}
               </div>
-            )}
-            {formData.hasFamily && (
-              <p><strong>Family Registered:</strong> {formData.familyDetails.length}</p>
-            )}
-            {formData.orderTshirt && (
-              <p><strong>T-shirts Ordered:</strong> {formData.tshirtOrders.reduce((sum, order) => sum + order.quantity, 0)}</p>
             )}
             <p><strong>Payment Method:</strong> {formData.paymentMethod === 'bank' ? 'Bank Transfer' : 'Pay On-site'}</p>
             

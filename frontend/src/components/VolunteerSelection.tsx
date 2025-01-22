@@ -5,6 +5,7 @@ import { VolunteerRole, FormData } from '../App';
 interface VolunteerSelectionProps {
   formData: FormData;
   setFormData: React.Dispatch<React.SetStateAction<FormData>>;
+  familyMemberIndex?: number;
 }
 
 const VOLUNTEER_ROLES: { value: VolunteerRole; label: string; description: string }[] = [
@@ -50,27 +51,56 @@ const VOLUNTEER_ROLES: { value: VolunteerRole; label: string; description: strin
   }
 ];
 
-const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFormData }) => {
+const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFormData, familyMemberIndex }) => {
   const handleRoleToggle = (role: VolunteerRole) => {
-    setFormData(prev => {
-      const currentRoles = prev.volunteerRoles || [];
-      if (currentRoles.includes(role)) {
+    if (typeof familyMemberIndex === 'number') {
+      setFormData(prev => ({
+        ...prev,
+        familyDetails: prev.familyDetails.map((member, idx) => {
+          if (idx !== familyMemberIndex) return member;
+          const currentRoles = member.volunteerRoles || [];
+          if (currentRoles.includes(role)) {
+            return {
+              ...member,
+              volunteerRoles: currentRoles.filter(r => r !== role)
+            };
+          }
+          if (currentRoles.length >= 5) return member;
+          return {
+            ...member,
+            volunteerRoles: [...currentRoles, role]
+          };
+        })
+      }));
+    } else {
+      setFormData(prev => {
+        const currentRoles = prev.volunteerRoles || [];
+        if (currentRoles.includes(role)) {
+          return {
+            ...prev,
+            volunteerRoles: currentRoles.filter(r => r !== role)
+          };
+        }
+        if (currentRoles.length >= 5) {
+          return prev;
+        }
         return {
           ...prev,
-          volunteerRoles: currentRoles.filter(r => r !== role)
+          volunteerRoles: [...currentRoles, role]
         };
-      }
-      if (currentRoles.length >= 5) {
-        return prev;
-      }
-      return {
-        ...prev,
-        volunteerRoles: [...currentRoles, role]
-      };
-    });
+      });
+    }
   };
 
-  if (!formData.volunteer) return null;
+  const isVolunteer = typeof familyMemberIndex === 'number' 
+    ? formData.familyDetails[familyMemberIndex]?.volunteer 
+    : formData.volunteer;
+
+  const volunteerRoles = typeof familyMemberIndex === 'number'
+    ? formData.familyDetails[familyMemberIndex]?.volunteerRoles || []
+    : formData.volunteerRoles;
+
+  if (!isVolunteer) return null;
 
   return (
     <div className="animate-fade-in mt-6 bg-orange-50 dark:bg-gray-700/50 rounded-lg p-6">
@@ -86,7 +116,7 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
         </div>
       </div>
 
-      {formData.volunteerRoles.length >= 5 && (
+      {volunteerRoles.length >= 5 && (
         <div className="flex items-center space-x-2 mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/50 rounded-lg text-sm">
           <AlertCircle className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
           <p className="text-yellow-600 dark:text-yellow-400">
@@ -101,10 +131,10 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
             key={role.value}
             className={`
               relative flex items-start p-4 rounded-lg border-2 cursor-pointer
-              ${formData.volunteerRoles.includes(role.value)
+              ${volunteerRoles.includes(role.value)
                 ? 'border-orange-500 bg-orange-50 dark:border-orange-400 dark:bg-orange-400/10'
                 : 'border-gray-200 hover:border-orange-300 dark:border-gray-600 dark:hover:border-orange-500/50'}
-              ${formData.volunteerRoles.length >= 5 && !formData.volunteerRoles.includes(role.value)
+              ${volunteerRoles.length >= 5 && !volunteerRoles.includes(role.value)
                 ? 'opacity-50 cursor-not-allowed'
                 : ''}
             `}
@@ -112,9 +142,9 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
             <div className="flex items-center h-5">
               <input
                 type="checkbox"
-                checked={formData.volunteerRoles.includes(role.value)}
+                checked={volunteerRoles.includes(role.value)}
                 onChange={() => handleRoleToggle(role.value)}
-                disabled={formData.volunteerRoles.length >= 5 && !formData.volunteerRoles.includes(role.value)}
+                disabled={volunteerRoles.length >= 5 && !volunteerRoles.includes(role.value)}
                 className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
               />
             </div>

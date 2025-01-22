@@ -4,6 +4,7 @@ import { Plus, Trash2 } from 'lucide-react';
 import { validateOccupationTypeByAge, getOccupationTypesByAge, FAMILY_OCCUPATION_TYPES, OccupationType } from '../utils/pricing';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import VolunteerSelection from './VolunteerSelection';
 
 interface FamilyRegistrationProps {
   formData: FormData;
@@ -46,7 +47,9 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
           riceType: '',
           portionSize: '',
           occupationType: 'adult', // Set a default value that matches OccupationType
-          phone: '' // Add this field
+          phone: '', // Add this field
+          volunteer: false,
+          volunteerRoles: [],
         }
       ]
     }));
@@ -263,6 +266,29 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
                       </div>
                     )}
                   </div>
+
+                  {/* Add volunteer section before health info */}
+                  {member.occupationType !== 'child_5_12' && member.occupationType !== 'child_below_4' && (
+                    <div className="mt-6 mb-4">
+                      <div className="flex items-center space-x-2">
+                        <input
+                          type="checkbox"
+                          id={`volunteer-${index}`}
+                          checked={member.volunteer}
+                          onChange={(e) => updateFamilyMember(index, 'volunteer', e.target.checked)}
+                          className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+                        />
+                        <label htmlFor={`volunteer-${index}`} className="form-label mb-0">
+                          I am interested in volunteering
+                        </label>
+                      </div>
+                      <VolunteerSelection
+                        formData={formData}
+                        setFormData={setFormData}
+                        familyMemberIndex={index}
+                      />
+                    </div>
+                  )}
 
                   <div className="mt-6">
                     <h4 className="font-semibold text-lg mb-4">Health & Food Preferences</h4>

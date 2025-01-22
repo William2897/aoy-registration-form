@@ -68,17 +68,16 @@ export const getWalkInDateRangeText = (): string => {
 
 export const calculateTotalPrice = (formData: FormData): {
   basePrice: number;
-  familyTotal: number; // Changed from kidsTotal
+  familyTotal: number;
   tshirtTotal: number;
   subtotal: number;
   discount: number;
-  familyDiscount: number; // Add this
+  familyDiscount: number;
   finalTotal: number;
 } => {
   let basePrice;
   
   if (formData.occupationType === 'walk_in_full') {
-    // Use the selected sub-category rate for walk-in full conference
     basePrice = formData.walkInCategory ? 
       PRICING_CONFIG.baseRates[formData.walkInCategory as keyof typeof PRICING_CONFIG.baseRates] : 
       PRICING_CONFIG.baseRates.adult;
@@ -86,30 +85,31 @@ export const calculateTotalPrice = (formData: FormData): {
     basePrice = PRICING_CONFIG.baseRates[formData.occupationType as OccupationType];
   }
 
-  // Rest of the calculation remains the same
   const familyTotal = formData.hasFamily ? 
     formData.familyDetails.reduce((sum, member) => 
-      sum + PRICING_CONFIG.baseRates[member.occupationType as OccupationType], 0) : 0; // Changed from kidsDetails
+      sum + PRICING_CONFIG.baseRates[member.occupationType as OccupationType], 0) : 0;
+
   const tshirtTotal = formData.orderTshirt
     ? formData.tshirtOrders.reduce((sum, order) => sum + (order.quantity * PRICING_CONFIG.tshirtRate), 0)
     : 0;
 
-  const baseSubtotal = basePrice + familyTotal + tshirtTotal;
+  const registrationSubtotal = basePrice + familyTotal;
   const isEarlyBird = checkEarlyBirdEligibility();
   const earlyBirdDiscount = isEarlyBird ? PRICING_CONFIG.earlyBirdDiscount : 0;
   
-  // Calculate family discount (5% of subtotal) if there are family members
+  // Calculate family discount only on registration fees
   const familyDiscount = formData.hasFamily && formData.familyDetails.length >= 2 
-    ? (baseSubtotal * PRICING_CONFIG.familyDiscountPercentage / 100)
+    ? (registrationSubtotal * PRICING_CONFIG.familyDiscountPercentage / 100)
     : 0;
 
-  const finalTotal = baseSubtotal - earlyBirdDiscount - familyDiscount;
+  // Add t-shirt total after discounts
+  const finalTotal = registrationSubtotal - earlyBirdDiscount - familyDiscount + tshirtTotal;
 
   return {
     basePrice,
-    familyTotal, // Changed from kidsTotal
+    familyTotal,
     tshirtTotal,
-    subtotal: baseSubtotal,
+    subtotal: registrationSubtotal + tshirtTotal,
     discount: earlyBirdDiscount,
     familyDiscount,
     finalTotal
