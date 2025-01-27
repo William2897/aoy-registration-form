@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormData } from '../App';
+import { FormData, FamilyMember } from '../App';
 import { CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { calculateTotalPrice } from '../utils/pricing';
 
@@ -145,6 +145,19 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
     }
   };
 
+  const getSelectedVolunteerRoles = (member: FormData | FamilyMember): string[] => {
+    const roles: string[] = [];
+    if (member.isFoodTeam) roles.push('Food Team');
+    if (member.isRegistrationTeam) roles.push('Registration Team');
+    if (member.isTreasuryTeam) roles.push('Treasury Team');
+    if (member.isPrayerTeam) roles.push('Prayer Team');
+    if (member.isPaAvTeam) roles.push('PA/AV Team');
+    if (member.isEmergencyMedicalTeam) roles.push('Emergency Medical Team');
+    if (member.isChildrenProgram) roles.push('Children\'s Program');
+    if (member.isUsher) roles.push('Usher');
+    return roles;
+  };
+
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">Terms and Conditions</h2>
@@ -201,7 +214,7 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
                 dateOfBirth: formData.dateOfBirth,
                 occupationType: formData.occupationType,
                 volunteer: formData.volunteer,
-                volunteerRoles: formData.volunteerRoles,
+                volunteerRoles: getSelectedVolunteerRoles(formData),
                 riceType: formData.riceType,
                 portionSize: formData.portionSize,
                 foodAllergies: formData.foodAllergies,
@@ -224,7 +237,7 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
                       dateOfBirth: member.dateOfBirth,
                       occupationType: member.occupationType,
                       volunteer: member.volunteer,
-                      volunteerRoles: member.volunteerRoles,
+                      volunteerRoles: getSelectedVolunteerRoles(member),
                       riceType: member.riceType,
                       portionSize: member.portionSize,
                       foodAllergies: member.foodAllergies,

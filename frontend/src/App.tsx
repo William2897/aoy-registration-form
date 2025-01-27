@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { Sun, Moon, Loader2 } from 'lucide-react';
-import RegistrationCountdown from './components/RegistrationCountdown';
+//import RegistrationCountdown from './components/RegistrationCountdown';
 import WelcomeSection from './components/WelcomeSection';
 import ParticipantInfo from './components/ParticipantInfo';
 import FamilyRegistration from './components/FamilyRegistration';
@@ -41,10 +41,11 @@ export type FormData = {
     dateOfBirth: string;
     foodAllergies: boolean;
     allergiesDetails: string;
-    healthIssues: boolean;
-    healthDetails: string;
     riceType: 'brown' | 'white' | '';
     portionSize: 'small' | 'big' | '';
+    healthIssues: boolean;
+    healthDetails: string;
+
     occupationType: OccupationType; // Add this line
     phone?: string; // Add this field
     volunteer: boolean;
@@ -57,14 +58,15 @@ export type FormData = {
   }>;
   foodAllergies: boolean;
   allergiesDetails: string;
+  riceType: 'brown' | 'white' | '';
+  portionSize: 'small' | 'big' | '';
   healthIssues: boolean;
   healthDetails: string;
   paymentMethod: string;
   paymentProof: File | null;
   termsAccepted: boolean;
   walkInCategory?: OccupationType; // Add this line
-  riceType: 'brown' | 'white' | '';
-  portionSize: 'small' | 'big' | '';
+
 };
 
 const initialFormData: FormData = {
@@ -81,20 +83,20 @@ const initialFormData: FormData = {
   church: '',
   volunteer: false,
   volunteerRoles: [], // Add this line
-  hasFamily: false, // Changed from hasKids
-  familyDetails: [], // Changed from kidsDetails
-  orderTshirt: false,
-  tshirtOrders: [],
+  riceType: '',
+  portionSize: '',
   foodAllergies: false,
   allergiesDetails: '',
   healthIssues: false,
   healthDetails: '',
+  hasFamily: false, // Changed from hasKids
+  familyDetails: [], // Changed from kidsDetails
+  orderTshirt: false,
+  tshirtOrders: [],
   paymentMethod: '',
   paymentProof: null,
   termsAccepted: false,
   walkInCategory: undefined, // Add this line
-  riceType: '',
-  portionSize: '',
 };
 
 const App: React.FC = () => {
@@ -140,7 +142,16 @@ const handleSubmit = async (e: FormEvent) => {
   formDataToSubmit.append('otherConference', formData.otherConference);
   formDataToSubmit.append('church', formData.church);
   formDataToSubmit.append('volunteer', String(formData.volunteer));
+  formDataToSubmit.append('volunteerRoles', JSON.stringify(formData.volunteerRoles || []));
+  formDataToSubmit.append('riceType', formData.riceType);
+  formDataToSubmit.append('portionSize', formData.portionSize);
+  formDataToSubmit.append('foodAllergies', String(formData.foodAllergies));
+  formDataToSubmit.append('allergiesDetails', formData.allergiesDetails);
+  formDataToSubmit.append('healthIssues', String(formData.healthIssues));
+  formDataToSubmit.append('healthDetails', formData.healthDetails);
+  formDataToSubmit.append('paymentMethod', formData.paymentMethod);
   formDataToSubmit.append('hasFamily', String(formData.hasFamily)); // Changed from hasKids
+
   
   // Ensure familyDetails is always an array
   if (formData.hasFamily) { // Changed from hasKids
@@ -170,12 +181,6 @@ const handleSubmit = async (e: FormEvent) => {
   } else {
     formDataToSubmit.append('tshirtOrders', JSON.stringify([]));
   }
-
-  formDataToSubmit.append('foodAllergies', String(formData.foodAllergies));
-  formDataToSubmit.append('allergiesDetails', formData.allergiesDetails);
-  formDataToSubmit.append('healthIssues', String(formData.healthIssues));
-  formDataToSubmit.append('healthDetails', formData.healthDetails);
-  formDataToSubmit.append('paymentMethod', formData.paymentMethod);
   
   if (formData.paymentProof) {
     formDataToSubmit.append('paymentProof', formData.paymentProof);
@@ -183,9 +188,7 @@ const handleSubmit = async (e: FormEvent) => {
   
   formDataToSubmit.append('termsAccepted', String(formData.termsAccepted));
 
-  // Add food preferences to form data
-  formDataToSubmit.append('riceType', formData.riceType);
-  formDataToSubmit.append('portionSize', formData.portionSize);
+
 
   try {
     const response = await fetch(`${import.meta.env.VITE_API_URL}/api/registration`, {
@@ -211,12 +214,12 @@ const handleSubmit = async (e: FormEvent) => {
 
 
   const stepsComponents: { [key: number]: JSX.Element } = {
-    //0: <WelcomeSection onNext={handleNext} />,
-    0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-      <WelcomeSection onNext={handleNext} />
-    ) : (
-      <RegistrationCountdown onStart={handleNext} />
-    ),  
+    0: <WelcomeSection onNext={handleNext} />,
+    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
+    //   <WelcomeSection onNext={handleNext} />
+    // ) : (
+    //   <RegistrationCountdown onStart={handleNext} />
+    // ),  
     1: (
       <ParticipantInfo
         formData={formData}
