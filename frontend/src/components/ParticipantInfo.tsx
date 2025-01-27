@@ -31,12 +31,25 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
   const [volunteerError, setVolunteerError] = useState<string>('');
   const [phoneError, setPhoneError] = useState<string>('');
 
+  const hasSelectedVolunteerRoles = (data: FormData): boolean => {
+    return (
+      data.isFoodTeam ||
+      data.isRegistrationTeam ||
+      data.isTreasuryTeam ||
+      data.isPrayerTeam ||
+      data.isPaAvTeam ||
+      data.isEmergencyMedicalTeam ||
+      data.isChildrenProgram ||
+      data.isUsher
+    );
+  };
+
   // Check if form is valid for submission
   const isFormValid = () => {
     if ((formData.occupationType === 'walk_in_full' || formData.occupationType === 'walk_in_partial') && !isWalkInPeriod()) {
       return false;
     }
-    if (formData.volunteer && formData.volunteerRoles.length === 0) {
+    if (formData.volunteer && !hasSelectedVolunteerRoles(formData)) {
       return false;
     }
     return true;
@@ -71,6 +84,24 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
     return cleanPhone.length >= 9;
   };
 
+  const handleVolunteerChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      volunteer: e.target.checked,
+      // Reset all volunteer role fields when unchecking volunteer
+      ...(e.target.checked ? {} : {
+        isFoodTeam: false,
+        isRegistrationTeam: false,
+        isTreasuryTeam: false,
+        isPrayerTeam: false,
+        isPaAvTeam: false,
+        isEmergencyMedicalTeam: false,
+        isChildrenProgram: false,
+        isUsher: false,
+      })
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -81,9 +112,9 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
     }
     setPhoneError('');
 
-    // Rest of your validation
-    if (formData.volunteer && formData.volunteerRoles.length === 0) {
-      setVolunteerError('Please select at least one volunteer category to continue.');
+    // Update volunteer validation
+    if (formData.volunteer && !hasSelectedVolunteerRoles(formData)) {
+      setVolunteerError('Please select at least one volunteer role to continue.');
       return;
     }
     setVolunteerError('');
@@ -367,11 +398,7 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
             id="volunteer"
             name="volunteer"
             checked={formData.volunteer}
-            onChange={(e) => setFormData(prev => ({
-              ...prev,
-              volunteer: e.target.checked,
-              volunteerRoles: e.target.checked ? prev.volunteerRoles : []
-            }))}
+            onChange={handleVolunteerChange}
             className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
           />
           <label htmlFor="volunteer" className="form-label mb-0">
