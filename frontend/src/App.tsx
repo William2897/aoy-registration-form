@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { Sun, Moon, Loader2 } from 'lucide-react';
-import RegistrationCountdown from './components/RegistrationCountdown';
+//import RegistrationCountdown from './components/RegistrationCountdown';
 import WelcomeSection from './components/WelcomeSection';
 import ParticipantInfo from './components/ParticipantInfo';
 import FamilyRegistration from './components/FamilyRegistration';
@@ -165,6 +165,11 @@ const handleSubmit = async (e: FormEvent) => {
       formDataToSubmit.append(`familyDetails[${index}][riceType]`, child.riceType);
       formDataToSubmit.append(`familyDetails[${index}][portionSize]`, child.portionSize);
       formDataToSubmit.append(`familyDetails[${index}][occupationType]`, child.occupationType); // Add this line
+      if (child.volunteer && Array.isArray(child.volunteerRoles)) {
+        formDataToSubmit.append(`familyDetails[${index}][volunteerRoles]`, JSON.stringify(child.volunteerRoles));
+      } else {
+        formDataToSubmit.append(`familyDetails[${index}][volunteerRoles]`, JSON.stringify([]));
+      }
     });
   } else {
     formDataToSubmit.append('familyDetails', JSON.stringify([])); // Changed from kidsDetails
@@ -188,13 +193,28 @@ const handleSubmit = async (e: FormEvent) => {
   
   formDataToSubmit.append('termsAccepted', String(formData.termsAccepted));
 
+  // Update how volunteerRoles are handled
+  if (formData.volunteer) {
+    // Convert volunteerRoles to a string only if it's not already a string
+    const roles = formData.volunteerRoles || [];
+    formDataToSubmit.append('volunteerRoles', JSON.stringify(roles));
+  } else {
+    formDataToSubmit.append('volunteerRoles', '[]');
+  }
 
+  // Ensure all arrays are properly stringified
+  formDataToSubmit.append('familyDetails', JSON.stringify(formData.familyDetails || []));
+  formDataToSubmit.append('tshirtOrders', JSON.stringify(formData.tshirtOrders || []));
 
   try {
     const response = await fetch(`${import.meta.env.VITE_API_URL}/api/registration`, {
       method: 'POST',
       body: formDataToSubmit,
     });
+
+    // Log the actual data being sent for debugging
+    const formDataObject = Object.fromEntries(formDataToSubmit.entries());
+    console.log('Sending form data:', formDataObject);
 
     if (!response.ok) {
       const errorData = await response.json();
@@ -214,12 +234,12 @@ const handleSubmit = async (e: FormEvent) => {
 
 
   const stepsComponents: { [key: number]: JSX.Element } = {
-    //0: <WelcomeSection onNext={handleNext} />,
-    0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-      <WelcomeSection onNext={handleNext} />
-    ) : (
-      <RegistrationCountdown onStart={handleNext} />
-    ),  
+    0: <WelcomeSection onNext={handleNext} />,
+    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
+    //   <WelcomeSection onNext={handleNext} />
+    // ) : (
+    //   <RegistrationCountdown onStart={handleNext} />
+    // ),  
     1: (
       <ParticipantInfo
         formData={formData}
