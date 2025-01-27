@@ -1,6 +1,6 @@
 import React from 'react';
-import { Heart, AlertCircle } from 'lucide-react';
-import { VolunteerRole, FormData } from '../App';
+import { Heart } from 'lucide-react';
+import { FormData } from '../App';
 
 interface VolunteerSelectionProps {
   formData: FormData;
@@ -8,99 +8,112 @@ interface VolunteerSelectionProps {
   familyMemberIndex?: number;
 }
 
-const VOLUNTEER_ROLES: { value: VolunteerRole; label: string; description: string }[] = [
+type VolunteerFields = {
+  isFoodTeam: boolean;
+  isRegistrationTeam: boolean;
+  isTreasuryTeam: boolean;
+  isPrayerTeam: boolean;
+  isPaAvTeam: boolean;
+  isEmergencyMedicalTeam: boolean;
+  isChildrenProgram: boolean;
+  isUsher: boolean;
+};
+
+const VOLUNTEER_ROLES = [
   {
-    value: 'food_team',
+    value: 'isFoodTeam' as const,
     label: 'Food Team',
     description: 'Help coordinate and serve meals to conference attendees'
   },
   {
-    value: 'registration_team',
+    value: 'isRegistrationTeam' as const,
     label: 'Registration Team',
     description: 'Assist with check-in and registration process'
   },
   {
-    value: 'treasury_team',
+    value: 'isTreasuryTeam' as const,
     label: 'Treasury Team',
     description: 'Support financial operations during the event'
   },
   {
-    value: 'prayer_team',
+    value: 'isPrayerTeam' as const,
     label: 'Prayer Team',
     description: 'Lead and participate in prayer sessions'
   },
   {
-    value: 'pa_av_team',
+    value: 'isPaAvTeam' as const,
     label: 'PA/AV Team',
     description: 'Manage sound, lighting, and multimedia systems'
   },
   {
-    value: 'emergency_medical_team',
+    value: 'isEmergencyMedicalTeam' as const,
     label: 'Emergency Medical Team',
     description: 'Provide basic medical support and first aid'
   },
   {
-    value: 'children_program',
+    value: 'isChildrenProgram' as const,
     label: 'Children\'s Program',
     description: 'Help organize and run activities for children'
   },
   {
-    value: 'usher',
+    value: 'isUsher' as const,
     label: 'Usher',
     description: 'Guide and assist attendees during sessions'
   }
-];
+] as const;
 
-const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFormData, familyMemberIndex }) => {
-  const handleRoleToggle = (role: VolunteerRole) => {
+const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({
+  formData,
+  setFormData,
+  familyMemberIndex
+}) => {
+  const countSelectedRoles = (member: Partial<VolunteerFields>): number => {
+    return VOLUNTEER_ROLES.reduce((count, role) => 
+      member[role.value as keyof VolunteerFields] ? count + 1 : count, 0
+    );
+  };
+
+  const getVolunteerFields = (data: FormData | typeof formData.familyDetails[number]): Partial<VolunteerFields> => {
+    const fields: Partial<VolunteerFields> = {};
+    VOLUNTEER_ROLES.forEach(role => {
+      fields[role.value as keyof VolunteerFields] = data[role.value as keyof typeof data] as boolean;
+    });
+    return fields;
+  };
+
+  const toggleRole = (roleField: typeof VOLUNTEER_ROLES[number]['value']) => {
     if (typeof familyMemberIndex === 'number') {
       setFormData(prev => ({
         ...prev,
         familyDetails: prev.familyDetails.map((member, idx) => {
           if (idx !== familyMemberIndex) return member;
-          const currentRoles = member.volunteerRoles || [];
-          if (currentRoles.includes(role)) {
-            return {
-              ...member,
-              volunteerRoles: currentRoles.filter(r => r !== role)
-            };
-          }
-          if (currentRoles.length >= 5) return member;
-          return {
-            ...member,
-            volunteerRoles: [...currentRoles, role]
-          };
+          const selectedCount = countSelectedRoles(getVolunteerFields(member));
+          // Don't allow more than 5 roles unless deselecting
+          if (selectedCount >= 5 && !member[roleField]) return member;
+          return { ...member, [roleField]: !member[roleField] };
         })
       }));
     } else {
       setFormData(prev => {
-        const currentRoles = prev.volunteerRoles || [];
-        if (currentRoles.includes(role)) {
-          return {
-            ...prev,
-            volunteerRoles: currentRoles.filter(r => r !== role)
-          };
-        }
-        if (currentRoles.length >= 5) {
-          return prev;
-        }
-        return {
-          ...prev,
-          volunteerRoles: [...currentRoles, role]
-        };
+        const selectedCount = countSelectedRoles(getVolunteerFields(prev));
+        // Don't allow more than 5 roles unless deselecting
+        if (selectedCount >= 5 && !prev[roleField]) return prev;
+        return { ...prev, [roleField]: !prev[roleField] };
       });
     }
   };
 
-  const isVolunteer = typeof familyMemberIndex === 'number' 
-    ? formData.familyDetails[familyMemberIndex]?.volunteer 
+  const isVolunteer = typeof familyMemberIndex === 'number'
+    ? formData.familyDetails[familyMemberIndex]?.volunteer
     : formData.volunteer;
 
-  const volunteerRoles = typeof familyMemberIndex === 'number'
-    ? formData.familyDetails[familyMemberIndex]?.volunteerRoles || []
-    : formData.volunteerRoles;
-
   if (!isVolunteer) return null;
+
+  const currentMember = typeof familyMemberIndex === 'number'
+    ? formData.familyDetails[familyMemberIndex]
+    : formData;
+
+  const selectedCount = countSelectedRoles(getVolunteerFields(currentMember));
 
   return (
     <div className="animate-fade-in mt-6 bg-orange-50 dark:bg-gray-700/50 rounded-lg p-6">
@@ -116,9 +129,8 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
         </div>
       </div>
 
-      {volunteerRoles.length >= 5 && (
+      {selectedCount >= 5 && (
         <div className="flex items-center space-x-2 mb-4 p-3 bg-yellow-50 dark:bg-yellow-900/50 rounded-lg text-sm">
-          <AlertCircle className="w-4 h-4 text-yellow-600 dark:text-yellow-400" />
           <p className="text-yellow-600 dark:text-yellow-400">
             Maximum of 5 roles selected
           </p>
@@ -131,10 +143,10 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
             key={role.value}
             className={`
               relative flex items-start p-4 rounded-lg border-2 cursor-pointer
-              ${volunteerRoles.includes(role.value)
+              ${currentMember[role.value]
                 ? 'border-orange-500 bg-orange-50 dark:border-orange-400 dark:bg-orange-400/10'
                 : 'border-gray-200 hover:border-orange-300 dark:border-gray-600 dark:hover:border-orange-500/50'}
-              ${volunteerRoles.length >= 5 && !volunteerRoles.includes(role.value)
+              ${selectedCount >= 5 && !currentMember[role.value]
                 ? 'opacity-50 cursor-not-allowed'
                 : ''}
             `}
@@ -142,9 +154,9 @@ const VolunteerSelection: React.FC<VolunteerSelectionProps> = ({ formData, setFo
             <div className="flex items-center h-5">
               <input
                 type="checkbox"
-                checked={volunteerRoles.includes(role.value)}
-                onChange={() => handleRoleToggle(role.value)}
-                disabled={volunteerRoles.length >= 5 && !volunteerRoles.includes(role.value)}
+                checked={currentMember[role.value]}
+                onChange={() => toggleRole(role.value)}
+                disabled={selectedCount >= 5 && !currentMember[role.value]}
                 className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
               />
             </div>

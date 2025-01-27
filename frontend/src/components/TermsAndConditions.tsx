@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { FormData, FamilyMember } from '../App';
+import { FormData } from '../App';
 import { CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { calculateTotalPrice } from '../utils/pricing';
+
+// Remove FamilyMember import and use the type from FormData
+type FamilyMember = FormData['familyDetails'][number];
 
 interface TermsAndConditionsProps {
   formData: FormData;

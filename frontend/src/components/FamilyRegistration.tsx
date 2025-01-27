@@ -50,6 +50,14 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
           phone: '', // Add this field
           volunteer: false,
           volunteerRoles: [],
+          isFoodTeam: false,
+          isRegistrationTeam: false,
+          isTreasuryTeam: false,
+          isPrayerTeam: false,
+          isPaAvTeam: false,
+          isEmergencyMedicalTeam: false,
+          isChildrenProgram: false,
+          isUsher: false,
         }
       ]
     }));

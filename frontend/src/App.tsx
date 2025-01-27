@@ -11,16 +11,6 @@ import TermsAndConditions from './components/TermsAndConditions';
 import ProgressBar from './components/ProgressBar';
 import { OccupationType } from './utils/pricing';
 
-export type VolunteerRole = 
-  | 'food_team'
-  | 'registration_team'
-  | 'treasury_team'
-  | 'prayer_team'
-  | 'pa_av_team'
-  | 'emergency_medical_team'
-  | 'children_program'
-  | 'usher';
-
 export type FormData = {
   step: number;
   email: string;
@@ -34,9 +24,16 @@ export type FormData = {
   otherConference: string;
   church: string;
   volunteer: boolean;
-  volunteerRoles: VolunteerRole[]; // Add this line
-  hasFamily: boolean; // Changed from hasKids
-  familyDetails: Array<{ // Changed from kidsDetails
+  isFoodTeam: boolean;
+  isRegistrationTeam: boolean;
+  isTreasuryTeam: boolean;
+  isPrayerTeam: boolean;
+  isPaAvTeam: boolean;
+  isEmergencyMedicalTeam: boolean;
+  isChildrenProgram: boolean;
+  isUsher: boolean;
+  hasFamily: boolean;
+  familyDetails: Array<{
     fullName: string;
     dateOfBirth: string;
     foodAllergies: boolean;
@@ -45,11 +42,17 @@ export type FormData = {
     portionSize: 'small' | 'big' | '';
     healthIssues: boolean;
     healthDetails: string;
-
-    occupationType: OccupationType; // Add this line
-    phone?: string; // Add this field
+    occupationType: OccupationType;
+    phone?: string;
     volunteer: boolean;
-    volunteerRoles: VolunteerRole[];
+    isFoodTeam: boolean;
+    isRegistrationTeam: boolean;
+    isTreasuryTeam: boolean;
+    isPrayerTeam: boolean;
+    isPaAvTeam: boolean;
+    isEmergencyMedicalTeam: boolean;
+    isChildrenProgram: boolean;
+    isUsher: boolean;
   }>;
   orderTshirt: boolean;
   tshirtOrders: Array<{
@@ -65,8 +68,7 @@ export type FormData = {
   paymentMethod: string;
   paymentProof: File | null;
   termsAccepted: boolean;
-  walkInCategory?: OccupationType; // Add this line
-
+  walkInCategory?: OccupationType;
 };
 
 const initialFormData: FormData = {
@@ -82,21 +84,28 @@ const initialFormData: FormData = {
   otherConference: '',
   church: '',
   volunteer: false,
-  volunteerRoles: [], // Add this line
+  isFoodTeam: false,
+  isRegistrationTeam: false,
+  isTreasuryTeam: false,
+  isPrayerTeam: false,
+  isPaAvTeam: false,
+  isEmergencyMedicalTeam: false,
+  isChildrenProgram: false,
+  isUsher: false,
   riceType: '',
   portionSize: '',
   foodAllergies: false,
   allergiesDetails: '',
   healthIssues: false,
   healthDetails: '',
-  hasFamily: false, // Changed from hasKids
-  familyDetails: [], // Changed from kidsDetails
+  hasFamily: false,
+  familyDetails: [],
   orderTshirt: false,
   tshirtOrders: [],
   paymentMethod: '',
   paymentProof: null,
   termsAccepted: false,
-  walkInCategory: undefined, // Add this line
+  walkInCategory: undefined,
 };
 
 const App: React.FC = () => {
@@ -142,7 +151,14 @@ const handleSubmit = async (e: FormEvent) => {
   formDataToSubmit.append('otherConference', formData.otherConference);
   formDataToSubmit.append('church', formData.church);
   formDataToSubmit.append('volunteer', String(formData.volunteer));
-  formDataToSubmit.append('volunteerRoles', JSON.stringify(formData.volunteerRoles || []));
+  formDataToSubmit.append('isFoodTeam', String(formData.isFoodTeam));
+  formDataToSubmit.append('isRegistrationTeam', String(formData.isRegistrationTeam));
+  formDataToSubmit.append('isTreasuryTeam', String(formData.isTreasuryTeam));
+  formDataToSubmit.append('isPrayerTeam', String(formData.isPrayerTeam));
+  formDataToSubmit.append('isPaAvTeam', String(formData.isPaAvTeam));
+  formDataToSubmit.append('isEmergencyMedicalTeam', String(formData.isEmergencyMedicalTeam));
+  formDataToSubmit.append('isChildrenProgram', String(formData.isChildrenProgram));
+  formDataToSubmit.append('isUsher', String(formData.isUsher));
   formDataToSubmit.append('riceType', formData.riceType);
   formDataToSubmit.append('portionSize', formData.portionSize);
   formDataToSubmit.append('foodAllergies', String(formData.foodAllergies));
@@ -150,34 +166,34 @@ const handleSubmit = async (e: FormEvent) => {
   formDataToSubmit.append('healthIssues', String(formData.healthIssues));
   formDataToSubmit.append('healthDetails', formData.healthDetails);
   formDataToSubmit.append('paymentMethod', formData.paymentMethod);
-  formDataToSubmit.append('hasFamily', String(formData.hasFamily)); // Changed from hasKids
+  formDataToSubmit.append('hasFamily', String(formData.hasFamily));
 
-  
-  // Ensure familyDetails is always an array
-  if (formData.hasFamily) { // Changed from hasKids
-    formData.familyDetails.forEach((child, index) => { // Changed from kidsDetails
-      formDataToSubmit.append(`familyDetails[${index}][fullName]`, child.fullName); // Changed from kidsDetails
-      formDataToSubmit.append(`familyDetails[${index}][dateOfBirth]`, child.dateOfBirth); // Changed from kidsDetails
+  if (formData.hasFamily) {
+    formData.familyDetails.forEach((child, index) => {
+      formDataToSubmit.append(`familyDetails[${index}][fullName]`, child.fullName);
+      formDataToSubmit.append(`familyDetails[${index}][dateOfBirth]`, child.dateOfBirth);
       formDataToSubmit.append(`familyDetails[${index}][foodAllergies]`, String(child.foodAllergies));
       formDataToSubmit.append(`familyDetails[${index}][allergiesDetails]`, child.allergiesDetails);
       formDataToSubmit.append(`familyDetails[${index}][healthIssues]`, String(child.healthIssues));
       formDataToSubmit.append(`familyDetails[${index}][healthDetails]`, child.healthDetails);
       formDataToSubmit.append(`familyDetails[${index}][riceType]`, child.riceType);
       formDataToSubmit.append(`familyDetails[${index}][portionSize]`, child.portionSize);
-      formDataToSubmit.append(`familyDetails[${index}][occupationType]`, child.occupationType); // Add this line
-      if (child.volunteer && Array.isArray(child.volunteerRoles)) {
-        formDataToSubmit.append(`familyDetails[${index}][volunteerRoles]`, JSON.stringify(child.volunteerRoles));
-      } else {
-        formDataToSubmit.append(`familyDetails[${index}][volunteerRoles]`, JSON.stringify([]));
-      }
+      formDataToSubmit.append(`familyDetails[${index}][occupationType]`, child.occupationType);
+      formDataToSubmit.append(`familyDetails[${index}][isFoodTeam]`, String(child.isFoodTeam));
+      formDataToSubmit.append(`familyDetails[${index}][isRegistrationTeam]`, String(child.isRegistrationTeam));
+      formDataToSubmit.append(`familyDetails[${index}][isTreasuryTeam]`, String(child.isTreasuryTeam));
+      formDataToSubmit.append(`familyDetails[${index}][isPrayerTeam]`, String(child.isPrayerTeam));
+      formDataToSubmit.append(`familyDetails[${index}][isPaAvTeam]`, String(child.isPaAvTeam));
+      formDataToSubmit.append(`familyDetails[${index}][isEmergencyMedicalTeam]`, String(child.isEmergencyMedicalTeam));
+      formDataToSubmit.append(`familyDetails[${index}][isChildrenProgram]`, String(child.isChildrenProgram));
+      formDataToSubmit.append(`familyDetails[${index}][isUsher]`, String(child.isUsher));
     });
   } else {
-    formDataToSubmit.append('familyDetails', JSON.stringify([])); // Changed from kidsDetails
+    formDataToSubmit.append('familyDetails', JSON.stringify([]));
   }
 
   formDataToSubmit.append('orderTshirt', String(formData.orderTshirt));
-  
-  // Ensure tshirtOrders is always an array
+
   if (formData.orderTshirt) {
     formData.tshirtOrders.forEach((order, index) => {
       formDataToSubmit.append(`tshirtOrders[${index}][size]`, order.size);
@@ -186,25 +202,12 @@ const handleSubmit = async (e: FormEvent) => {
   } else {
     formDataToSubmit.append('tshirtOrders', JSON.stringify([]));
   }
-  
+
   if (formData.paymentProof) {
     formDataToSubmit.append('paymentProof', formData.paymentProof);
   }
-  
+
   formDataToSubmit.append('termsAccepted', String(formData.termsAccepted));
-
-  // Update how volunteerRoles are handled
-  if (formData.volunteer) {
-    // Convert volunteerRoles to a string only if it's not already a string
-    const roles = formData.volunteerRoles || [];
-    formDataToSubmit.append('volunteerRoles', JSON.stringify(roles));
-  } else {
-    formDataToSubmit.append('volunteerRoles', '[]');
-  }
-
-  // Ensure all arrays are properly stringified
-  formDataToSubmit.append('familyDetails', JSON.stringify(formData.familyDetails || []));
-  formDataToSubmit.append('tshirtOrders', JSON.stringify(formData.tshirtOrders || []));
 
   try {
     const response = await fetch(`${import.meta.env.VITE_API_URL}/api/registration`, {
@@ -212,7 +215,6 @@ const handleSubmit = async (e: FormEvent) => {
       body: formDataToSubmit,
     });
 
-    // Log the actual data being sent for debugging
     const formDataObject = Object.fromEntries(formDataToSubmit.entries());
     console.log('Sending form data:', formDataObject);
 
@@ -232,14 +234,8 @@ const handleSubmit = async (e: FormEvent) => {
   }
 };
 
-
   const stepsComponents: { [key: number]: JSX.Element } = {
     0: <WelcomeSection onNext={handleNext} />,
-    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-    //   <WelcomeSection onNext={handleNext} />
-    // ) : (
-    //   <RegistrationCountdown onStart={handleNext} />
-    // ),  
     1: (
       <ParticipantInfo
         formData={formData}
@@ -319,7 +315,6 @@ const handleSubmit = async (e: FormEvent) => {
     <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
       <div className="min-h-screen bg-gradient-to-b from-orange-50 to-orange-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-200">
         <div className="container mx-auto px-4 py-8">
-          {/* Header */}
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-3xl font-bold text-orange-600 dark:text-orange-400">
               AOY 2025 Registration
@@ -332,7 +327,6 @@ const handleSubmit = async (e: FormEvent) => {
             </button>
           </div>
 
-          {/* Error Message */}
           {submitError && (
             <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/50 text-red-600 dark:text-red-400 rounded-lg">
               <p className="font-medium">Registration Error</p>
@@ -340,7 +334,6 @@ const handleSubmit = async (e: FormEvent) => {
             </div>
           )}
 
-          {/* Loading Overlay */}
           {isSubmitting && (
             <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl flex items-center space-x-4">
@@ -350,10 +343,8 @@ const handleSubmit = async (e: FormEvent) => {
             </div>
           )}
 
-          {/* Progress Bar */}
           {!submitSuccess && <ProgressBar currentStep={formData.step} totalSteps={7} />}
 
-          {/* Form Container */}
           {renderStep()}
         </div>
       </div>
