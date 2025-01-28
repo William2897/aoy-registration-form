@@ -170,6 +170,7 @@ const handleSubmit = async (e: FormEvent) => {
 
   if (formData.hasFamily) {
     formData.familyDetails.forEach((child, index) => {
+      formDataToSubmit.append(`familyDetails[${index}][volunteer]`, String(child.volunteer));
       formDataToSubmit.append(`familyDetails[${index}][fullName]`, child.fullName);
       formDataToSubmit.append(`familyDetails[${index}][dateOfBirth]`, child.dateOfBirth);
       formDataToSubmit.append(`familyDetails[${index}][foodAllergies]`, String(child.foodAllergies));

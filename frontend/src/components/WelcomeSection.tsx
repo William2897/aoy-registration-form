@@ -70,10 +70,10 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
           <div className="flex items-center space-x-2">
             <Mail className="w-5 h-5 text-purple-500" />
             <a
-              href="mailto:info@aoyweb.org"
+              href="mailto:aoyregister.aoy@gmail.com"
               className="text-purple-600 dark:text-purple-400 hover:underline"
             >
-              info@aoyweb.org
+              aoyregister.aoy@gmail.com
             </a>
           </div>
         </div>

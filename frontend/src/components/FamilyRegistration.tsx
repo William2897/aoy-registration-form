@@ -49,7 +49,6 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
           occupationType: 'adult', // Set a default value that matches OccupationType
           phone: '', // Add this field
           volunteer: false,
-          volunteerRoles: [],
           isFoodTeam: false,
           isRegistrationTeam: false,
           isTreasuryTeam: false,
