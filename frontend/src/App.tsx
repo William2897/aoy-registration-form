@@ -174,6 +174,7 @@ const handleSubmit = async (e: FormEvent) => {
       formDataToSubmit.append(`familyDetails[${index}][volunteer]`, String(child.volunteer));
       formDataToSubmit.append(`familyDetails[${index}][fullName]`, child.fullName);
       formDataToSubmit.append(`familyDetails[${index}][dateOfBirth]`, child.dateOfBirth);
+      formDataToSubmit.append(`familyDetails[${index}][gender]`, child.gender)
       formDataToSubmit.append(`familyDetails[${index}][phone]`, child.phone || '');
       formDataToSubmit.append(`familyDetails[${index}][foodAllergies]`, String(child.foodAllergies));
       formDataToSubmit.append(`familyDetails[${index}][allergiesDetails]`, child.allergiesDetails);
