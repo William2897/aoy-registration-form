@@ -36,6 +36,7 @@ export type FormData = {
   familyDetails: Array<{
     fullName: string;
     dateOfBirth: string;
+    gender: string;  // Add this line
     foodAllergies: boolean;
     allergiesDetails: string;
     riceType: 'brown' | 'white' | '';
@@ -173,6 +174,7 @@ const handleSubmit = async (e: FormEvent) => {
       formDataToSubmit.append(`familyDetails[${index}][volunteer]`, String(child.volunteer));
       formDataToSubmit.append(`familyDetails[${index}][fullName]`, child.fullName);
       formDataToSubmit.append(`familyDetails[${index}][dateOfBirth]`, child.dateOfBirth);
+      formDataToSubmit.append(`familyDetails[${index}][phone]`, child.phone || '');
       formDataToSubmit.append(`familyDetails[${index}][foodAllergies]`, String(child.foodAllergies));
       formDataToSubmit.append(`familyDetails[${index}][allergiesDetails]`, child.allergiesDetails);
       formDataToSubmit.append(`familyDetails[${index}][healthIssues]`, String(child.healthIssues));

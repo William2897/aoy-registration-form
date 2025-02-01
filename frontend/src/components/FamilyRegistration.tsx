@@ -40,6 +40,7 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
         {
           fullName: '',
           dateOfBirth: '',
+          gender: '', // Add this line
           foodAllergies: false,
           allergiesDetails: '',
           healthIssues: false,
@@ -203,8 +204,8 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
 
                   <h3 className="text-lg font-semibold mb-4">Family Member {index + 1}</h3>
                   
-                  {/* First Row: Name and DOB */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  {/* First Row: Name, DOB, and Gender */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                     <div>
                       <label className="form-label">Full Name *</label>
                       <input
@@ -227,6 +228,32 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
                         onChange={(e) => updateFamilyMember(index, 'dateOfBirth', e.target.value)}
                         className="input-field"
                       />
+                    </div>
+
+                    <div>
+                      <label className="form-label">Gender *</label>
+                      <div className="flex space-x-4 mt-4">
+                        <label className="flex items-center space-x-2">
+                          <input
+                            type="radio"
+                            required
+                            checked={member.gender === 'male'}
+                            onChange={() => updateFamilyMember(index, 'gender', 'male')}
+                            className="text-orange-600 focus:ring-orange-500"
+                          />
+                          <span>Male</span>
+                        </label>
+                        <label className="flex items-center space-x-2">
+                          <input
+                            type="radio"
+                            required
+                            checked={member.gender === 'female'}
+                            onChange={() => updateFamilyMember(index, 'gender', 'female')}
+                            className="text-orange-600 focus:ring-orange-500"
+                          />
+                          <span>Female</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
 
