@@ -11,7 +11,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep, totalSteps }) =>
     'Personal Info',
     'Health',
     'Family',
-    'T-Shirt',
+    'Conference Shirt',
     'TnC',
     'Payment'
   ];

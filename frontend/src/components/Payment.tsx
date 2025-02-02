@@ -85,7 +85,7 @@ const Payment: React.FC<PaymentProps> = ({
             {formData.orderTshirt && formData.tshirtOrders.length > 0 && (
               <div className="border-b pb-3">
                 <div className="flex justify-between">
-                  <span>T-shirts ({formData.tshirtOrders.reduce((sum, order) => sum + order.quantity, 0)} pieces):</span>
+                  <span>Conference Shirts ({formData.tshirtOrders.reduce((sum, order) => sum + order.quantity, 0)} pieces):</span>
                   <span className="font-medium">RM {pricing.tshirtTotal.toFixed(2)}</span>
                 </div>
               </div>

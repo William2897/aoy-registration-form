@@ -46,7 +46,7 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
           <div className="mt-4 flex items-center space-x-2">
             <CreditCard className="w-5 h-5 text-green-500" />
             <span className="text-green-600 dark:text-green-400 font-medium">
-              T-shirt Price: RM30/piece
+            Conference Shirt Price: RM30/piece
             </span>
           </div>
         </div>

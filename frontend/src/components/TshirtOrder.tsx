@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FormData } from '../App';
 import { Plus, Minus, Trash2 } from 'lucide-react';
+import poloFront from '../assets/Polo F.png';
+import poloBack from '../assets/Polo B.png';
 
 interface TshirtOrderProps {
   formData: FormData;
@@ -58,16 +60,16 @@ const TshirtOrder: React.FC<TshirtOrderProps> = ({
 
   return (
     <div className="animate-fade-in">
-      <h2 className="section-title">T-shirt Order</h2>
+      <h2 className="section-title">Conference Shirt Order</h2>
       <div className="mb-6 grid grid-cols-2 place-items-center">
         <img
-          src="/src/assets/Polo F.png"
-          alt="AOY 2025 T-shirt 1"
+          src={poloFront}
+          alt="AOY 2025 Conference Shirt 1"
           className="w-3/5 rounded-lg shadow-lg"
         />
         <img
-          src="/src/assets/Polo B.png"
-          alt="AOY 2025 T-shirt 2"
+          src={poloBack}
+          alt="AOY 2025 Conference Shirt 2"
           className="w-3/5 rounded-lg shadow-lg"
         />
       </div>
@@ -89,11 +91,11 @@ const TshirtOrder: React.FC<TshirtOrderProps> = ({
             className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
           />
           <label htmlFor="orderTshirt" className="form-label mb-0">
-            I would like to order T-shirt(s)
+            I would like to order Conference Shirt(s)
           </label>
         </div>
         {formData.orderTshirt && formData.tshirtOrders.length === 0 && (
-          <p className="text-red-600">Please add at least one T-shirt order.</p>
+          <p className="text-red-600">Please add at least one Conference Shirt order.</p>
         )}
 
         {formData.orderTshirt && (

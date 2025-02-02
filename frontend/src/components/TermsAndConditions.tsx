@@ -263,7 +263,7 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
                 )}
 
                 {formData.orderTshirt && (
-                  <p>T-shirts: RM {pricing.tshirtTotal.toFixed(2)}</p>
+                  <p>Conference Shirts: RM {pricing.tshirtTotal.toFixed(2)}</p>
                 )}
                 
                 <p>Subtotal: RM {pricing.subtotal.toFixed(2)}</p>
