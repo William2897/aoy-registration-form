@@ -166,7 +166,7 @@ const TshirtOrder: React.FC<TshirtOrderProps> = ({
               className="flex items-center space-x-2 text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 transition-colors duration-200"
             >
               <Plus size={20} />
-              <span>Add T-shirt {formData.tshirtOrders.length + 1}</span>
+              <span>Add Conference Shirt {formData.tshirtOrders.length + 1}</span>
             </button>
 
             {formData.tshirtOrders.length > 0 && (
