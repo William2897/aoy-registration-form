@@ -105,9 +105,9 @@ const Payment: React.FC<PaymentProps> = ({
                 <span>Early Bird Discount:</span>
                 <span>- RM {pricing.discount.toFixed(2)}</span>
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                Fixed discount for early registration
-              </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                Applies for registrations before March 2, 2025 (excludes children under 4 years old)
+                </div>
               </div>
             )}
 
@@ -118,7 +118,7 @@ const Payment: React.FC<PaymentProps> = ({
                   <span>-RM {pricing.familyDiscount.toFixed(2)}</span>
                 </div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                    Fixed discount for family registration
+                  Applied to total registration fees (individual and family package)
                 </div>
               </div>
             )}
