@@ -66,7 +66,7 @@ const Payment: React.FC<PaymentProps> = ({
             {/* Base Registration */}
             <div className="border-b pb-3">
               <div className="flex justify-between">
-                <span>Base Registration ({formatOccupationType(formData.occupationType)}):</span>
+                <span>Individual Fee ({formatOccupationType(formData.occupationType)}):</span>
                 <span className="font-medium">RM {pricing.basePrice.toFixed(2)}</span>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Payment: React.FC<PaymentProps> = ({
             {formData.hasFamily && (
               <div className="border-b pb-3">
                 <div className="flex justify-between">
-                  <span>Family Registration:</span>
+                  <span>Family Package Fee:</span>
                   <span className="font-medium">RM {pricing.familyTotal.toFixed(2)}</span>
                 </div>
               </div>

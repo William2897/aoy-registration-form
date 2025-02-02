@@ -125,7 +125,7 @@ const ParticipantInfo: React.FC<ParticipantInfoProps> = ({
   };
 
   const conferences = [
-    'Peninsula Malaysia Mission',
+    'Peninsular Malaysia Mission',
     'Sabah Mission',
     'Sarawak Mission',
     'Singapore Conference',

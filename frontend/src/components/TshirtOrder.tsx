@@ -59,21 +59,18 @@ const TshirtOrder: React.FC<TshirtOrderProps> = ({
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">T-shirt Order</h2>
-      <p className="section-subtitle">Order your AOY 2025 T-shirt <strong>(RM30 each)</strong></p>
-
-      {/* <div className="mb-8 grid grid-cols-2 gap-4">
+      <div className="mb-6 grid grid-cols-2 place-items-center">
         <img
-          src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=80&w=400"
+          src="/src/assets/Polo F.png"
           alt="AOY 2025 T-shirt 1"
-          className="w-full rounded-lg shadow-lg"
+          className="w-3/5 rounded-lg shadow-lg"
         />
         <img
-          src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=80&w=400"
+          src="/src/assets/Polo B.png"
           alt="AOY 2025 T-shirt 2"
-          className="w-full rounded-lg shadow-lg"
+          className="w-3/5 rounded-lg shadow-lg"
         />
       </div>
-       */}
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="flex items-center space-x-2 mb-6">

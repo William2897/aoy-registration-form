@@ -76,6 +76,7 @@ export const calculateTotalPrice = (formData: FormData): {
   finalTotal: number;
 } => {
   let basePrice;
+  const isEarlyBird = checkEarlyBirdEligibility();
   
   if (formData.occupationType === 'walk_in_full') {
     basePrice = formData.walkInCategory ? 
@@ -85,33 +86,43 @@ export const calculateTotalPrice = (formData: FormData): {
     basePrice = PRICING_CONFIG.baseRates[formData.occupationType as OccupationType];
   }
 
+  // Calculate early bird discount for main registrant
+  const mainRegistrantDiscount = isEarlyBird && formData.occupationType !== 'child_below_4' 
+    ? PRICING_CONFIG.earlyBirdDiscount 
+    : 0;
+
   const familyTotal = formData.hasFamily ? 
     formData.familyDetails.reduce((sum, member) => 
       sum + PRICING_CONFIG.baseRates[member.occupationType as OccupationType], 0) : 0;
 
-  const tshirtTotal = formData.orderTshirt
-    ? formData.tshirtOrders.reduce((sum, order) => sum + (order.quantity * PRICING_CONFIG.tshirtRate), 0)
+  // Calculate early bird discount for eligible family members
+  const familyEarlyBirdDiscount = isEarlyBird && formData.hasFamily
+    ? formData.familyDetails.reduce((sum, member) => 
+        member.occupationType !== 'child_below_4' 
+          ? sum + PRICING_CONFIG.earlyBirdDiscount 
+          : sum, 0)
     : 0;
 
   const registrationSubtotal = basePrice + familyTotal;
-  const isEarlyBird = checkEarlyBirdEligibility();
-  const earlyBirdDiscount = isEarlyBird ? PRICING_CONFIG.earlyBirdDiscount : 0;
+  const totalEarlyBirdDiscount = mainRegistrantDiscount + familyEarlyBirdDiscount;
   
   // Calculate family discount only on registration fees
-  const familyDiscount = formData.hasFamily? (registrationSubtotal * PRICING_CONFIG.familyDiscountPercentage / 100)
+  const familyDiscount = formData.hasFamily 
+    ? (registrationSubtotal * PRICING_CONFIG.familyDiscountPercentage / 100)
     : 0;
 
-  // Add t-shirt total after discounts
-  const finalTotal = registrationSubtotal - earlyBirdDiscount - familyDiscount + tshirtTotal;
+  const tshirtTotal = formData.orderTshirt
+    ? formData.tshirtOrders.reduce((sum, order) => sum + (order.quantity * PRICING_CONFIG.tshirtRate), 0)
+    : 0;
 
   return {
     basePrice,
     familyTotal,
     tshirtTotal,
     subtotal: registrationSubtotal + tshirtTotal,
-    discount: earlyBirdDiscount,
+    discount: totalEarlyBirdDiscount,
     familyDiscount,
-    finalTotal
+    finalTotal: registrationSubtotal - totalEarlyBirdDiscount - familyDiscount + tshirtTotal
   };
 };
 

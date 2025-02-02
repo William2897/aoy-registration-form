@@ -132,8 +132,8 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
       content: 'If you cannot attend, contact our registration team to allow another participant to take your spot.'
     },
     {
-      title: 'Registration',
-      content: 'One registration form per participant. Each must register individually.'
+      title: 'Family Policy',
+      content: 'All participants registering under a family package must visit the registration booth during the conference for verification. The family policy applies only to parents and their children, excluding siblings and extended family members. We appreciate your honest cooperation in adhering to this policy.'
     },
     {
       title: 'Limitation of Liability',
@@ -257,9 +257,9 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({
             <div className="mt-4 pt-4 border-t">
               <h4 className="font-semibold mb-2">Fee Breakdown</h4>
               <div className="space-y-1">
-                <p>Base Registration: RM {pricing.basePrice.toFixed(2)}</p>
+                <p>Individual Fee: RM {pricing.basePrice.toFixed(2)}</p>
                 {formData.hasFamily && (
-                  <p>Family Registration: RM {pricing.familyTotal.toFixed(2)}</p>
+                  <p>Family Package Fee: RM {pricing.familyTotal.toFixed(2)}</p>
                 )}
 
                 {formData.orderTshirt && (

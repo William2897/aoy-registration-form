@@ -57,7 +57,7 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
             <li>Register at least 2 additional family members to qualify for the family package discount.</li>
-            <li>Children below 4 years old: Free admission.</li>
+            <li>Children below 4 years old: Free admission, but not eligible for early bird special.</li>
             <li>Volunteering opportunities are limited to a maximum of 5 roles per participant.</li>
             <li>Provide valid proof of payment if selecting Bank Transfer as the payment method.</li>
           </ul>
