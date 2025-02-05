@@ -28,11 +28,20 @@ const Payment: React.FC<PaymentProps> = ({
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      const validImageTypes = ['image/jpeg', 'image/png'];
-      if (!validImageTypes.includes(file.type)) {
-        setPaymentError('Please upload a valid image file (JPEG or PNG).');
+      // Check file type
+      const validFileTypes = ['image/jpeg', 'image/png', 'application/pdf'];
+      if (!validFileTypes.includes(file.type)) {
+        setPaymentError('Please upload a valid file (JPEG, PNG, or PDF).');
         return;
       }
+
+      // Check file size (1MB = 1024 * 1024 bytes)
+      const maxSize = 1024 * 1024;
+      if (file.size > maxSize) {
+        setPaymentError('File size must be less than 1MB.');
+        return;
+      }
+
       setFormData(prev => ({ ...prev, paymentProof: file }));
       setPaymentError('');
     }
@@ -207,7 +216,7 @@ const Payment: React.FC<PaymentProps> = ({
                     ref={fileInputRef}
                     type="file"
                     name="paymentProof"
-                    accept="image/*"
+                    accept="image/*,.pdf"
                     onChange={handleFileChange}
                     className="hidden"
                     required={formData.paymentMethod === 'bank'}
@@ -217,7 +226,7 @@ const Payment: React.FC<PaymentProps> = ({
                     Click to upload your payment proof
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-400">
-                    Supported formats: JPEG, PNG
+                    Supported formats: JPEG, PNG, PDF (max 1MB)
                   </p>
                 </div>
                 {formData.paymentProof && (
