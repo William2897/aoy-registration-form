@@ -47,7 +47,7 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
           healthDetails: '',
           riceType: '',
           portionSize: '',
-          occupationType: 'adult', // Set a default value that matches OccupationType
+          occupationType: 'working_adult', // Set a default value that matches OccupationType
           phone: '', // Add this field
           volunteer: false,
           isFoodTeam: false,
@@ -83,7 +83,7 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
           const isValid = validateOccupationTypeByAge(value, updatedMember.occupationType);
           if (!isValid) {
             // Reset occupation type if it's no longer valid for the new age
-            updatedMember.occupationType = 'adult' as OccupationType; // Set a valid default
+            updatedMember.occupationType = 'working_adult' as OccupationType; // Set a valid default
             alert('Occupation type has been reset due to age change.');
           }
         }

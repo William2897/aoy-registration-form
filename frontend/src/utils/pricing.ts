@@ -1,15 +1,15 @@
 import { FormData } from '../App';
 
 export type OccupationType = 
-  | 'adult'
+  | 'working_adult'
+  | 'homemaker'
   | 'student'
   | 'ministry_salary'
   | 'ministry_stipend'
   | 'walk_in_full'
   | 'walk_in_partial'
   | 'child_5_12'
-  | 'child_below_4'
-  | 'homemaker_retiree';  // Add new type
+  | 'child_below_4';
 
 interface PricingConfig {
   baseRates: {
@@ -22,15 +22,15 @@ interface PricingConfig {
 
 export const PRICING_CONFIG: PricingConfig = {
   baseRates: {
-    'adult': 240,
+    'working_adult': 240,
+    'homemaker': 180, 
     'student': 180,
     'ministry_salary': 240,
     'ministry_stipend': 180,
     'walk_in_full': 240,
     'walk_in_partial': 100,
     'child_5_12': 50,
-    'child_below_4': 0,
-    'homemaker_retiree': 180  // Add new rate
+    'child_below_4': 0
   },
   tshirtRate: 30,
   earlyBirdDiscount: 20,
@@ -38,11 +38,11 @@ export const PRICING_CONFIG: PricingConfig = {
 };
 
 export const FAMILY_OCCUPATION_TYPES = [
-  { type: 'adult', label: 'Adult', price: 240 },
+  { type: 'working_adult', label: 'Working Adult', price: 240 },
+  { type: 'homemaker', label: 'Homemaker', price: 180 },
   { type: 'student', label: 'Student', price: 180 },
   { type: 'ministry_salary', label: 'Ministry (Full Salary)', price: 240 },
   { type: 'ministry_stipend', label: 'Ministry (Stipend)', price: 180 },
-  { type: 'homemaker_retiree', label: 'Homemaker/Retiree', price: 180 }, // Add new option
   { type: 'child_5_12', label: 'Child (Ages 5-12)', price: 50 },
   { type: 'child_below_4', label: 'Child (4 and Below)', price: 0 }
 ];
@@ -84,7 +84,7 @@ export const calculateTotalPrice = (formData: FormData): {
   if (formData.occupationType === 'walk_in_full') {
     basePrice = formData.walkInCategory ? 
       PRICING_CONFIG.baseRates[formData.walkInCategory as keyof typeof PRICING_CONFIG.baseRates] : 
-      PRICING_CONFIG.baseRates.adult;
+      PRICING_CONFIG.baseRates.working_adult;
   } else {
     basePrice = PRICING_CONFIG.baseRates[formData.occupationType as OccupationType];
   }
@@ -167,6 +167,6 @@ export const getOccupationTypesByAge = (dateOfBirth: string): OccupationType[] =
   } else if (age >= 5 && age <= 12) {
     return ['child_5_12'];
   } else {
-    return ['adult', 'student', 'ministry_salary', 'ministry_stipend', 'homemaker_retiree'];
+    return ['working_adult', 'student', 'ministry_salary', 'ministry_stipend', 'homemaker'];
   }
 };
