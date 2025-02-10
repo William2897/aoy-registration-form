@@ -7,8 +7,9 @@ export type OccupationType =
   | 'ministry_stipend'
   | 'walk_in_full'
   | 'walk_in_partial'
-  | 'child_5_12'    // Add new child types
-  | 'child_below_4';
+  | 'child_5_12'
+  | 'child_below_4'
+  | 'homemaker_retiree';  // Add new type
 
 interface PricingConfig {
   baseRates: {
@@ -16,7 +17,7 @@ interface PricingConfig {
   };
   tshirtRate: number;
   earlyBirdDiscount: number;
-  familyDiscountPercentage: number; // Add this
+  familyDiscountPercentage: number;
 }
 
 export const PRICING_CONFIG: PricingConfig = {
@@ -25,14 +26,15 @@ export const PRICING_CONFIG: PricingConfig = {
     'student': 180,
     'ministry_salary': 240,
     'ministry_stipend': 180,
-    'walk_in_full': 240, // This will be dynamically calculated
+    'walk_in_full': 240,
     'walk_in_partial': 100,
     'child_5_12': 50,
-    'child_below_4': 0
+    'child_below_4': 0,
+    'homemaker_retiree': 180  // Add new rate
   },
   tshirtRate: 30,
-  earlyBirdDiscount: 20, // Changed from 0.15 to 20 (RM)
-  familyDiscountPercentage: 5 // 5% discount for family registration
+  earlyBirdDiscount: 20,
+  familyDiscountPercentage: 5
 };
 
 export const FAMILY_OCCUPATION_TYPES = [
@@ -40,6 +42,7 @@ export const FAMILY_OCCUPATION_TYPES = [
   { type: 'student', label: 'Student', price: 180 },
   { type: 'ministry_salary', label: 'Ministry (Full Salary)', price: 240 },
   { type: 'ministry_stipend', label: 'Ministry (Stipend)', price: 180 },
+  { type: 'homemaker_retiree', label: 'Homemaker/Retiree', price: 180 }, // Add new option
   { type: 'child_5_12', label: 'Child (Ages 5-12)', price: 50 },
   { type: 'child_below_4', label: 'Child (4 and Below)', price: 0 }
 ];
@@ -164,6 +167,6 @@ export const getOccupationTypesByAge = (dateOfBirth: string): OccupationType[] =
   } else if (age >= 5 && age <= 12) {
     return ['child_5_12'];
   } else {
-    return ['adult', 'student', 'ministry_salary', 'ministry_stipend'];
+    return ['adult', 'student', 'ministry_salary', 'ministry_stipend', 'homemaker_retiree'];
   }
 };
