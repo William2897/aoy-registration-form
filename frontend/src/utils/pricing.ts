@@ -111,7 +111,7 @@ export const calculateTotalPrice = (formData: FormData): {
   
   // Calculate family discount only on registration fees
   const familyDiscount = formData.hasFamily 
-    ? (registrationSubtotal * PRICING_CONFIG.familyDiscountPercentage / 100)
+    ? ((registrationSubtotal - totalEarlyBirdDiscount) * PRICING_CONFIG.familyDiscountPercentage / 100)
     : 0;
 
   const tshirtTotal = formData.orderTshirt
