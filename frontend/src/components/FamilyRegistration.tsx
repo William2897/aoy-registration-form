@@ -152,10 +152,17 @@ const FamilyRegistration: React.FC<FamilyRegistrationProps> = ({
     <div className="animate-fade-in">
       <h2 className="section-title">Family Registration</h2>
       <p className="section-subtitle mb-2">Register your family members</p>
-      <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-        To qualify for the Family Package, you must register at least {MIN_FAMILY_MEMBERS} family members.
-        Prices are determined by each member's category.
-      </p>
+      <div className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+        <p className="mb-2">
+          <strong>Family Package Eligibility Requirements:</strong>
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+            <li>Only for immediate family members (parent(s) and their children)</li>
+          <li>Minimum {MIN_FAMILY_MEMBERS} family members required</li>
+          <li>Other relatives (siblings, cousins, etc.) must register separately</li>
+        </ul>
+        <p className="mt-2">Pricing varies based on each member's age category.</p>
+      </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="flex items-center space-x-2 mb-6">
