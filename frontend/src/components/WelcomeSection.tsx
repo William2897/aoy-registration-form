@@ -1,11 +1,47 @@
-import React from 'react';
-import {Calendar, Mail, CreditCard, MapPin } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import {Calendar, Mail, CreditCard, MapPin, Clock } from 'lucide-react';
 
 interface WelcomeSectionProps {
   onNext: () => void;
 }
 
 const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
+  // Add state for countdown
+  const [timeLeft, setTimeLeft] = useState({
+    hours: 0,
+    minutes: 0,
+  });
+
+  // Early bird end date from the pricing utility (March 2nd, 2025, 23:59 GMT+8)
+  const earlyBirdEndDate = new Date('2025-03-02T23:59:00+08:00');
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const difference = earlyBirdEndDate.getTime() - now.getTime();
+
+      if (difference > 0) {
+        setTimeLeft({
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / (1000 * 60)) % 60),
+        });
+      } else {
+        // Early bird period has ended
+        setTimeLeft({hours: 0, minutes: 0});
+      }
+    };
+
+    // Calculate immediately
+    calculateTimeLeft();
+    
+    // Update every second
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const isEarlyBirdActive = new Date() <= earlyBirdEndDate;
+
   return (
     <div className="animate-fade-in">
       <h2 className="section-title">Welcome to AOY 2025!</h2>
@@ -43,6 +79,28 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
           <p className="text-gray-700 dark:text-gray-300">
             Get <strong>5% off</strong> when you register your family!
           </p>
+          
+          {isEarlyBirdActive && (
+            <div className="mt-4 p-3 border border-green-200 dark:border-green-800 bg-green-100 dark:bg-green-900/30 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center space-x-2">
+                  <Clock className="w-5 h-5 text-green-600 dark:text-green-400" />
+                  <span className="font-medium text-green-600 dark:text-green-400">Early Bird Ends In:</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-4 gap-2 text-center">
+                <div className="bg-white dark:bg-gray-700 p-2 rounded">
+                  <div className="text-xl font-bold text-green-600 dark:text-green-400">{timeLeft.hours}</div>
+                  <div className="text-xs text-green-700 dark:text-green-300">Hours</div>
+                </div>
+                <div className="bg-white dark:bg-gray-700 p-2 rounded">
+                  <div className="text-xl font-bold text-green-600 dark:text-green-400">{timeLeft.minutes}</div>
+                  <div className="text-xs text-green-700 dark:text-green-300">Mins</div>
+                </div>
+              </div>
+            </div>
+          )}
+          
           <div className="mt-4 flex items-center space-x-2">
             <CreditCard className="w-5 h-5 text-green-500" />
             <span className="text-green-600 dark:text-green-400 font-medium">
