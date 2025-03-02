@@ -48,8 +48,8 @@ export const FAMILY_OCCUPATION_TYPES = [
 ];
 
 export const WALK_IN_DATES = {
-  start: new Date('2025-06-05'),
-  end: new Date('2025-06-08')
+  start: new Date('2025-06-05T00:00:00+08:00'),
+  end: new Date('2025-06-08T23:59:59+08:00')
 };
 
 export const formatDate = (date: Date): string => {
