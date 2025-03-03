@@ -12,8 +12,8 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
     hours: 0,
   });
 
-  // Early bird end date from the pricing utility (March 2nd, 2025, 23:59 GMT+8)
-  const earlyBirdEndDate = new Date('2025-03-02T23:59:00+08:00');
+  // Early bird end date from the pricing utility (March 16th , 2025, 23:59 GMT+8)
+  const earlyBirdEndDate = new Date('2025-03-16T23:59:00+08:00');
 
   useEffect(() => {
     const calculateTimeLeft = () => {
