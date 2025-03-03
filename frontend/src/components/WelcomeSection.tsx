@@ -8,8 +8,8 @@ interface WelcomeSectionProps {
 const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
   // Add state for countdown
   const [timeLeft, setTimeLeft] = useState({
+    days: 0,
     hours: 0,
-    minutes: 0,
   });
 
   // Early bird end date from the pricing utility (March 2nd, 2025, 23:59 GMT+8)
@@ -22,12 +22,12 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
 
       if (difference > 0) {
         setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / (1000 * 60)) % 60),
         });
       } else {
         // Early bird period has ended
-        setTimeLeft({hours: 0, minutes: 0});
+        setTimeLeft({ days: 0, hours: 0 });
       }
     };
 
@@ -71,27 +71,27 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onNext }) => {
 
         <div className="bg-green-50 dark:bg-gray-700/50 rounded-lg p-6">
           <h3 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-4">
-            Early Bird Special!
+            Early Bird Special Extended!
           </h3>
           <p className="text-gray-700 dark:text-gray-300">
-            Get <strong>RM20 off</strong> when you register early! Limited time offer ends <strong>2nd March, 2025</strong>.
+            Get <strong>RM20 off</strong> when you register early! Limited time offer ends <strong>16th March, 2025</strong>.
           </p>   
             {isEarlyBirdActive && (
             <div className="mt-4 p-3 border border-green-200 dark:border-green-800 bg-green-100 dark:bg-green-900/30 rounded-lg">
               <div className="flex items-center justify-center mb-2">
               <div className="flex items-center space-x-2">
                 <Clock className="w-5 h-5 text-green-600 dark:text-green-400" />
-                <span className="font-medium text-green-600 dark:text-green-400">Early Bird (RM20 off) Ends In:</span>
+                <span className="font-medium text-green-600 dark:text-green-400">Early Bird Ends In:</span>
               </div>
               </div>
               <div className="grid grid-cols-2 gap-2 text-center max-w-[200px] mx-auto">
               <div className="bg-white dark:bg-gray-700 p-2 rounded">
-                <div className="text-xl font-bold text-green-600 dark:text-green-400">{timeLeft.hours}</div>
-                <div className="text-xs text-green-700 dark:text-green-300">Hours</div>
+                <div className="text-xl font-bold text-green-600 dark:text-green-400">{timeLeft.days}</div>
+                <div className="text-xs text-green-700 dark:text-green-300">Days</div>
               </div>
               <div className="bg-white dark:bg-gray-700 p-2 rounded">
-                <div className="text-xl font-bold text-green-600 dark:text-green-400">{timeLeft.minutes}</div>
-                <div className="text-xs text-green-700 dark:text-green-300">Mins</div>
+                <div className="text-xl font-bold text-green-600 dark:text-green-400">{timeLeft.hours}</div>
+                <div className="text-xs text-green-700 dark:text-green-300">hours</div>
               </div>
               </div>
             </div>

@@ -130,7 +130,7 @@ export const calculateTotalPrice = (formData: FormData): {
 };
 
 export const checkEarlyBirdEligibility = (): boolean => {
-  const earlyBirdEndDate = new Date('2025-03-02T23:59:00+08:00'); // Ends 2nd March 2025, 23:59 GMT+8
+  const earlyBirdEndDate = new Date('2025-03-16T23:59:00+08:00'); // Ends 2nd March 2025, 23:59 GMT+8
   return new Date() <= earlyBirdEndDate;
 };
 
