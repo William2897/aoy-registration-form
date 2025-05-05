@@ -1,6 +1,6 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { Sun, Moon, Loader2 } from 'lucide-react';
-//import RegistrationCountdown from './components/RegistrationCountdown';
+import RegistrationCountdown from './components/RegistrationCountdown';
 import WelcomeSection from './components/WelcomeSection';
 import ParticipantInfo from './components/ParticipantInfo';
 import FamilyRegistration from './components/FamilyRegistration';
@@ -115,6 +115,32 @@ const App: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+    // Registration closing date: May 5, 2025, 23:59 GMT+8 (Malaysian time)
+  const registrationCloseDate = new Date('2025-05-05T23:59:00+08:00');
+  // To test the closed registration page, uncomment the line below
+  // const registrationCloseDate = new Date('2025-05-04T23:59:00+08:00'); // Past date for testing
+  const [isRegistrationOpen, setIsRegistrationOpen] = useState(true);
+    useEffect(() => {
+    // Check if registration is still open
+    const checkRegistrationStatus = () => {
+      const now = new Date();
+      // This is the real check for production
+      setIsRegistrationOpen(now < registrationCloseDate);
+      
+      // For testing purposes:
+      // Uncomment the line below and comment the line above to test when registration is closed
+      // setIsRegistrationOpen(false);
+    };
+    
+    // Check immediately on component mount
+    checkRegistrationStatus();
+    
+    // Set up interval to check every minute
+    const intervalId = setInterval(checkRegistrationStatus, 60000);
+    
+    // Clean up interval on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
 
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
@@ -241,14 +267,12 @@ const handleSubmit = async (e: FormEvent) => {
     setIsSubmitting(false);
   }
 };
-
   const stepsComponents: { [key: number]: JSX.Element } = {
-    0: <WelcomeSection onNext={handleNext} />,
-    // 0: new Date() >= new Date('2025-02-03T00:00:00Z') ? (
-    //   <WelcomeSection onNext={handleNext} />
-    // ) : (
-    //   <RegistrationCountdown onStart={handleNext} />
-    // ),  
+    0: isRegistrationOpen ? (
+      <WelcomeSection onNext={handleNext} />
+    ) : (
+      <RegistrationCountdown onStart={handleNext} />
+    ),
     1: (
       <ParticipantInfo
         formData={formData}

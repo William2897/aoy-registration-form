@@ -1,0 +1,1500 @@
+2025-03-16T15:25:54.495799+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-16T15:25:54.495799+00:00 app[web.1]: "isUsher": "false"
+2025-03-16T15:25:54.495799+00:00 app[web.1]: },
+2025-03-16T15:25:54.495799+00:00 app[web.1]: {
+2025-03-16T15:25:54.495799+00:00 app[web.1]: "volunteer": "false",
+2025-03-16T15:25:54.495799+00:00 app[web.1]: "fullName": "Wynnelle Odhiambo",
+2025-03-16T15:25:54.495799+00:00 app[web.1]: "dateOfBirth": "2012-01-06",
+2025-03-16T15:25:54.495799+00:00 app[web.1]: "gender": "female",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "phone": "601139957116",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "healthIssues": "false",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.495800+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-16T15:25:54.495801+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-16T15:25:54.495801+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-16T15:25:54.495801+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-16T15:25:54.495801+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-16T15:25:54.495801+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-16T15:25:54.495801+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-16T15:25:54.495802+00:00 app[web.1]: "isUsher": "false"
+2025-03-16T15:25:54.495802+00:00 app[web.1]: }
+2025-03-16T15:25:54.495802+00:00 app[web.1]: ],
+2025-03-16T15:25:54.495802+00:00 app[web.1]: "orderTshirt": "false",
+2025-03-16T15:25:54.495802+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-03-16T15:25:54.495802+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-16T15:25:54.495803+00:00 app[web.1]: },
+2025-03-16T15:25:54.495803+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-16T15:25:54.495803+00:00 app[web.1]: }
+2025-03-16T15:25:54.496008+00:00 app[web.1]: 2025-03-16T15:25:54.495Z [34mdebug[39m: Parsed familyDetails: {
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "0": {
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "fullName": "Nancy Odhiambo",
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "dateOfBirth": "1975-05-04",
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "gender": "female",
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.496009+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "occupationType": "homemaker",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "phone": "601128365141",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "volunteer": false
+2025-03-16T15:25:54.496010+00:00 app[web.1]: },
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "1": {
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "fullName": "Timothy Odhiambo",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "dateOfBirth": "1996-03-05",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "gender": "male",
+2025-03-16T15:25:54.496010+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "phone": "601127288169",
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "volunteer": false
+2025-03-16T15:25:54.496011+00:00 app[web.1]: },
+2025-03-16T15:25:54.496011+00:00 app[web.1]: "2": {
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "fullName": "William Odhiambo",
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "dateOfBirth": "1997-12-28",
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "gender": "male",
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.496012+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "phone": "601160937110",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "volunteer": false
+2025-03-16T15:25:54.496013+00:00 app[web.1]: },
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "3": {
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "fullName": "Wynnelle Odhiambo",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "dateOfBirth": "2012-01-06",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "gender": "female",
+2025-03-16T15:25:54.496013+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "phone": "601139957116",
+2025-03-16T15:25:54.496014+00:00 app[web.1]: "volunteer": false
+2025-03-16T15:25:54.496015+00:00 app[web.1]: }
+2025-03-16T15:25:54.496015+00:00 app[web.1]: }
+2025-03-16T15:25:54.496505+00:00 app[web.1]: 2025-03-16T15:25:54.496Z [34mdebug[39m: Price calculation: {
+2025-03-16T15:25:54.496506+00:00 app[web.1]: "basePrice": 240,
+2025-03-16T15:25:54.496506+00:00 app[web.1]: "familyTotal": 720,
+2025-03-16T15:25:54.496506+00:00 app[web.1]: "registrationSubtotal": 960,
+2025-03-16T15:25:54.496506+00:00 app[web.1]: "familyDiscount": 43,
+2025-03-16T15:25:54.496506+00:00 app[web.1]: "tshirtTotal": 0,
+2025-03-16T15:25:54.496506+00:00 app[web.1]: "finalTotal": 817
+2025-03-16T15:25:54.496506+00:00 app[web.1]: }
+2025-03-16T15:25:54.538266+00:00 app[web.1]: 2025-03-16T15:25:54.538Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-03-16T15:25:54.538267+00:00 app[web.1]: "registrationId": "4694",
+2025-03-16T15:25:54.538267+00:00 app[web.1]: "hasVolunteer": false,
+2025-03-16T15:25:54.538268+00:00 app[web.1]: "volunteerType": "boolean",
+2025-03-16T15:25:54.538268+00:00 app[web.1]: "hasFamilyMembers": true,
+2025-03-16T15:25:54.538268+00:00 app[web.1]: "familyMembersCount": 4
+2025-03-16T15:25:54.538268+00:00 app[web.1]: }
+2025-03-16T15:25:54.544175+00:00 app[web.1]: 2025-03-16T15:25:54.543Z [34mdebug[39m: Formatting family member details: {
+2025-03-16T15:25:54.544176+00:00 app[web.1]: "familyDetailsCount": 4,
+2025-03-16T15:25:54.544177+00:00 app[web.1]: "familyData": [
+2025-03-16T15:25:54.544177+00:00 app[web.1]: {
+2025-03-16T15:25:54.544177+00:00 app[web.1]: "id": "4dec18b8-f802-4bad-9a71-8ee6d4a9772b",
+2025-03-16T15:25:54.544178+00:00 app[web.1]: "registrationId": "4694",
+2025-03-16T15:25:54.544178+00:00 app[web.1]: "fullName": "William Odhiambo",
+2025-03-16T15:25:54.544178+00:00 app[web.1]: "dateOfBirth": "1997-12-28T00:00:00.000Z",
+2025-03-16T15:25:54.544178+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.544178+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.544179+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.544179+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.544179+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.544179+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.544179+00:00 app[web.1]: "phone": "601160937110",
+2025-03-16T15:25:54.544180+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.544180+00:00 app[web.1]: "gender": "male",
+2025-03-16T15:25:54.544180+00:00 app[web.1]: "createdAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544183+00:00 app[web.1]: "updatedAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544183+00:00 app[web.1]: "volunteerAssignments": []
+2025-03-16T15:25:54.544183+00:00 app[web.1]: },
+2025-03-16T15:25:54.544184+00:00 app[web.1]: {
+2025-03-16T15:25:54.544184+00:00 app[web.1]: "id": "8c569b04-0e35-4d70-bacb-0c7e0fbedf8c",
+2025-03-16T15:25:54.544184+00:00 app[web.1]: "registrationId": "4694",
+2025-03-16T15:25:54.544184+00:00 app[web.1]: "fullName": "Nancy Odhiambo",
+2025-03-16T15:25:54.544184+00:00 app[web.1]: "dateOfBirth": "1975-05-04T00:00:00.000Z",
+2025-03-16T15:25:54.544184+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.544184+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "phone": "601128365141",
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "occupationType": "homemaker",
+2025-03-16T15:25:54.544185+00:00 app[web.1]: "gender": "female",
+2025-03-16T15:25:54.544186+00:00 app[web.1]: "createdAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544186+00:00 app[web.1]: "updatedAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544186+00:00 app[web.1]: "volunteerAssignments": []
+2025-03-16T15:25:54.544186+00:00 app[web.1]: },
+2025-03-16T15:25:54.544186+00:00 app[web.1]: {
+2025-03-16T15:25:54.544186+00:00 app[web.1]: "id": "58acf8f4-adcd-4d66-9009-fcfa8a4c5472",
+2025-03-16T15:25:54.544186+00:00 app[web.1]: "registrationId": "4694",
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "fullName": "Wynnelle Odhiambo",
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "dateOfBirth": "2012-01-06T00:00:00.000Z",
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.544187+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.544188+00:00 app[web.1]: "phone": "601139957116",
+2025-03-16T15:25:54.544188+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.544188+00:00 app[web.1]: "gender": "female",
+2025-03-16T15:25:54.544188+00:00 app[web.1]: "createdAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544188+00:00 app[web.1]: "updatedAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544195+00:00 app[web.1]: "volunteerAssignments": []
+2025-03-16T15:25:54.544196+00:00 app[web.1]: },
+2025-03-16T15:25:54.544196+00:00 app[web.1]: {
+2025-03-16T15:25:54.544196+00:00 app[web.1]: "id": "327f1600-b4fd-4790-8cee-ba5db740f1b9",
+2025-03-16T15:25:54.544196+00:00 app[web.1]: "registrationId": "4694",
+2025-03-16T15:25:54.544196+00:00 app[web.1]: "fullName": "Timothy Odhiambo",
+2025-03-16T15:25:54.544196+00:00 app[web.1]: "dateOfBirth": "1996-03-05T00:00:00.000Z",
+2025-03-16T15:25:54.544196+00:00 app[web.1]: "foodAllergies": false,
+2025-03-16T15:25:54.544196+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "healthIssues": false,
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "portionSize": "big",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "phone": "601127288169",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "occupationType": "student",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "gender": "male",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "createdAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544197+00:00 app[web.1]: "updatedAt": "2025-03-16T15:25:54.517Z",
+2025-03-16T15:25:54.544198+00:00 app[web.1]: "volunteerAssignments": []
+2025-03-16T15:25:54.544198+00:00 app[web.1]: }
+2025-03-16T15:25:54.544198+00:00 app[web.1]: ]
+2025-03-16T15:25:54.544198+00:00 app[web.1]: }
+2025-03-16T15:25:54.745946+00:00 app[web.1]: 2025-03-16T15:25:54.745Z [32minfo[39m: Confirmation email sent successfully to otieno.odhiambo@gmail.com (ID: 4694)
+2025-03-16T15:25:54.746566+00:00 app[web.1]: 202.186.78.147 - - [16/Mar/2025:15:25:54 +0000] "POST /api/registration HTTP/1.1" 201 2418 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0"
+2025-03-16T15:49:04.392184+00:00 app[web.1]: Request body: {}
+2025-03-16T15:49:04.392295+00:00 app[web.1]: 2025-03-16T15:49:04.392Z [34mdebug[39m: Registration request body: {
+2025-03-16T15:49:04.392295+00:00 app[web.1]: "body": {}
+2025-03-16T15:49:04.392296+00:00 app[web.1]: }
+2025-03-16T15:49:04.393198+00:00 app[web.1]: 2025-03-16T15:49:04.393Z [34mdebug[39m: Request body before validation: {
+2025-03-16T15:49:04.393199+00:00 app[web.1]: "body": {
+2025-03-16T15:49:04.393200+00:00 app[web.1]: "email": "graciouse_bobay@yahoo.com",
+2025-03-16T15:49:04.393200+00:00 app[web.1]: "fullName": "GRACIOUSE STEVE GEORGE",
+2025-03-16T15:49:04.393201+00:00 app[web.1]: "dateOfBirth": "1994-03-04",
+2025-03-16T15:49:04.393201+00:00 app[web.1]: "gender": "male",
+2025-03-16T15:49:04.393202+00:00 app[web.1]: "country": "Malaysia",
+2025-03-16T15:49:04.393202+00:00 app[web.1]: "phone": "60145670272",
+2025-03-16T15:49:04.393203+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-16T15:49:04.393204+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-03-16T15:49:04.393205+00:00 app[web.1]: "otherConference": "",
+2025-03-16T15:49:04.393205+00:00 app[web.1]: "church": "MONT KIARA ADVENTIST HOPE",
+2025-03-16T15:49:04.393206+00:00 app[web.1]: "volunteer": "false",
+2025-03-16T15:49:04.393206+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-16T15:49:04.393206+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-16T15:49:04.393206+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-16T15:49:04.393207+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-16T15:49:04.393207+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-16T15:49:04.393207+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-16T15:49:04.393208+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-16T15:49:04.393208+00:00 app[web.1]: "isUsher": "false",
+2025-03-16T15:49:04.393208+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:49:04.393208+00:00 app[web.1]: "portionSize": "small",
+2025-03-16T15:49:04.393208+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-16T15:49:04.393209+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:49:04.393209+00:00 app[web.1]: "healthIssues": "false",
+2025-03-16T15:49:04.393209+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:49:04.393209+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-16T15:49:04.393209+00:00 app[web.1]: "hasFamily": "false",
+2025-03-16T15:49:04.393210+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-16T15:49:04.393210+00:00 app[web.1]: "orderTshirt": "false",
+2025-03-16T15:49:04.393210+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-03-16T15:49:04.393210+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-16T15:49:04.393210+00:00 app[web.1]: },
+2025-03-16T15:49:04.393210+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-16T15:49:04.393211+00:00 app[web.1]: }
+2025-03-16T15:49:04.393906+00:00 app[web.1]: 2025-03-16T15:49:04.393Z [34mdebug[39m: Occupation type validation: {
+2025-03-16T15:49:04.393907+00:00 app[web.1]: "receivedValue": "working_adult",
+2025-03-16T15:49:04.393907+00:00 app[web.1]: "receivedType": "string",
+2025-03-16T15:49:04.393907+00:00 app[web.1]: "validValues": [
+2025-03-16T15:49:04.393908+00:00 app[web.1]: "working_adult",
+2025-03-16T15:49:04.393908+00:00 app[web.1]: "student",
+2025-03-16T15:49:04.393908+00:00 app[web.1]: "ministry_salary",
+2025-03-16T15:49:04.393908+00:00 app[web.1]: "ministry_stipend",
+2025-03-16T15:49:04.393908+00:00 app[web.1]: "walk_in_full",
+2025-03-16T15:49:04.393909+00:00 app[web.1]: "walk_in_partial",
+2025-03-16T15:49:04.393909+00:00 app[web.1]: "child_5_12",
+2025-03-16T15:49:04.393909+00:00 app[web.1]: "child_below_4",
+2025-03-16T15:49:04.393909+00:00 app[web.1]: "homemaker"
+2025-03-16T15:49:04.393909+00:00 app[web.1]: ]
+2025-03-16T15:49:04.393910+00:00 app[web.1]: }
+2025-03-16T15:49:04.395572+00:00 app[web.1]: 2025-03-16T15:49:04.395Z [34mdebug[39m: Request body after validation: {
+2025-03-16T15:49:04.395572+00:00 app[web.1]: "body": {
+2025-03-16T15:49:04.395573+00:00 app[web.1]: "email": "graciouse_bobay@yahoo.com",
+2025-03-16T15:49:04.395573+00:00 app[web.1]: "fullName": "GRACIOUSE STEVE GEORGE",
+2025-03-16T15:49:04.395573+00:00 app[web.1]: "dateOfBirth": "1994-03-04",
+2025-03-16T15:49:04.395574+00:00 app[web.1]: "gender": "male",
+2025-03-16T15:49:04.395574+00:00 app[web.1]: "country": "Malaysia",
+2025-03-16T15:49:04.395574+00:00 app[web.1]: "phone": "60145670272",
+2025-03-16T15:49:04.395575+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-16T15:49:04.395575+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-03-16T15:49:04.395575+00:00 app[web.1]: "otherConference": "",
+2025-03-16T15:49:04.395575+00:00 app[web.1]: "church": "MONT KIARA ADVENTIST HOPE",
+2025-03-16T15:49:04.395576+00:00 app[web.1]: "volunteer": "false",
+2025-03-16T15:49:04.395576+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-16T15:49:04.395576+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-16T15:49:04.395576+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-16T15:49:04.395576+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-16T15:49:04.395577+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-16T15:49:04.395577+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-16T15:49:04.395578+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-16T15:49:04.395578+00:00 app[web.1]: "isUsher": "false",
+2025-03-16T15:49:04.395578+00:00 app[web.1]: "riceType": "white",
+2025-03-16T15:49:04.395578+00:00 app[web.1]: "portionSize": "small",
+2025-03-16T15:49:04.395578+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-16T15:49:04.395579+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-16T15:49:04.395579+00:00 app[web.1]: "healthIssues": "false",
+2025-03-16T15:49:04.395579+00:00 app[web.1]: "healthDetails": "",
+2025-03-16T15:49:04.395579+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-16T15:49:04.395579+00:00 app[web.1]: "hasFamily": "false",
+2025-03-16T15:49:04.395580+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-16T15:49:04.395580+00:00 app[web.1]: "orderTshirt": "false",
+2025-03-16T15:49:04.395580+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-03-16T15:49:04.395581+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-16T15:49:04.395581+00:00 app[web.1]: },
+2025-03-16T15:49:04.395581+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-16T15:49:04.395582+00:00 app[web.1]: }
+2025-03-16T15:49:04.395632+00:00 app[web.1]: 2025-03-16T15:49:04.395Z [34mdebug[39m: Parsed familyDetails:
+2025-03-16T15:49:04.395726+00:00 app[web.1]: 2025-03-16T15:49:04.395Z [34mdebug[39m: Price calculation: {
+2025-03-16T15:49:04.395726+00:00 app[web.1]: "basePrice": 240,
+2025-03-16T15:49:04.395726+00:00 app[web.1]: "familyTotal": 0,
+2025-03-16T15:49:04.395727+00:00 app[web.1]: "registrationSubtotal": 240,
+2025-03-16T15:49:04.395727+00:00 app[web.1]: "familyDiscount": 0,
+2025-03-16T15:49:04.395727+00:00 app[web.1]: "tshirtTotal": 0,
+2025-03-16T15:49:04.395728+00:00 app[web.1]: "finalTotal": 220
+2025-03-16T15:49:04.395728+00:00 app[web.1]: }
+2025-03-16T15:49:04.428742+00:00 app[web.1]: 2025-03-16T15:49:04.428Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-03-16T15:49:04.428743+00:00 app[web.1]: "registrationId": "9744",
+2025-03-16T15:49:04.428743+00:00 app[web.1]: "hasVolunteer": false,
+2025-03-16T15:49:04.428743+00:00 app[web.1]: "volunteerType": "boolean",
+2025-03-16T15:49:04.428744+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-03-16T15:49:04.428744+00:00 app[web.1]: "familyMembersCount": 0
+2025-03-16T15:49:04.428744+00:00 app[web.1]: }
+2025-03-16T15:49:04.663548+00:00 app[web.1]: 2025-03-16T15:49:04.663Z [32minfo[39m: Confirmation email sent successfully to graciouse_bobay@yahoo.com (ID: 9744)
+2025-03-16T15:49:04.664190+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=d7cf04e0-e244-cedc-179e-e864a079a59f fwd="27.125.246.2" dyno=web.1 connect=0ms service=273ms status=201 bytes=870 protocol=http1.1 tls=true tls_version=unknown
+2025-03-16T15:49:04.664207+00:00 app[web.1]: 27.125.246.2 - - [16/Mar/2025:15:49:04 +0000] "POST /api/registration HTTP/1.1" 201 870 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36"
+2025-03-16T16:24:23.714366+00:00 heroku[web.1]: Idling
+2025-03-16T16:24:23.717516+00:00 heroku[web.1]: State changed from up to down
+2025-03-16T16:24:24.206136+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-03-16T16:24:24.291640+00:00 heroku[web.1]: Process exited with status 143
+2025-03-18T10:45:09.959438+00:00 heroku[web.1]: Unidling
+2025-03-18T10:45:10.008590+00:00 heroku[web.1]: State changed from down to starting
+2025-03-18T10:45:13.747365+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-03-18T10:45:14.558216+00:00 app[web.1]: 
+2025-03-18T10:45:14.558234+00:00 app[web.1]: > backend@1.0.0 start
+2025-03-18T10:45:14.558234+00:00 app[web.1]: > node dist/index.js
+2025-03-18T10:45:14.558234+00:00 app[web.1]: 
+2025-03-18T10:45:14.931449+00:00 app[web.1]: 2025-03-18T10:45:14.929Z [34mdebug[39m: Logger initialized in production mode
+2025-03-18T10:45:15.151194+00:00 app[web.1]: 2025-03-18T10:45:15.150Z [32minfo[39m: Database connected successfully
+2025-03-18T10:45:15.153642+00:00 app[web.1]: 2025-03-18T10:45:15.153Z [32minfo[39m: Server is running on port 5099
+2025-03-18T10:45:15.414291+00:00 heroku[web.1]: State changed from starting to up
+2025-03-18T10:45:16.584793+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-03-18T10:45:16.584807+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-03-18T10:45:16.584825+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-03-18T10:45:16.584825+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-03-18T10:45:16.584826+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-03-18T10:45:16.584826+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-03-18T10:45:16.584827+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-03-18T10:45:16.584827+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-03-18T10:45:16.584827+00:00 app[web.1]: }
+2025-03-18T10:45:16.585333+00:00 app[web.1]: Request body: {}
+2025-03-18T10:45:16.585715+00:00 app[web.1]: 2025-03-18T10:45:16.585Z [34mdebug[39m: Registration request body: {
+2025-03-18T10:45:16.585716+00:00 app[web.1]: "body": {}
+2025-03-18T10:45:16.585716+00:00 app[web.1]: }
+2025-03-18T10:45:16.590372+00:00 app[web.1]: 2025-03-18T10:45:16.590Z [34mdebug[39m: Request body before validation: {
+2025-03-18T10:45:16.590373+00:00 app[web.1]: "body": {
+2025-03-18T10:45:16.590373+00:00 app[web.1]: "email": "angelakatenga@gmail.com",
+2025-03-18T10:45:16.590373+00:00 app[web.1]: "fullName": "Angella Anjimile Katenga",
+2025-03-18T10:45:16.590373+00:00 app[web.1]: "dateOfBirth": "1993-08-29",
+2025-03-18T10:45:16.590374+00:00 app[web.1]: "gender": "female",
+2025-03-18T10:45:16.590374+00:00 app[web.1]: "country": "Thailand",
+2025-03-18T10:45:16.590374+00:00 app[web.1]: "phone": "660656745233",
+2025-03-18T10:45:16.590374+00:00 app[web.1]: "occupationType": "student",
+2025-03-18T10:45:16.590374+00:00 app[web.1]: "conference": "Other",
+2025-03-18T10:45:16.590375+00:00 app[web.1]: "otherConference": "TAM Thailand Adventist Mission",
+2025-03-18T10:45:16.590375+00:00 app[web.1]: "church": "Bangkok Korean SDA Church",
+2025-03-18T10:45:16.590375+00:00 app[web.1]: "volunteer": "false",
+2025-03-18T10:45:16.590375+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-18T10:45:16.590375+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-18T10:45:16.590376+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-18T10:45:16.590376+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-18T10:45:16.590376+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-18T10:45:16.590376+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "isUsher": "false",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "riceType": "brown",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "portionSize": "small",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "healthIssues": "false",
+2025-03-18T10:45:16.590377+00:00 app[web.1]: "healthDetails": "",
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "hasFamily": "false",
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "orderTshirt": "false",
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-18T10:45:16.590378+00:00 app[web.1]: },
+2025-03-18T10:45:16.590378+00:00 app[web.1]: "occupationType": "student"
+2025-03-18T10:45:16.590379+00:00 app[web.1]: }
+2025-03-18T10:45:16.595131+00:00 app[web.1]: 2025-03-18T10:45:16.594Z [34mdebug[39m: Occupation type validation: {
+2025-03-18T10:45:16.595131+00:00 app[web.1]: "receivedValue": "student",
+2025-03-18T10:45:16.595131+00:00 app[web.1]: "receivedType": "string",
+2025-03-18T10:45:16.595131+00:00 app[web.1]: "validValues": [
+2025-03-18T10:45:16.595131+00:00 app[web.1]: "working_adult",
+2025-03-18T10:45:16.595132+00:00 app[web.1]: "student",
+2025-03-18T10:45:16.595132+00:00 app[web.1]: "ministry_salary",
+2025-03-18T10:45:16.595132+00:00 app[web.1]: "ministry_stipend",
+2025-03-18T10:45:16.595132+00:00 app[web.1]: "walk_in_full",
+2025-03-18T10:45:16.595132+00:00 app[web.1]: "walk_in_partial",
+2025-03-18T10:45:16.595132+00:00 app[web.1]: "child_5_12",
+2025-03-18T10:45:16.595133+00:00 app[web.1]: "child_below_4",
+2025-03-18T10:45:16.595133+00:00 app[web.1]: "homemaker"
+2025-03-18T10:45:16.595133+00:00 app[web.1]: ]
+2025-03-18T10:45:16.595133+00:00 app[web.1]: }
+2025-03-18T10:45:16.597375+00:00 app[web.1]: 2025-03-18T10:45:16.597Z [34mdebug[39m: Request body after validation: {
+2025-03-18T10:45:16.597376+00:00 app[web.1]: "body": {
+2025-03-18T10:45:16.597376+00:00 app[web.1]: "email": "angelakatenga@gmail.com",
+2025-03-18T10:45:16.597376+00:00 app[web.1]: "fullName": "Angella Anjimile Katenga",
+2025-03-18T10:45:16.597376+00:00 app[web.1]: "dateOfBirth": "1993-08-29",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "gender": "female",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "country": "Thailand",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "phone": "660656745233",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "occupationType": "student",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "conference": "Other",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "otherConference": "TAM Thailand Adventist Mission",
+2025-03-18T10:45:16.597377+00:00 app[web.1]: "church": "Bangkok Korean SDA Church",
+2025-03-18T10:45:16.597378+00:00 app[web.1]: "volunteer": "false",
+2025-03-18T10:45:16.597378+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-18T10:45:16.597378+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-18T10:45:16.597378+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-18T10:45:16.597378+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-18T10:45:16.597378+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-18T10:45:16.597379+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-18T10:45:16.597379+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-18T10:45:16.597379+00:00 app[web.1]: "isUsher": "false",
+2025-03-18T10:45:16.597379+00:00 app[web.1]: "riceType": "brown",
+2025-03-18T10:45:16.597379+00:00 app[web.1]: "portionSize": "small",
+2025-03-18T10:45:16.597380+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-18T10:45:16.597380+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-18T10:45:16.597380+00:00 app[web.1]: "healthIssues": "false",
+2025-03-18T10:45:16.597380+00:00 app[web.1]: "healthDetails": "",
+2025-03-18T10:45:16.597380+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-18T10:45:16.597381+00:00 app[web.1]: "hasFamily": "false",
+2025-03-18T10:45:16.597381+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-18T10:45:16.597381+00:00 app[web.1]: "orderTshirt": "false",
+2025-03-18T10:45:16.597381+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-03-18T10:45:16.597381+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-18T10:45:16.597381+00:00 app[web.1]: },
+2025-03-18T10:45:16.597382+00:00 app[web.1]: "occupationType": "student"
+2025-03-18T10:45:16.597382+00:00 app[web.1]: }
+2025-03-18T10:45:16.597754+00:00 app[web.1]: 2025-03-18T10:45:16.597Z [34mdebug[39m: Parsed familyDetails:
+2025-03-18T10:45:16.598141+00:00 app[web.1]: 2025-03-18T10:45:16.598Z [34mdebug[39m: Price calculation: {
+2025-03-18T10:45:16.598142+00:00 app[web.1]: "basePrice": 180,
+2025-03-18T10:45:16.598142+00:00 app[web.1]: "familyTotal": 0,
+2025-03-18T10:45:16.598142+00:00 app[web.1]: "registrationSubtotal": 180,
+2025-03-18T10:45:16.598142+00:00 app[web.1]: "familyDiscount": 0,
+2025-03-18T10:45:16.598142+00:00 app[web.1]: "tshirtTotal": 0,
+2025-03-18T10:45:16.598142+00:00 app[web.1]: "finalTotal": 180
+2025-03-18T10:45:16.598143+00:00 app[web.1]: }
+2025-03-18T10:45:16.630352+00:00 app[web.1]: 2025-03-18T10:45:16.630Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-03-18T10:45:16.630353+00:00 app[web.1]: "registrationId": "6748",
+2025-03-18T10:45:16.630353+00:00 app[web.1]: "hasVolunteer": false,
+2025-03-18T10:45:16.630353+00:00 app[web.1]: "volunteerType": "boolean",
+2025-03-18T10:45:16.630353+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-03-18T10:45:16.630353+00:00 app[web.1]: "familyMembersCount": 0
+2025-03-18T10:45:16.630359+00:00 app[web.1]: }
+2025-03-18T10:45:16.777410+00:00 app[web.1]: 2025-03-18T10:45:16.777Z [32minfo[39m: Confirmation email sent successfully to angelakatenga@gmail.com (ID: 6748)
+2025-03-18T10:45:16.779613+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=a102625c-ba9b-92b2-ca0a-8ce615d75326 fwd="161.200.191.55" dyno=web.1 connect=6625ms service=200ms status=201 bytes=875 protocol=http1.1 tls=true tls_version=unknown
+2025-03-18T10:45:16.779685+00:00 app[web.1]: 161.200.191.55 - - [18/Mar/2025:10:45:16 +0000] "POST /api/registration HTTP/1.1" 201 875 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-03-18T11:19:38.643864+00:00 heroku[web.1]: Idling
+2025-03-18T11:19:38.646640+00:00 heroku[web.1]: State changed from up to down
+2025-03-18T11:19:39.114031+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-03-18T11:19:39.201789+00:00 heroku[web.1]: Process exited with status 143
+2025-03-22T09:13:18.910593+00:00 heroku[web.1]: Unidling
+2025-03-22T09:13:18.962586+00:00 heroku[web.1]: State changed from down to starting
+2025-03-22T09:13:22.866410+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-03-22T09:13:23.610545+00:00 app[web.1]: 
+2025-03-22T09:13:23.610567+00:00 app[web.1]: > backend@1.0.0 start
+2025-03-22T09:13:23.610567+00:00 app[web.1]: > node dist/index.js
+2025-03-22T09:13:23.610567+00:00 app[web.1]: 
+2025-03-22T09:13:23.974123+00:00 app[web.1]: 2025-03-22T09:13:23.972Z [34mdebug[39m: Logger initialized in production mode
+2025-03-22T09:13:24.189635+00:00 app[web.1]: 2025-03-22T09:13:24.189Z [32minfo[39m: Database connected successfully
+2025-03-22T09:13:24.191936+00:00 app[web.1]: 2025-03-22T09:13:24.191Z [32minfo[39m: Server is running on port 22223
+2025-03-22T09:13:24.491743+00:00 heroku[web.1]: State changed from starting to up
+2025-03-22T09:13:26.041307+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-03-22T09:13:26.041338+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-03-22T09:13:26.041340+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-03-22T09:13:26.041340+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-03-22T09:13:26.041341+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-03-22T09:13:26.041342+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-03-22T09:13:26.041342+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-03-22T09:13:26.041343+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-03-22T09:13:26.041343+00:00 app[web.1]: }
+2025-03-22T09:13:26.041848+00:00 app[web.1]: Request body: {}
+2025-03-22T09:13:26.042226+00:00 app[web.1]: 2025-03-22T09:13:26.042Z [34mdebug[39m: Registration request body: {
+2025-03-22T09:13:26.042226+00:00 app[web.1]: "body": {}
+2025-03-22T09:13:26.042226+00:00 app[web.1]: }
+2025-03-22T09:13:26.048422+00:00 app[web.1]: 2025-03-22T09:13:26.048Z [34mdebug[39m: Request body before validation: {
+2025-03-22T09:13:26.048422+00:00 app[web.1]: "body": {
+2025-03-22T09:13:26.048423+00:00 app[web.1]: "email": "juneta_jane82@yahoo.com",
+2025-03-22T09:13:26.048423+00:00 app[web.1]: "fullName": "Juneta Balacuit ",
+2025-03-22T09:13:26.048423+00:00 app[web.1]: "dateOfBirth": "1982-06-08",
+2025-03-22T09:13:26.048423+00:00 app[web.1]: "gender": "female",
+2025-03-22T09:13:26.048424+00:00 app[web.1]: "country": "Malaysia",
+2025-03-22T09:13:26.048424+00:00 app[web.1]: "phone": "60164427143",
+2025-03-22T09:13:26.048424+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-22T09:13:26.048425+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-03-22T09:13:26.048425+00:00 app[web.1]: "otherConference": "",
+2025-03-22T09:13:26.048426+00:00 app[web.1]: "church": "Penang English Seventh-day Adventist Church ",
+2025-03-22T09:13:26.048426+00:00 app[web.1]: "volunteer": "false",
+2025-03-22T09:13:26.048426+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-22T09:13:26.048426+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-22T09:13:26.048426+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-22T09:13:26.048426+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "isUsher": "false",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "riceType": "white",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "portionSize": "small",
+2025-03-22T09:13:26.048427+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "healthIssues": "false",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "healthDetails": "",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "paymentMethod": "bank",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "hasFamily": "false",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-22T09:13:26.048428+00:00 app[web.1]: "orderTshirt": "true",
+2025-03-22T09:13:26.048429+00:00 app[web.1]: "tshirtOrders": [
+2025-03-22T09:13:26.048429+00:00 app[web.1]: {
+2025-03-22T09:13:26.048429+00:00 app[web.1]: "size": "L",
+2025-03-22T09:13:26.048429+00:00 app[web.1]: "quantity": "1"
+2025-03-22T09:13:26.048429+00:00 app[web.1]: },
+2025-03-22T09:13:26.048430+00:00 app[web.1]: {
+2025-03-22T09:13:26.048430+00:00 app[web.1]: "size": "M",
+2025-03-22T09:13:26.048430+00:00 app[web.1]: "quantity": "1"
+2025-03-22T09:13:26.048430+00:00 app[web.1]: }
+2025-03-22T09:13:26.048430+00:00 app[web.1]: ],
+2025-03-22T09:13:26.048430+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-22T09:13:26.048430+00:00 app[web.1]: },
+2025-03-22T09:13:26.048431+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-22T09:13:26.048431+00:00 app[web.1]: }
+2025-03-22T09:13:26.053174+00:00 app[web.1]: 2025-03-22T09:13:26.053Z [34mdebug[39m: Occupation type validation: {
+2025-03-22T09:13:26.053174+00:00 app[web.1]: "receivedValue": "working_adult",
+2025-03-22T09:13:26.053174+00:00 app[web.1]: "receivedType": "string",
+2025-03-22T09:13:26.053174+00:00 app[web.1]: "validValues": [
+2025-03-22T09:13:26.053175+00:00 app[web.1]: "working_adult",
+2025-03-22T09:13:26.053175+00:00 app[web.1]: "student",
+2025-03-22T09:13:26.053175+00:00 app[web.1]: "ministry_salary",
+2025-03-22T09:13:26.053175+00:00 app[web.1]: "ministry_stipend",
+2025-03-22T09:13:26.053175+00:00 app[web.1]: "walk_in_full",
+2025-03-22T09:13:26.053175+00:00 app[web.1]: "walk_in_partial",
+2025-03-22T09:13:26.053176+00:00 app[web.1]: "child_5_12",
+2025-03-22T09:13:26.053176+00:00 app[web.1]: "child_below_4",
+2025-03-22T09:13:26.053176+00:00 app[web.1]: "homemaker"
+2025-03-22T09:13:26.053176+00:00 app[web.1]: ]
+2025-03-22T09:13:26.053176+00:00 app[web.1]: }
+2025-03-22T09:13:26.055928+00:00 app[web.1]: 2025-03-22T09:13:26.055Z [34mdebug[39m: Request body after validation: {
+2025-03-22T09:13:26.055928+00:00 app[web.1]: "body": {
+2025-03-22T09:13:26.055928+00:00 app[web.1]: "email": "juneta_jane82@yahoo.com",
+2025-03-22T09:13:26.055928+00:00 app[web.1]: "fullName": "Juneta Balacuit ",
+2025-03-22T09:13:26.055928+00:00 app[web.1]: "dateOfBirth": "1982-06-08",
+2025-03-22T09:13:26.055928+00:00 app[web.1]: "gender": "female",
+2025-03-22T09:13:26.055929+00:00 app[web.1]: "country": "Malaysia",
+2025-03-22T09:13:26.055929+00:00 app[web.1]: "phone": "60164427143",
+2025-03-22T09:13:26.055929+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-22T09:13:26.055929+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-03-22T09:13:26.055929+00:00 app[web.1]: "otherConference": "",
+2025-03-22T09:13:26.055929+00:00 app[web.1]: "church": "Penang English Seventh-day Adventist Church ",
+2025-03-22T09:13:26.055930+00:00 app[web.1]: "volunteer": "false",
+2025-03-22T09:13:26.055930+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-22T09:13:26.055930+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-22T09:13:26.055930+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-22T09:13:26.055930+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-22T09:13:26.055931+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-22T09:13:26.055931+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-22T09:13:26.055931+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-22T09:13:26.055931+00:00 app[web.1]: "isUsher": "false",
+2025-03-22T09:13:26.055932+00:00 app[web.1]: "riceType": "white",
+2025-03-22T09:13:26.055932+00:00 app[web.1]: "portionSize": "small",
+2025-03-22T09:13:26.055932+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-22T09:13:26.055932+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-22T09:13:26.055932+00:00 app[web.1]: "healthIssues": "false",
+2025-03-22T09:13:26.055933+00:00 app[web.1]: "healthDetails": "",
+2025-03-22T09:13:26.055933+00:00 app[web.1]: "paymentMethod": "bank",
+2025-03-22T09:13:26.055933+00:00 app[web.1]: "hasFamily": "false",
+2025-03-22T09:13:26.055933+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-22T09:13:26.055933+00:00 app[web.1]: "orderTshirt": "true",
+2025-03-22T09:13:26.055933+00:00 app[web.1]: "tshirtOrders": [
+2025-03-22T09:13:26.055933+00:00 app[web.1]: {
+2025-03-22T09:13:26.055934+00:00 app[web.1]: "size": "L",
+2025-03-22T09:13:26.055934+00:00 app[web.1]: "quantity": "1"
+2025-03-22T09:13:26.055934+00:00 app[web.1]: },
+2025-03-22T09:13:26.055934+00:00 app[web.1]: {
+2025-03-22T09:13:26.055934+00:00 app[web.1]: "size": "M",
+2025-03-22T09:13:26.055934+00:00 app[web.1]: "quantity": "1"
+2025-03-22T09:13:26.055934+00:00 app[web.1]: }
+2025-03-22T09:13:26.055935+00:00 app[web.1]: ],
+2025-03-22T09:13:26.055935+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-22T09:13:26.055935+00:00 app[web.1]: },
+2025-03-22T09:13:26.055935+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-22T09:13:26.055935+00:00 app[web.1]: }
+2025-03-22T09:13:26.495929+00:00 app[web.1]: 2025-03-22T09:13:26.495Z [32minfo[39m: File uploaded to Cloudinary: {
+2025-03-22T09:13:26.495941+00:00 app[web.1]: "url": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1742634806/paymentProofs/DOC-20250322-WA0009..pdf.pdf"
+2025-03-22T09:13:26.495941+00:00 app[web.1]: }
+2025-03-22T09:13:26.496108+00:00 app[web.1]: 2025-03-22T09:13:26.495Z [34mdebug[39m: Parsed familyDetails:
+2025-03-22T09:13:26.496758+00:00 app[web.1]: 2025-03-22T09:13:26.496Z [34mdebug[39m: Price calculation: {
+2025-03-22T09:13:26.496759+00:00 app[web.1]: "basePrice": 240,
+2025-03-22T09:13:26.496759+00:00 app[web.1]: "familyTotal": 0,
+2025-03-22T09:13:26.496759+00:00 app[web.1]: "registrationSubtotal": 240,
+2025-03-22T09:13:26.496759+00:00 app[web.1]: "familyDiscount": 0,
+2025-03-22T09:13:26.496759+00:00 app[web.1]: "tshirtTotal": 60,
+2025-03-22T09:13:26.496760+00:00 app[web.1]: "finalTotal": 300
+2025-03-22T09:13:26.496760+00:00 app[web.1]: }
+2025-03-22T09:13:26.538194+00:00 app[web.1]: 2025-03-22T09:13:26.538Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-03-22T09:13:26.538194+00:00 app[web.1]: "registrationId": "8693",
+2025-03-22T09:13:26.538195+00:00 app[web.1]: "hasVolunteer": false,
+2025-03-22T09:13:26.538195+00:00 app[web.1]: "volunteerType": "boolean",
+2025-03-22T09:13:26.538195+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-03-22T09:13:26.538195+00:00 app[web.1]: "familyMembersCount": 0
+2025-03-22T09:13:26.538196+00:00 app[web.1]: }
+2025-03-22T09:13:26.662935+00:00 app[web.1]: 2025-03-22T09:13:26.662Z [32minfo[39m: Confirmation email sent successfully to juneta_jane82@yahoo.com (ID: 8693)
+2025-03-22T09:13:26.664598+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=f724d21b-c888-53fc-cf07-e25ef07604a0 fwd="115.164.78.19" dyno=web.1 connect=7130ms service=628ms status=201 bytes=1346 protocol=http1.1 tls=true tls_version=unknown
+2025-03-22T09:13:26.664957+00:00 app[web.1]: 115.164.78.19 - - [22/Mar/2025:09:13:26 +0000] "POST /api/registration HTTP/1.1" 201 1346 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36"
+2025-03-22T09:48:43.081180+00:00 heroku[web.1]: Idling
+2025-03-22T09:48:43.084073+00:00 heroku[web.1]: State changed from up to down
+2025-03-22T09:48:43.629734+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-03-22T09:48:43.716965+00:00 heroku[web.1]: Process exited with status 143
+2025-03-28T20:29:55.035044+00:00 heroku[web.1]: Unidling
+2025-03-28T20:29:55.086162+00:00 heroku[web.1]: State changed from down to starting
+2025-03-28T20:29:59.082206+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-03-28T20:29:59.930682+00:00 app[web.1]: 
+2025-03-28T20:29:59.930708+00:00 app[web.1]: > backend@1.0.0 start
+2025-03-28T20:29:59.930709+00:00 app[web.1]: > node dist/index.js
+2025-03-28T20:29:59.930709+00:00 app[web.1]: 
+2025-03-28T20:30:00.346986+00:00 app[web.1]: 2025-03-28T20:30:00.345Z [34mdebug[39m: Logger initialized in production mode
+2025-03-28T20:30:00.589508+00:00 app[web.1]: 2025-03-28T20:30:00.589Z [32minfo[39m: Database connected successfully
+2025-03-28T20:30:00.593086+00:00 app[web.1]: 2025-03-28T20:30:00.592Z [32minfo[39m: Server is running on port 23547
+2025-03-28T20:30:00.732919+00:00 heroku[web.1]: State changed from starting to up
+2025-03-28T20:30:02.170674+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-03-28T20:30:02.170689+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-03-28T20:30:02.170699+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-03-28T20:30:02.170700+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-03-28T20:30:02.170700+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-03-28T20:30:02.170701+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-03-28T20:30:02.170715+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-03-28T20:30:02.170715+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-03-28T20:30:02.170716+00:00 app[web.1]: }
+2025-03-28T20:30:02.171467+00:00 app[web.1]: Request body: {}
+2025-03-28T20:30:02.171974+00:00 app[web.1]: 2025-03-28T20:30:02.171Z [34mdebug[39m: Registration request body: {
+2025-03-28T20:30:02.171975+00:00 app[web.1]: "body": {}
+2025-03-28T20:30:02.171975+00:00 app[web.1]: }
+2025-03-28T20:30:02.178552+00:00 app[web.1]: 2025-03-28T20:30:02.178Z [34mdebug[39m: Request body before validation: {
+2025-03-28T20:30:02.178553+00:00 app[web.1]: "body": {
+2025-03-28T20:30:02.178554+00:00 app[web.1]: "email": "leejelvine@gmail.com",
+2025-03-28T20:30:02.178554+00:00 app[web.1]: "fullName": "Jelvine Lio Ting Lee",
+2025-03-28T20:30:02.178554+00:00 app[web.1]: "dateOfBirth": "2002-11-13",
+2025-03-28T20:30:02.178555+00:00 app[web.1]: "gender": "male",
+2025-03-28T20:30:02.178558+00:00 app[web.1]: "country": "Malaysia",
+2025-03-28T20:30:02.178558+00:00 app[web.1]: "phone": "60103970575",
+2025-03-28T20:30:02.178558+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-28T20:30:02.178559+00:00 app[web.1]: "conference": "Other",
+2025-03-28T20:30:02.178559+00:00 app[web.1]: "otherConference": "Evangelism",
+2025-03-28T20:30:02.178559+00:00 app[web.1]: "church": "Tach ",
+2025-03-28T20:30:02.178559+00:00 app[web.1]: "volunteer": "true",
+2025-03-28T20:30:02.178559+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-28T20:30:02.178560+00:00 app[web.1]: "isUsher": "true",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "riceType": "brown",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "portionSize": "big",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "healthIssues": "false",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "healthDetails": "",
+2025-03-28T20:30:02.178561+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-28T20:30:02.178562+00:00 app[web.1]: "hasFamily": "false",
+2025-03-28T20:30:02.178562+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-28T20:30:02.178562+00:00 app[web.1]: "orderTshirt": "true",
+2025-03-28T20:30:02.178562+00:00 app[web.1]: "tshirtOrders": [
+2025-03-28T20:30:02.178563+00:00 app[web.1]: {
+2025-03-28T20:30:02.178563+00:00 app[web.1]: "size": "S",
+2025-03-28T20:30:02.178563+00:00 app[web.1]: "quantity": "1"
+2025-03-28T20:30:02.178563+00:00 app[web.1]: }
+2025-03-28T20:30:02.178563+00:00 app[web.1]: ],
+2025-03-28T20:30:02.178563+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-28T20:30:02.178563+00:00 app[web.1]: },
+2025-03-28T20:30:02.178564+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-28T20:30:02.178564+00:00 app[web.1]: }
+2025-03-28T20:30:02.185593+00:00 app[web.1]: 2025-03-28T20:30:02.185Z [34mdebug[39m: Occupation type validation: {
+2025-03-28T20:30:02.185594+00:00 app[web.1]: "receivedValue": "working_adult",
+2025-03-28T20:30:02.185595+00:00 app[web.1]: "receivedType": "string",
+2025-03-28T20:30:02.185595+00:00 app[web.1]: "validValues": [
+2025-03-28T20:30:02.185596+00:00 app[web.1]: "working_adult",
+2025-03-28T20:30:02.185596+00:00 app[web.1]: "student",
+2025-03-28T20:30:02.185597+00:00 app[web.1]: "ministry_salary",
+2025-03-28T20:30:02.185597+00:00 app[web.1]: "ministry_stipend",
+2025-03-28T20:30:02.185597+00:00 app[web.1]: "walk_in_full",
+2025-03-28T20:30:02.185597+00:00 app[web.1]: "walk_in_partial",
+2025-03-28T20:30:02.185597+00:00 app[web.1]: "child_5_12",
+2025-03-28T20:30:02.185597+00:00 app[web.1]: "child_below_4",
+2025-03-28T20:30:02.185598+00:00 app[web.1]: "homemaker"
+2025-03-28T20:30:02.185598+00:00 app[web.1]: ]
+2025-03-28T20:30:02.185598+00:00 app[web.1]: }
+2025-03-28T20:30:02.189507+00:00 app[web.1]: 2025-03-28T20:30:02.189Z [34mdebug[39m: Request body after validation: {
+2025-03-28T20:30:02.189508+00:00 app[web.1]: "body": {
+2025-03-28T20:30:02.189508+00:00 app[web.1]: "email": "leejelvine@gmail.com",
+2025-03-28T20:30:02.189509+00:00 app[web.1]: "fullName": "Jelvine Lio Ting Lee",
+2025-03-28T20:30:02.189509+00:00 app[web.1]: "dateOfBirth": "2002-11-13",
+2025-03-28T20:30:02.189509+00:00 app[web.1]: "gender": "male",
+2025-03-28T20:30:02.189509+00:00 app[web.1]: "country": "Malaysia",
+2025-03-28T20:30:02.189509+00:00 app[web.1]: "phone": "60103970575",
+2025-03-28T20:30:02.189510+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-28T20:30:02.189510+00:00 app[web.1]: "conference": "Other",
+2025-03-28T20:30:02.189510+00:00 app[web.1]: "otherConference": "Evangelism",
+2025-03-28T20:30:02.189510+00:00 app[web.1]: "church": "Tach ",
+2025-03-28T20:30:02.189511+00:00 app[web.1]: "volunteer": "true",
+2025-03-28T20:30:02.189511+00:00 app[web.1]: "isFoodTeam": "false",
+2025-03-28T20:30:02.189511+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-03-28T20:30:02.189511+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-03-28T20:30:02.189511+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-03-28T20:30:02.189512+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-03-28T20:30:02.189512+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-03-28T20:30:02.189512+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-03-28T20:30:02.189512+00:00 app[web.1]: "isUsher": "true",
+2025-03-28T20:30:02.189512+00:00 app[web.1]: "riceType": "brown",
+2025-03-28T20:30:02.189512+00:00 app[web.1]: "portionSize": "big",
+2025-03-28T20:30:02.189513+00:00 app[web.1]: "foodAllergies": "false",
+2025-03-28T20:30:02.189513+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-28T20:30:02.189513+00:00 app[web.1]: "healthIssues": "false",
+2025-03-28T20:30:02.189513+00:00 app[web.1]: "healthDetails": "",
+2025-03-28T20:30:02.189513+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-28T20:30:02.189513+00:00 app[web.1]: "hasFamily": "false",
+2025-03-28T20:30:02.189514+00:00 app[web.1]: "familyDetails": "[]",
+2025-03-28T20:30:02.189514+00:00 app[web.1]: "orderTshirt": "true",
+2025-03-28T20:30:02.189514+00:00 app[web.1]: "tshirtOrders": [
+2025-03-28T20:30:02.189514+00:00 app[web.1]: {
+2025-03-28T20:30:02.189514+00:00 app[web.1]: "size": "S",
+2025-03-28T20:30:02.189514+00:00 app[web.1]: "quantity": "1"
+2025-03-28T20:30:02.189514+00:00 app[web.1]: }
+2025-03-28T20:30:02.189514+00:00 app[web.1]: ],
+2025-03-28T20:30:02.189515+00:00 app[web.1]: "termsAccepted": "true"
+2025-03-28T20:30:02.189515+00:00 app[web.1]: },
+2025-03-28T20:30:02.189515+00:00 app[web.1]: "occupationType": "working_adult"
+2025-03-28T20:30:02.189515+00:00 app[web.1]: }
+2025-03-28T20:30:02.190117+00:00 app[web.1]: 2025-03-28T20:30:02.189Z [34mdebug[39m: Parsed familyDetails:
+2025-03-28T20:30:02.190614+00:00 app[web.1]: 2025-03-28T20:30:02.190Z [34mdebug[39m: Price calculation: {
+2025-03-28T20:30:02.190614+00:00 app[web.1]: "basePrice": 240,
+2025-03-28T20:30:02.190614+00:00 app[web.1]: "familyTotal": 0,
+2025-03-28T20:30:02.190614+00:00 app[web.1]: "registrationSubtotal": 240,
+2025-03-28T20:30:02.190614+00:00 app[web.1]: "familyDiscount": 0,
+2025-03-28T20:30:02.190614+00:00 app[web.1]: "tshirtTotal": 30,
+2025-03-28T20:30:02.190615+00:00 app[web.1]: "finalTotal": 270
+2025-03-28T20:30:02.190615+00:00 app[web.1]: }
+2025-03-28T20:30:02.226756+00:00 app[web.1]: 2025-03-28T20:30:02.226Z [34mdebug[39m: Volunteer assignment created: {
+2025-03-28T20:30:02.226758+00:00 app[web.1]: "registrationId": "3561",
+2025-03-28T20:30:02.226759+00:00 app[web.1]: "fullName": "Jelvine Lio Ting Lee",
+2025-03-28T20:30:02.226759+00:00 app[web.1]: "isFoodTeam": false,
+2025-03-28T20:30:02.226760+00:00 app[web.1]: "isRegistrationTeam": false,
+2025-03-28T20:30:02.226760+00:00 app[web.1]: "isTreasuryTeam": false,
+2025-03-28T20:30:02.226760+00:00 app[web.1]: "isPrayerTeam": false,
+2025-03-28T20:30:02.226760+00:00 app[web.1]: "isPaAvTeam": false,
+2025-03-28T20:30:02.226761+00:00 app[web.1]: "isEmergencyMedicalTeam": false,
+2025-03-28T20:30:02.226761+00:00 app[web.1]: "isChildrenProgram": false,
+2025-03-28T20:30:02.226761+00:00 app[web.1]: "isUsher": true,
+2025-03-28T20:30:02.226761+00:00 app[web.1]: "registration": {
+2025-03-28T20:30:02.226762+00:00 app[web.1]: "otherConference": "Evangelism",
+2025-03-28T20:30:02.226762+00:00 app[web.1]: "volunteer": true,
+2025-03-28T20:30:02.226762+00:00 app[web.1]: "hasFamily": false,
+2025-03-28T20:30:02.226762+00:00 app[web.1]: "orderTshirt": true,
+2025-03-28T20:30:02.226762+00:00 app[web.1]: "foodAllergies": false,
+2025-03-28T20:30:02.226774+00:00 app[web.1]: "allergiesDetails": "",
+2025-03-28T20:30:02.226774+00:00 app[web.1]: "healthIssues": false,
+2025-03-28T20:30:02.226774+00:00 app[web.1]: "healthDetails": "",
+2025-03-28T20:30:02.226775+00:00 app[web.1]: "paymentProofUrl": null,
+2025-03-28T20:30:02.226775+00:00 app[web.1]: "basePrice": 240,
+2025-03-28T20:30:02.226775+00:00 app[web.1]: "familyTotal": 0,
+2025-03-28T20:30:02.226775+00:00 app[web.1]: "tshirtTotal": 30,
+2025-03-28T20:30:02.226775+00:00 app[web.1]: "subtotal": 270,
+2025-03-28T20:30:02.226775+00:00 app[web.1]: "discount": 0,
+2025-03-28T20:30:02.226776+00:00 app[web.1]: "finalTotal": 270,
+2025-03-28T20:30:02.226776+00:00 app[web.1]: "isEarlyBird": false,
+2025-03-28T20:30:02.226788+00:00 app[web.1]: "termsAccepted": true,
+2025-03-28T20:30:02.226788+00:00 app[web.1]: "isConfirmed": false,
+2025-03-28T20:30:02.226789+00:00 app[web.1]: "status": "pending",
+2025-03-28T20:30:02.226789+00:00 app[web.1]: "id": "3561",
+2025-03-28T20:30:02.226789+00:00 app[web.1]: "email": "leejelvine@gmail.com",
+2025-03-28T20:30:02.226789+00:00 app[web.1]: "fullName": "Jelvine Lio Ting Lee",
+2025-03-28T20:30:02.226789+00:00 app[web.1]: "dateOfBirth": "2002-11-13",
+2025-03-28T20:30:02.226790+00:00 app[web.1]: "gender": "male",
+2025-03-28T20:30:02.226790+00:00 app[web.1]: "country": "Malaysia",
+2025-03-28T20:30:02.226790+00:00 app[web.1]: "phone": "60103970575",
+2025-03-28T20:30:02.226790+00:00 app[web.1]: "occupationType": "working_adult",
+2025-03-28T20:30:02.226791+00:00 app[web.1]: "conference": "Other",
+2025-03-28T20:30:02.226791+00:00 app[web.1]: "church": "Tach ",
+2025-03-28T20:30:02.226791+00:00 app[web.1]: "paymentMethod": "deferred",
+2025-03-28T20:30:02.226791+00:00 app[web.1]: "familyDiscount": 0,
+2025-03-28T20:30:02.226792+00:00 app[web.1]: "riceType": "brown",
+2025-03-28T20:30:02.226792+00:00 app[web.1]: "portionSize": "big",
+2025-03-28T20:30:02.226792+00:00 app[web.1]: "createdAt": "2025-03-28T20:30:02.194Z",
+2025-03-28T20:30:02.226792+00:00 app[web.1]: "updatedAt": "2025-03-28T20:30:02.194Z",
+2025-03-28T20:30:02.226792+00:00 app[web.1]: "familyDetails": [],
+2025-03-28T20:30:02.226792+00:00 app[web.1]: "tshirtOrders": [
+2025-03-28T20:30:02.226793+00:00 app[web.1]: {
+2025-03-28T20:30:02.226793+00:00 app[web.1]: "id": "14ef1c1f-ce14-4bf5-95b3-cceb1024849f",
+2025-03-28T20:30:02.226794+00:00 app[web.1]: "registrationId": "3561",
+2025-03-28T20:30:02.226794+00:00 app[web.1]: "size": "S",
+2025-03-28T20:30:02.226794+00:00 app[web.1]: "quantity": "1",
+2025-03-28T20:30:02.226795+00:00 app[web.1]: "createdAt": "2025-03-28T20:30:02.194Z",
+2025-03-28T20:30:02.226795+00:00 app[web.1]: "updatedAt": "2025-03-28T20:30:02.194Z"
+2025-03-28T20:30:02.226795+00:00 app[web.1]: }
+2025-03-28T20:30:02.226796+00:00 app[web.1]: ]
+2025-03-28T20:30:02.226796+00:00 app[web.1]: },
+2025-03-28T20:30:02.226796+00:00 app[web.1]: "id": "1bc8f078-256f-45bd-aecb-af777ca0f553"
+2025-03-28T20:30:02.226796+00:00 app[web.1]: }
+2025-03-28T20:30:02.247200+00:00 app[web.1]: 2025-03-28T20:30:02.247Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-03-28T20:30:02.247211+00:00 app[web.1]: "registrationId": "3561",
+2025-03-28T20:30:02.247221+00:00 app[web.1]: "hasVolunteer": true,
+2025-03-28T20:30:02.247222+00:00 app[web.1]: "volunteerType": "boolean",
+2025-03-28T20:30:02.247222+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-03-28T20:30:02.247223+00:00 app[web.1]: "familyMembersCount": 0
+2025-03-28T20:30:02.247223+00:00 app[web.1]: }
+2025-03-28T20:30:02.521653+00:00 app[web.1]: 2025-03-28T20:30:02.521Z [32minfo[39m: Confirmation email sent successfully to leejelvine@gmail.com (ID: 3561)
+2025-03-28T20:30:02.524686+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=a08d6557-daa4-a166-0ce6-16598be75187 fwd="115.164.171.193" dyno=web.1 connect=7135ms service=361ms status=201 bytes=1019 protocol=http1.1 tls=true tls_version=unknown
+2025-03-28T20:30:02.525435+00:00 app[web.1]: 115.164.171.193 - - [28/Mar/2025:20:30:02 +0000] "POST /api/registration HTTP/1.1" 201 1019 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (Linux; Android 11; vivo 1906) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 VivoBrowser/13.3.0.0"
+2025-03-28T21:03:13.850355+00:00 heroku[web.1]: Idling
+2025-03-28T21:03:13.854187+00:00 heroku[web.1]: State changed from up to down
+2025-03-28T21:03:14.326550+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-03-28T21:03:14.429124+00:00 heroku[web.1]: Process exited with status 143
+2025-04-03T09:32:11.432486+00:00 heroku[web.1]: Unidling
+2025-04-03T09:32:11.485235+00:00 heroku[web.1]: State changed from down to starting
+2025-04-03T09:32:15.369625+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-04-03T09:32:16.181173+00:00 app[web.1]: 
+2025-04-03T09:32:16.181185+00:00 app[web.1]: > backend@1.0.0 start
+2025-04-03T09:32:16.181185+00:00 app[web.1]: > node dist/index.js
+2025-04-03T09:32:16.181186+00:00 app[web.1]: 
+2025-04-03T09:32:16.595573+00:00 app[web.1]: 2025-04-03T09:32:16.593Z [34mdebug[39m: Logger initialized in production mode
+2025-04-03T09:32:16.825495+00:00 app[web.1]: 2025-04-03T09:32:16.825Z [32minfo[39m: Database connected successfully
+2025-04-03T09:32:16.827919+00:00 app[web.1]: 2025-04-03T09:32:16.827Z [32minfo[39m: Server is running on port 38181
+2025-04-03T09:32:17.018822+00:00 heroku[web.1]: State changed from starting to up
+2025-04-03T09:32:18.068871+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-04-03T09:32:18.068884+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-04-03T09:32:18.068885+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-04-03T09:32:18.068885+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-04-03T09:32:18.068885+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-04-03T09:32:18.068886+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-04-03T09:32:18.068886+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-04-03T09:32:18.068886+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-04-03T09:32:18.068887+00:00 app[web.1]: }
+2025-04-03T09:32:18.069413+00:00 app[web.1]: Request body: {}
+2025-04-03T09:32:18.069819+00:00 app[web.1]: 2025-04-03T09:32:18.069Z [34mdebug[39m: Registration request body: {
+2025-04-03T09:32:18.069819+00:00 app[web.1]: "body": {}
+2025-04-03T09:32:18.069819+00:00 app[web.1]: }
+2025-04-03T09:32:18.076750+00:00 app[web.1]: 2025-04-03T09:32:18.076Z [34mdebug[39m: Request body before validation: {
+2025-04-03T09:32:18.076750+00:00 app[web.1]: "body": {
+2025-04-03T09:32:18.076750+00:00 app[web.1]: "email": "sunshinney06@gmail.com",
+2025-04-03T09:32:18.076750+00:00 app[web.1]: "fullName": "ANDEY MAJIK",
+2025-04-03T09:32:18.076751+00:00 app[web.1]: "dateOfBirth": "1999-01-14",
+2025-04-03T09:32:18.076751+00:00 app[web.1]: "gender": "male",
+2025-04-03T09:32:18.076751+00:00 app[web.1]: "country": "Malaysia",
+2025-04-03T09:32:18.076751+00:00 app[web.1]: "phone": "601164620789",
+2025-04-03T09:32:18.076752+00:00 app[web.1]: "occupationType": "working_adult",
+2025-04-03T09:32:18.076752+00:00 app[web.1]: "conference": "Sabah Mission",
+2025-04-03T09:32:18.076752+00:00 app[web.1]: "otherConference": "",
+2025-04-03T09:32:18.076752+00:00 app[web.1]: "church": "Kg Polod Church",
+2025-04-03T09:32:18.076753+00:00 app[web.1]: "volunteer": "false",
+2025-04-03T09:32:18.076753+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-03T09:32:18.076753+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-04-03T09:32:18.076753+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-03T09:32:18.076753+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-04-03T09:32:18.076754+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-04-03T09:32:18.076754+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-03T09:32:18.076754+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-03T09:32:18.076755+00:00 app[web.1]: "isUsher": "false",
+2025-04-03T09:32:18.076755+00:00 app[web.1]: "riceType": "brown",
+2025-04-03T09:32:18.076755+00:00 app[web.1]: "portionSize": "big",
+2025-04-03T09:32:18.076755+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-03T09:32:18.076755+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-03T09:32:18.076755+00:00 app[web.1]: "healthIssues": "false",
+2025-04-03T09:32:18.076756+00:00 app[web.1]: "healthDetails": "",
+2025-04-03T09:32:18.076756+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-03T09:32:18.076756+00:00 app[web.1]: "hasFamily": "false",
+2025-04-03T09:32:18.076756+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-03T09:32:18.076756+00:00 app[web.1]: "orderTshirt": "true",
+2025-04-03T09:32:18.076757+00:00 app[web.1]: "tshirtOrders": [
+2025-04-03T09:32:18.076757+00:00 app[web.1]: {
+2025-04-03T09:32:18.076757+00:00 app[web.1]: "size": "M",
+2025-04-03T09:32:18.076757+00:00 app[web.1]: "quantity": "1"
+2025-04-03T09:32:18.076758+00:00 app[web.1]: },
+2025-04-03T09:32:18.076758+00:00 app[web.1]: {
+2025-04-03T09:32:18.076758+00:00 app[web.1]: "size": "S",
+2025-04-03T09:32:18.076758+00:00 app[web.1]: "quantity": "1"
+2025-04-03T09:32:18.076758+00:00 app[web.1]: }
+2025-04-03T09:32:18.076759+00:00 app[web.1]: ],
+2025-04-03T09:32:18.076759+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-03T09:32:18.076759+00:00 app[web.1]: },
+2025-04-03T09:32:18.076759+00:00 app[web.1]: "occupationType": "working_adult"
+2025-04-03T09:32:18.076759+00:00 app[web.1]: }
+2025-04-03T09:32:18.081726+00:00 app[web.1]: 2025-04-03T09:32:18.081Z [34mdebug[39m: Occupation type validation: {
+2025-04-03T09:32:18.081727+00:00 app[web.1]: "receivedValue": "working_adult",
+2025-04-03T09:32:18.081727+00:00 app[web.1]: "receivedType": "string",
+2025-04-03T09:32:18.081727+00:00 app[web.1]: "validValues": [
+2025-04-03T09:32:18.081727+00:00 app[web.1]: "working_adult",
+2025-04-03T09:32:18.081727+00:00 app[web.1]: "student",
+2025-04-03T09:32:18.081728+00:00 app[web.1]: "ministry_salary",
+2025-04-03T09:32:18.081728+00:00 app[web.1]: "ministry_stipend",
+2025-04-03T09:32:18.081728+00:00 app[web.1]: "walk_in_full",
+2025-04-03T09:32:18.081728+00:00 app[web.1]: "walk_in_partial",
+2025-04-03T09:32:18.081728+00:00 app[web.1]: "child_5_12",
+2025-04-03T09:32:18.081729+00:00 app[web.1]: "child_below_4",
+2025-04-03T09:32:18.081729+00:00 app[web.1]: "homemaker"
+2025-04-03T09:32:18.081729+00:00 app[web.1]: ]
+2025-04-03T09:32:18.081729+00:00 app[web.1]: }
+2025-04-03T09:32:18.084731+00:00 app[web.1]: 2025-04-03T09:32:18.084Z [34mdebug[39m: Request body after validation: {
+2025-04-03T09:32:18.084731+00:00 app[web.1]: "body": {
+2025-04-03T09:32:18.084731+00:00 app[web.1]: "email": "sunshinney06@gmail.com",
+2025-04-03T09:32:18.084731+00:00 app[web.1]: "fullName": "ANDEY MAJIK",
+2025-04-03T09:32:18.084732+00:00 app[web.1]: "dateOfBirth": "1999-01-14",
+2025-04-03T09:32:18.084732+00:00 app[web.1]: "gender": "male",
+2025-04-03T09:32:18.084732+00:00 app[web.1]: "country": "Malaysia",
+2025-04-03T09:32:18.084732+00:00 app[web.1]: "phone": "601164620789",
+2025-04-03T09:32:18.084732+00:00 app[web.1]: "occupationType": "working_adult",
+2025-04-03T09:32:18.084733+00:00 app[web.1]: "conference": "Sabah Mission",
+2025-04-03T09:32:18.084733+00:00 app[web.1]: "otherConference": "",
+2025-04-03T09:32:18.084733+00:00 app[web.1]: "church": "Kg Polod Church",
+2025-04-03T09:32:18.084733+00:00 app[web.1]: "volunteer": "false",
+2025-04-03T09:32:18.084734+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-03T09:32:18.084734+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-04-03T09:32:18.084734+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-03T09:32:18.084734+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-04-03T09:32:18.084734+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-04-03T09:32:18.084735+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-03T09:32:18.084735+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-03T09:32:18.084735+00:00 app[web.1]: "isUsher": "false",
+2025-04-03T09:32:18.084735+00:00 app[web.1]: "riceType": "brown",
+2025-04-03T09:32:18.084736+00:00 app[web.1]: "portionSize": "big",
+2025-04-03T09:32:18.084736+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-03T09:32:18.084736+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-03T09:32:18.084736+00:00 app[web.1]: "healthIssues": "false",
+2025-04-03T09:32:18.084736+00:00 app[web.1]: "healthDetails": "",
+2025-04-03T09:32:18.084737+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-03T09:32:18.084737+00:00 app[web.1]: "hasFamily": "false",
+2025-04-03T09:32:18.084737+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-03T09:32:18.084737+00:00 app[web.1]: "orderTshirt": "true",
+2025-04-03T09:32:18.084737+00:00 app[web.1]: "tshirtOrders": [
+2025-04-03T09:32:18.084738+00:00 app[web.1]: {
+2025-04-03T09:32:18.084738+00:00 app[web.1]: "size": "M",
+2025-04-03T09:32:18.084738+00:00 app[web.1]: "quantity": "1"
+2025-04-03T09:32:18.084738+00:00 app[web.1]: },
+2025-04-03T09:32:18.084738+00:00 app[web.1]: {
+2025-04-03T09:32:18.084739+00:00 app[web.1]: "size": "S",
+2025-04-03T09:32:18.084739+00:00 app[web.1]: "quantity": "1"
+2025-04-03T09:32:18.084739+00:00 app[web.1]: }
+2025-04-03T09:32:18.084739+00:00 app[web.1]: ],
+2025-04-03T09:32:18.084739+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-03T09:32:18.084740+00:00 app[web.1]: },
+2025-04-03T09:32:18.084740+00:00 app[web.1]: "occupationType": "working_adult"
+2025-04-03T09:32:18.084740+00:00 app[web.1]: }
+2025-04-03T09:32:18.613879+00:00 app[web.1]: 2025-04-03T09:32:18.613Z [32minfo[39m: File uploaded to Cloudinary: {
+2025-04-03T09:32:18.613898+00:00 app[web.1]: "url": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1743672738/paymentProofs/AOY2025.pdf.pdf"
+2025-04-03T09:32:18.613898+00:00 app[web.1]: }
+2025-04-03T09:32:18.614052+00:00 app[web.1]: 2025-04-03T09:32:18.613Z [34mdebug[39m: Parsed familyDetails:
+2025-04-03T09:32:18.614669+00:00 app[web.1]: 2025-04-03T09:32:18.614Z [34mdebug[39m: Price calculation: {
+2025-04-03T09:32:18.614670+00:00 app[web.1]: "basePrice": 240,
+2025-04-03T09:32:18.614670+00:00 app[web.1]: "familyTotal": 0,
+2025-04-03T09:32:18.614671+00:00 app[web.1]: "registrationSubtotal": 240,
+2025-04-03T09:32:18.614671+00:00 app[web.1]: "familyDiscount": 0,
+2025-04-03T09:32:18.614671+00:00 app[web.1]: "tshirtTotal": 60,
+2025-04-03T09:32:18.614671+00:00 app[web.1]: "finalTotal": 300
+2025-04-03T09:32:18.614671+00:00 app[web.1]: }
+2025-04-03T09:32:18.659328+00:00 app[web.1]: 2025-04-03T09:32:18.659Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-04-03T09:32:18.659329+00:00 app[web.1]: "registrationId": "2268",
+2025-04-03T09:32:18.659329+00:00 app[web.1]: "hasVolunteer": false,
+2025-04-03T09:32:18.659329+00:00 app[web.1]: "volunteerType": "boolean",
+2025-04-03T09:32:18.659329+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-04-03T09:32:18.659330+00:00 app[web.1]: "familyMembersCount": 0
+2025-04-03T09:32:18.659330+00:00 app[web.1]: }
+2025-04-03T09:32:18.791305+00:00 app[web.1]: 2025-04-03T09:32:18.791Z [32minfo[39m: Confirmation email sent successfully to sunshinney06@gmail.com (ID: 2268)
+2025-04-03T09:32:18.792907+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=1d567029-a12c-7a38-deb1-0dd4a57ff532 fwd="113.210.62.221" dyno=web.1 connect=6646ms service=729ms status=201 bytes=1281 protocol=http1.1 tls=true tls_version=unknown
+2025-04-03T09:32:18.793311+00:00 app[web.1]: 113.210.62.221 - - [03/Apr/2025:09:32:18 +0000] "POST /api/registration HTTP/1.1" 201 1281 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/362.0.741018905 Mobile/15E148 Safari/604.1"
+2025-04-03T10:04:18.675947+00:00 heroku[web.1]: Idling
+2025-04-03T10:04:18.683409+00:00 heroku[web.1]: State changed from up to down
+2025-04-03T10:04:19.169209+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-04-03T10:04:19.247766+00:00 heroku[web.1]: Process exited with status 143
+2025-04-04T02:38:36.575010+00:00 heroku[web.1]: Unidling
+2025-04-04T02:38:36.624851+00:00 heroku[web.1]: State changed from down to starting
+2025-04-04T02:38:40.864061+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-04-04T02:38:41.592215+00:00 app[web.1]: 
+2025-04-04T02:38:41.592247+00:00 app[web.1]: > backend@1.0.0 start
+2025-04-04T02:38:41.592247+00:00 app[web.1]: > node dist/index.js
+2025-04-04T02:38:41.592247+00:00 app[web.1]: 
+2025-04-04T02:38:41.952569+00:00 app[web.1]: 2025-04-04T02:38:41.951Z [34mdebug[39m: Logger initialized in production mode
+2025-04-04T02:38:42.184410+00:00 app[web.1]: 2025-04-04T02:38:42.184Z [32minfo[39m: Database connected successfully
+2025-04-04T02:38:42.186538+00:00 app[web.1]: 2025-04-04T02:38:42.186Z [32minfo[39m: Server is running on port 35069
+2025-04-04T02:38:42.498300+00:00 heroku[web.1]: State changed from starting to up
+2025-04-04T02:38:43.708876+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-04-04T02:38:43.708910+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-04-04T02:38:43.708911+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-04-04T02:38:43.708912+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-04-04T02:38:43.708913+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-04-04T02:38:43.708913+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-04-04T02:38:43.708914+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-04-04T02:38:43.708914+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-04-04T02:38:43.708914+00:00 app[web.1]: }
+2025-04-04T02:38:43.709466+00:00 app[web.1]: Request body: {}
+2025-04-04T02:38:43.709858+00:00 app[web.1]: 2025-04-04T02:38:43.709Z [34mdebug[39m: Registration request body: {
+2025-04-04T02:38:43.709859+00:00 app[web.1]: "body": {}
+2025-04-04T02:38:43.709860+00:00 app[web.1]: }
+2025-04-04T02:38:43.716255+00:00 app[web.1]: 2025-04-04T02:38:43.716Z [34mdebug[39m: Request body before validation: {
+2025-04-04T02:38:43.716256+00:00 app[web.1]: "body": {
+2025-04-04T02:38:43.716257+00:00 app[web.1]: "email": "cyberterry82@yahoo.com",
+2025-04-04T02:38:43.716257+00:00 app[web.1]: "fullName": "Tang Chia Seng",
+2025-04-04T02:38:43.716257+00:00 app[web.1]: "dateOfBirth": "1982-06-02",
+2025-04-04T02:38:43.716258+00:00 app[web.1]: "gender": "male",
+2025-04-04T02:38:43.716259+00:00 app[web.1]: "country": "Malaysia",
+2025-04-04T02:38:43.716259+00:00 app[web.1]: "phone": "60169413345",
+2025-04-04T02:38:43.716259+00:00 app[web.1]: "occupationType": "ministry_stipend",
+2025-04-04T02:38:43.716262+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-04-04T02:38:43.716262+00:00 app[web.1]: "otherConference": "",
+2025-04-04T02:38:43.716263+00:00 app[web.1]: "church": "Serdang Adventist Hope Centre",
+2025-04-04T02:38:43.716263+00:00 app[web.1]: "volunteer": "true",
+2025-04-04T02:38:43.716263+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-04T02:38:43.716264+00:00 app[web.1]: "isRegistrationTeam": "true",
+2025-04-04T02:38:43.716264+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-04T02:38:43.716264+00:00 app[web.1]: "isPrayerTeam": "true",
+2025-04-04T02:38:43.716264+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-04-04T02:38:43.716264+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-04T02:38:43.716265+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-04T02:38:43.716265+00:00 app[web.1]: "isUsher": "false",
+2025-04-04T02:38:43.716265+00:00 app[web.1]: "riceType": "brown",
+2025-04-04T02:38:43.716266+00:00 app[web.1]: "portionSize": "big",
+2025-04-04T02:38:43.716266+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-04T02:38:43.716266+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-04T02:38:43.716266+00:00 app[web.1]: "healthIssues": "false",
+2025-04-04T02:38:43.716266+00:00 app[web.1]: "healthDetails": "",
+2025-04-04T02:38:43.716267+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-04T02:38:43.716267+00:00 app[web.1]: "hasFamily": "false",
+2025-04-04T02:38:43.716267+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-04T02:38:43.716267+00:00 app[web.1]: "orderTshirt": "true",
+2025-04-04T02:38:43.716267+00:00 app[web.1]: "tshirtOrders": [
+2025-04-04T02:38:43.716267+00:00 app[web.1]: {
+2025-04-04T02:38:43.716268+00:00 app[web.1]: "size": "3XL",
+2025-04-04T02:38:43.716268+00:00 app[web.1]: "quantity": "2"
+2025-04-04T02:38:43.716268+00:00 app[web.1]: }
+2025-04-04T02:38:43.716269+00:00 app[web.1]: ],
+2025-04-04T02:38:43.716269+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-04T02:38:43.716269+00:00 app[web.1]: },
+2025-04-04T02:38:43.716269+00:00 app[web.1]: "occupationType": "ministry_stipend"
+2025-04-04T02:38:43.716269+00:00 app[web.1]: }
+2025-04-04T02:38:43.721033+00:00 app[web.1]: 2025-04-04T02:38:43.720Z [34mdebug[39m: Occupation type validation: {
+2025-04-04T02:38:43.721034+00:00 app[web.1]: "receivedValue": "ministry_stipend",
+2025-04-04T02:38:43.721035+00:00 app[web.1]: "receivedType": "string",
+2025-04-04T02:38:43.721035+00:00 app[web.1]: "validValues": [
+2025-04-04T02:38:43.721036+00:00 app[web.1]: "working_adult",
+2025-04-04T02:38:43.721036+00:00 app[web.1]: "student",
+2025-04-04T02:38:43.721037+00:00 app[web.1]: "ministry_salary",
+2025-04-04T02:38:43.721037+00:00 app[web.1]: "ministry_stipend",
+2025-04-04T02:38:43.721037+00:00 app[web.1]: "walk_in_full",
+2025-04-04T02:38:43.721037+00:00 app[web.1]: "walk_in_partial",
+2025-04-04T02:38:43.721037+00:00 app[web.1]: "child_5_12",
+2025-04-04T02:38:43.721038+00:00 app[web.1]: "child_below_4",
+2025-04-04T02:38:43.721038+00:00 app[web.1]: "homemaker"
+2025-04-04T02:38:43.721038+00:00 app[web.1]: ]
+2025-04-04T02:38:43.721038+00:00 app[web.1]: }
+2025-04-04T02:38:43.723736+00:00 app[web.1]: 2025-04-04T02:38:43.723Z [34mdebug[39m: Request body after validation: {
+2025-04-04T02:38:43.723736+00:00 app[web.1]: "body": {
+2025-04-04T02:38:43.723737+00:00 app[web.1]: "email": "cyberterry82@yahoo.com",
+2025-04-04T02:38:43.723737+00:00 app[web.1]: "fullName": "Tang Chia Seng",
+2025-04-04T02:38:43.723737+00:00 app[web.1]: "dateOfBirth": "1982-06-02",
+2025-04-04T02:38:43.723738+00:00 app[web.1]: "gender": "male",
+2025-04-04T02:38:43.723738+00:00 app[web.1]: "country": "Malaysia",
+2025-04-04T02:38:43.723738+00:00 app[web.1]: "phone": "60169413345",
+2025-04-04T02:38:43.723739+00:00 app[web.1]: "occupationType": "ministry_stipend",
+2025-04-04T02:38:43.723739+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-04-04T02:38:43.723739+00:00 app[web.1]: "otherConference": "",
+2025-04-04T02:38:43.723739+00:00 app[web.1]: "church": "Serdang Adventist Hope Centre",
+2025-04-04T02:38:43.723740+00:00 app[web.1]: "volunteer": "true",
+2025-04-04T02:38:43.723740+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-04T02:38:43.723740+00:00 app[web.1]: "isRegistrationTeam": "true",
+2025-04-04T02:38:43.723740+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-04T02:38:43.723740+00:00 app[web.1]: "isPrayerTeam": "true",
+2025-04-04T02:38:43.723740+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-04-04T02:38:43.723741+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-04T02:38:43.723741+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-04T02:38:43.723741+00:00 app[web.1]: "isUsher": "false",
+2025-04-04T02:38:43.723741+00:00 app[web.1]: "riceType": "brown",
+2025-04-04T02:38:43.723742+00:00 app[web.1]: "portionSize": "big",
+2025-04-04T02:38:43.723742+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-04T02:38:43.723742+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-04T02:38:43.723742+00:00 app[web.1]: "healthIssues": "false",
+2025-04-04T02:38:43.723743+00:00 app[web.1]: "healthDetails": "",
+2025-04-04T02:38:43.723743+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-04T02:38:43.723743+00:00 app[web.1]: "hasFamily": "false",
+2025-04-04T02:38:43.723743+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-04T02:38:43.723744+00:00 app[web.1]: "orderTshirt": "true",
+2025-04-04T02:38:43.723744+00:00 app[web.1]: "tshirtOrders": [
+2025-04-04T02:38:43.723744+00:00 app[web.1]: {
+2025-04-04T02:38:43.723744+00:00 app[web.1]: "size": "3XL",
+2025-04-04T02:38:43.723744+00:00 app[web.1]: "quantity": "2"
+2025-04-04T02:38:43.723745+00:00 app[web.1]: }
+2025-04-04T02:38:43.723745+00:00 app[web.1]: ],
+2025-04-04T02:38:43.723745+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-04T02:38:43.723745+00:00 app[web.1]: },
+2025-04-04T02:38:43.723745+00:00 app[web.1]: "occupationType": "ministry_stipend"
+2025-04-04T02:38:43.723745+00:00 app[web.1]: }
+2025-04-04T02:38:44.227313+00:00 app[web.1]: 2025-04-04T02:38:44.227Z [32minfo[39m: File uploaded to Cloudinary: {
+2025-04-04T02:38:44.227347+00:00 app[web.1]: "url": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1743734323/paymentProofs/WhatsApp%20Image%202025-04-03%20at%2019.08.32_ee00f9ee.jpg.jpg"
+2025-04-04T02:38:44.227348+00:00 app[web.1]: }
+2025-04-04T02:38:44.227499+00:00 app[web.1]: 2025-04-04T02:38:44.227Z [34mdebug[39m: Parsed familyDetails:
+2025-04-04T02:38:44.228132+00:00 app[web.1]: 2025-04-04T02:38:44.227Z [34mdebug[39m: Price calculation: {
+2025-04-04T02:38:44.228133+00:00 app[web.1]: "basePrice": 180,
+2025-04-04T02:38:44.228133+00:00 app[web.1]: "familyTotal": 0,
+2025-04-04T02:38:44.228134+00:00 app[web.1]: "registrationSubtotal": 180,
+2025-04-04T02:38:44.228134+00:00 app[web.1]: "familyDiscount": 0,
+2025-04-04T02:38:44.228134+00:00 app[web.1]: "tshirtTotal": 60,
+2025-04-04T02:38:44.228134+00:00 app[web.1]: "finalTotal": 240
+2025-04-04T02:38:44.228135+00:00 app[web.1]: }
+2025-04-04T02:38:44.276214+00:00 app[web.1]: 2025-04-04T02:38:44.276Z [34mdebug[39m: Volunteer assignment created: {
+2025-04-04T02:38:44.276215+00:00 app[web.1]: "registrationId": "8179",
+2025-04-04T02:38:44.276215+00:00 app[web.1]: "fullName": "Tang Chia Seng",
+2025-04-04T02:38:44.276216+00:00 app[web.1]: "isFoodTeam": false,
+2025-04-04T02:38:44.276216+00:00 app[web.1]: "isRegistrationTeam": true,
+2025-04-04T02:38:44.276216+00:00 app[web.1]: "isTreasuryTeam": false,
+2025-04-04T02:38:44.276216+00:00 app[web.1]: "isPrayerTeam": true,
+2025-04-04T02:38:44.276217+00:00 app[web.1]: "isPaAvTeam": false,
+2025-04-04T02:38:44.276217+00:00 app[web.1]: "isEmergencyMedicalTeam": false,
+2025-04-04T02:38:44.276217+00:00 app[web.1]: "isChildrenProgram": false,
+2025-04-04T02:38:44.276218+00:00 app[web.1]: "isUsher": false,
+2025-04-04T02:38:44.276218+00:00 app[web.1]: "registration": {
+2025-04-04T02:38:44.276218+00:00 app[web.1]: "otherConference": "",
+2025-04-04T02:38:44.276218+00:00 app[web.1]: "volunteer": true,
+2025-04-04T02:38:44.276219+00:00 app[web.1]: "hasFamily": false,
+2025-04-04T02:38:44.276219+00:00 app[web.1]: "orderTshirt": true,
+2025-04-04T02:38:44.276219+00:00 app[web.1]: "foodAllergies": false,
+2025-04-04T02:38:44.276219+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-04T02:38:44.276219+00:00 app[web.1]: "healthIssues": false,
+2025-04-04T02:38:44.276220+00:00 app[web.1]: "healthDetails": "",
+2025-04-04T02:38:44.276240+00:00 app[web.1]: "paymentProofUrl": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1743734323/paymentProofs/WhatsApp%20Image%202025-04-03%20at%2019.08.32_ee00f9ee.jpg.jpg",
+2025-04-04T02:38:44.276240+00:00 app[web.1]: "basePrice": 180,
+2025-04-04T02:38:44.276241+00:00 app[web.1]: "familyTotal": 0,
+2025-04-04T02:38:44.276241+00:00 app[web.1]: "tshirtTotal": 60,
+2025-04-04T02:38:44.276241+00:00 app[web.1]: "subtotal": 240,
+2025-04-04T02:38:44.276242+00:00 app[web.1]: "discount": 0,
+2025-04-04T02:38:44.276242+00:00 app[web.1]: "finalTotal": 240,
+2025-04-04T02:38:44.276242+00:00 app[web.1]: "isEarlyBird": false,
+2025-04-04T02:38:44.276242+00:00 app[web.1]: "termsAccepted": true,
+2025-04-04T02:38:44.276242+00:00 app[web.1]: "isConfirmed": false,
+2025-04-04T02:38:44.276243+00:00 app[web.1]: "status": "pending",
+2025-04-04T02:38:44.276243+00:00 app[web.1]: "id": "8179",
+2025-04-04T02:38:44.276243+00:00 app[web.1]: "email": "cyberterry82@yahoo.com",
+2025-04-04T02:38:44.276244+00:00 app[web.1]: "fullName": "Tang Chia Seng",
+2025-04-04T02:38:44.276244+00:00 app[web.1]: "dateOfBirth": "1982-06-02",
+2025-04-04T02:38:44.276244+00:00 app[web.1]: "gender": "male",
+2025-04-04T02:38:44.276244+00:00 app[web.1]: "country": "Malaysia",
+2025-04-04T02:38:44.276244+00:00 app[web.1]: "phone": "60169413345",
+2025-04-04T02:38:44.276245+00:00 app[web.1]: "occupationType": "ministry_stipend",
+2025-04-04T02:38:44.276245+00:00 app[web.1]: "conference": "Peninsular Malaysia Mission",
+2025-04-04T02:38:44.276245+00:00 app[web.1]: "church": "Serdang Adventist Hope Centre",
+2025-04-04T02:38:44.276246+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-04T02:38:44.276246+00:00 app[web.1]: "familyDiscount": 0,
+2025-04-04T02:38:44.276246+00:00 app[web.1]: "riceType": "brown",
+2025-04-04T02:38:44.276246+00:00 app[web.1]: "portionSize": "big",
+2025-04-04T02:38:44.276246+00:00 app[web.1]: "createdAt": "2025-04-04T02:38:44.232Z",
+2025-04-04T02:38:44.276247+00:00 app[web.1]: "updatedAt": "2025-04-04T02:38:44.232Z",
+2025-04-04T02:38:44.276247+00:00 app[web.1]: "familyDetails": [],
+2025-04-04T02:38:44.276247+00:00 app[web.1]: "tshirtOrders": [
+2025-04-04T02:38:44.276247+00:00 app[web.1]: {
+2025-04-04T02:38:44.276247+00:00 app[web.1]: "id": "d00271c8-bb8c-4762-9f05-296b09c92c9b",
+2025-04-04T02:38:44.276247+00:00 app[web.1]: "registrationId": "8179",
+2025-04-04T02:38:44.276248+00:00 app[web.1]: "size": "3XL",
+2025-04-04T02:38:44.276248+00:00 app[web.1]: "quantity": "2",
+2025-04-04T02:38:44.276248+00:00 app[web.1]: "createdAt": "2025-04-04T02:38:44.232Z",
+2025-04-04T02:38:44.276248+00:00 app[web.1]: "updatedAt": "2025-04-04T02:38:44.232Z"
+2025-04-04T02:38:44.276249+00:00 app[web.1]: }
+2025-04-04T02:38:44.276249+00:00 app[web.1]: ]
+2025-04-04T02:38:44.276249+00:00 app[web.1]: },
+2025-04-04T02:38:44.276249+00:00 app[web.1]: "id": "9fcb91dc-60d2-48bc-b95e-028950866191"
+2025-04-04T02:38:44.276250+00:00 app[web.1]: }
+2025-04-04T02:38:44.290445+00:00 app[web.1]: 2025-04-04T02:38:44.290Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-04-04T02:38:44.290445+00:00 app[web.1]: "registrationId": "8179",
+2025-04-04T02:38:44.290446+00:00 app[web.1]: "hasVolunteer": true,
+2025-04-04T02:38:44.290446+00:00 app[web.1]: "volunteerType": "boolean",
+2025-04-04T02:38:44.290446+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-04-04T02:38:44.290446+00:00 app[web.1]: "familyMembersCount": 0
+2025-04-04T02:38:44.290447+00:00 app[web.1]: }
+2025-04-04T02:38:44.461789+00:00 app[web.1]: 2025-04-04T02:38:44.461Z [32minfo[39m: Confirmation email sent successfully to cyberterry82@yahoo.com (ID: 8179)
+2025-04-04T02:38:44.463251+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=06fa35a0-13e8-c31c-02a9-2277c772bfbf fwd="161.142.146.124" dyno=web.1 connect=7136ms service=759ms status=201 bytes=1188 protocol=http1.1 tls=true tls_version=unknown
+2025-04-04T02:38:44.463744+00:00 app[web.1]: 161.142.146.124 - - [04/Apr/2025:02:38:44 +0000] "POST /api/registration HTTP/1.1" 201 1188 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-04T03:11:58.068714+00:00 heroku[web.1]: Idling
+2025-04-04T03:11:58.072112+00:00 heroku[web.1]: State changed from up to down
+2025-04-04T03:11:59.352784+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-04-04T03:11:59.423231+00:00 heroku[web.1]: Process exited with status 143
+2025-04-09T01:59:51.004818+00:00 heroku[web.1]: Unidling
+2025-04-09T01:59:51.056213+00:00 heroku[web.1]: State changed from down to starting
+2025-04-09T01:59:55.354015+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-04-09T01:59:56.157362+00:00 app[web.1]: 
+2025-04-09T01:59:56.157382+00:00 app[web.1]: > backend@1.0.0 start
+2025-04-09T01:59:56.157383+00:00 app[web.1]: > node dist/index.js
+2025-04-09T01:59:56.157383+00:00 app[web.1]: 
+2025-04-09T01:59:56.541457+00:00 app[web.1]: 2025-04-09T01:59:56.539Z [34mdebug[39m: Logger initialized in production mode
+2025-04-09T01:59:56.784390+00:00 app[web.1]: 2025-04-09T01:59:56.784Z [32minfo[39m: Database connected successfully
+2025-04-09T01:59:56.786913+00:00 app[web.1]: 2025-04-09T01:59:56.786Z [32minfo[39m: Server is running on port 3382
+2025-04-09T01:59:56.981378+00:00 heroku[web.1]: State changed from starting to up
+2025-04-09T01:59:58.684652+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-04-09T01:59:58.684666+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-04-09T01:59:58.684667+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-04-09T01:59:58.684667+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-04-09T01:59:58.684668+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-04-09T01:59:58.684668+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-04-09T01:59:58.684669+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-04-09T01:59:58.684669+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-04-09T01:59:58.684669+00:00 app[web.1]: }
+2025-04-09T01:59:58.685244+00:00 app[web.1]: Request body: {}
+2025-04-09T01:59:58.685675+00:00 app[web.1]: 2025-04-09T01:59:58.685Z [34mdebug[39m: Registration request body: {
+2025-04-09T01:59:58.685677+00:00 app[web.1]: "body": {}
+2025-04-09T01:59:58.685677+00:00 app[web.1]: }
+2025-04-09T01:59:58.694152+00:00 app[web.1]: 2025-04-09T01:59:58.693Z [34mdebug[39m: Request body before validation: {
+2025-04-09T01:59:58.694153+00:00 app[web.1]: "body": {
+2025-04-09T01:59:58.694154+00:00 app[web.1]: "email": "jishean97@gmail.com",
+2025-04-09T01:59:58.694154+00:00 app[web.1]: "fullName": "Jishean Guvalakrisnan ",
+2025-04-09T01:59:58.694155+00:00 app[web.1]: "dateOfBirth": "2003-09-07",
+2025-04-09T01:59:58.694155+00:00 app[web.1]: "gender": "male",
+2025-04-09T01:59:58.694156+00:00 app[web.1]: "country": "Malaysia",
+2025-04-09T01:59:58.694156+00:00 app[web.1]: "phone": "601126070983",
+2025-04-09T01:59:58.694157+00:00 app[web.1]: "occupationType": "student",
+2025-04-09T01:59:58.694157+00:00 app[web.1]: "conference": "Sabah Mission",
+2025-04-09T01:59:58.694157+00:00 app[web.1]: "otherConference": "",
+2025-04-09T01:59:58.694157+00:00 app[web.1]: "church": "PESDAC",
+2025-04-09T01:59:58.694158+00:00 app[web.1]: "volunteer": "true",
+2025-04-09T01:59:58.694158+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-09T01:59:58.694158+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-04-09T01:59:58.694159+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-09T01:59:58.694159+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-04-09T01:59:58.694159+00:00 app[web.1]: "isPaAvTeam": "true",
+2025-04-09T01:59:58.694159+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-09T01:59:58.694160+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-09T01:59:58.694160+00:00 app[web.1]: "isUsher": "false",
+2025-04-09T01:59:58.694160+00:00 app[web.1]: "riceType": "white",
+2025-04-09T01:59:58.694160+00:00 app[web.1]: "portionSize": "big",
+2025-04-09T01:59:58.694161+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-09T01:59:58.694161+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-09T01:59:58.694161+00:00 app[web.1]: "healthIssues": "false",
+2025-04-09T01:59:58.694161+00:00 app[web.1]: "healthDetails": "",
+2025-04-09T01:59:58.694161+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-09T01:59:58.694161+00:00 app[web.1]: "hasFamily": "false",
+2025-04-09T01:59:58.694162+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-09T01:59:58.694162+00:00 app[web.1]: "orderTshirt": "true",
+2025-04-09T01:59:58.694162+00:00 app[web.1]: "tshirtOrders": [
+2025-04-09T01:59:58.694162+00:00 app[web.1]: {
+2025-04-09T01:59:58.694162+00:00 app[web.1]: "size": "M",
+2025-04-09T01:59:58.694163+00:00 app[web.1]: "quantity": "1"
+2025-04-09T01:59:58.694163+00:00 app[web.1]: }
+2025-04-09T01:59:58.694163+00:00 app[web.1]: ],
+2025-04-09T01:59:58.694163+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-09T01:59:58.694163+00:00 app[web.1]: },
+2025-04-09T01:59:58.694164+00:00 app[web.1]: "occupationType": "student"
+2025-04-09T01:59:58.694164+00:00 app[web.1]: }
+2025-04-09T01:59:58.699296+00:00 app[web.1]: 2025-04-09T01:59:58.699Z [34mdebug[39m: Occupation type validation: {
+2025-04-09T01:59:58.699297+00:00 app[web.1]: "receivedValue": "student",
+2025-04-09T01:59:58.699306+00:00 app[web.1]: "receivedType": "string",
+2025-04-09T01:59:58.699306+00:00 app[web.1]: "validValues": [
+2025-04-09T01:59:58.699307+00:00 app[web.1]: "working_adult",
+2025-04-09T01:59:58.699307+00:00 app[web.1]: "student",
+2025-04-09T01:59:58.699308+00:00 app[web.1]: "ministry_salary",
+2025-04-09T01:59:58.699319+00:00 app[web.1]: "ministry_stipend",
+2025-04-09T01:59:58.699319+00:00 app[web.1]: "walk_in_full",
+2025-04-09T01:59:58.699319+00:00 app[web.1]: "walk_in_partial",
+2025-04-09T01:59:58.699320+00:00 app[web.1]: "child_5_12",
+2025-04-09T01:59:58.699320+00:00 app[web.1]: "child_below_4",
+2025-04-09T01:59:58.699320+00:00 app[web.1]: "homemaker"
+2025-04-09T01:59:58.699320+00:00 app[web.1]: ]
+2025-04-09T01:59:58.699321+00:00 app[web.1]: }
+2025-04-09T01:59:58.702049+00:00 app[web.1]: 2025-04-09T01:59:58.701Z [34mdebug[39m: Request body after validation: {
+2025-04-09T01:59:58.702050+00:00 app[web.1]: "body": {
+2025-04-09T01:59:58.702051+00:00 app[web.1]: "email": "jishean97@gmail.com",
+2025-04-09T01:59:58.702052+00:00 app[web.1]: "fullName": "Jishean Guvalakrisnan ",
+2025-04-09T01:59:58.702052+00:00 app[web.1]: "dateOfBirth": "2003-09-07",
+2025-04-09T01:59:58.702052+00:00 app[web.1]: "gender": "male",
+2025-04-09T01:59:58.702053+00:00 app[web.1]: "country": "Malaysia",
+2025-04-09T01:59:58.702053+00:00 app[web.1]: "phone": "601126070983",
+2025-04-09T01:59:58.702053+00:00 app[web.1]: "occupationType": "student",
+2025-04-09T01:59:58.702054+00:00 app[web.1]: "conference": "Sabah Mission",
+2025-04-09T01:59:58.702055+00:00 app[web.1]: "otherConference": "",
+2025-04-09T01:59:58.702055+00:00 app[web.1]: "church": "PESDAC",
+2025-04-09T01:59:58.702055+00:00 app[web.1]: "volunteer": "true",
+2025-04-09T01:59:58.702055+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-09T01:59:58.702055+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-04-09T01:59:58.702056+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-09T01:59:58.702056+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-04-09T01:59:58.702056+00:00 app[web.1]: "isPaAvTeam": "true",
+2025-04-09T01:59:58.702057+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-09T01:59:58.702057+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-09T01:59:58.702057+00:00 app[web.1]: "isUsher": "false",
+2025-04-09T01:59:58.702057+00:00 app[web.1]: "riceType": "white",
+2025-04-09T01:59:58.702058+00:00 app[web.1]: "portionSize": "big",
+2025-04-09T01:59:58.702058+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-09T01:59:58.702058+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-09T01:59:58.702058+00:00 app[web.1]: "healthIssues": "false",
+2025-04-09T01:59:58.702059+00:00 app[web.1]: "healthDetails": "",
+2025-04-09T01:59:58.702059+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-09T01:59:58.702059+00:00 app[web.1]: "hasFamily": "false",
+2025-04-09T01:59:58.702059+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-09T01:59:58.702060+00:00 app[web.1]: "orderTshirt": "true",
+2025-04-09T01:59:58.702060+00:00 app[web.1]: "tshirtOrders": [
+2025-04-09T01:59:58.702060+00:00 app[web.1]: {
+2025-04-09T01:59:58.702060+00:00 app[web.1]: "size": "M",
+2025-04-09T01:59:58.702060+00:00 app[web.1]: "quantity": "1"
+2025-04-09T01:59:58.702061+00:00 app[web.1]: }
+2025-04-09T01:59:58.702061+00:00 app[web.1]: ],
+2025-04-09T01:59:58.702061+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-09T01:59:58.702061+00:00 app[web.1]: },
+2025-04-09T01:59:58.702061+00:00 app[web.1]: "occupationType": "student"
+2025-04-09T01:59:58.702061+00:00 app[web.1]: }
+2025-04-09T01:59:59.365566+00:00 app[web.1]: 2025-04-09T01:59:59.365Z [32minfo[39m: File uploaded to Cloudinary: {
+2025-04-09T01:59:59.365635+00:00 app[web.1]: "url": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1744163998/paymentProofs/IMG_9033.png.png"
+2025-04-09T01:59:59.365636+00:00 app[web.1]: }
+2025-04-09T01:59:59.365762+00:00 app[web.1]: 2025-04-09T01:59:59.365Z [34mdebug[39m: Parsed familyDetails:
+2025-04-09T01:59:59.366366+00:00 app[web.1]: 2025-04-09T01:59:59.366Z [34mdebug[39m: Price calculation: {
+2025-04-09T01:59:59.366371+00:00 app[web.1]: "basePrice": 180,
+2025-04-09T01:59:59.366371+00:00 app[web.1]: "familyTotal": 0,
+2025-04-09T01:59:59.366371+00:00 app[web.1]: "registrationSubtotal": 180,
+2025-04-09T01:59:59.366371+00:00 app[web.1]: "familyDiscount": 0,
+2025-04-09T01:59:59.366372+00:00 app[web.1]: "tshirtTotal": 30,
+2025-04-09T01:59:59.366372+00:00 app[web.1]: "finalTotal": 210
+2025-04-09T01:59:59.366372+00:00 app[web.1]: }
+2025-04-09T01:59:59.410081+00:00 app[web.1]: 2025-04-09T01:59:59.409Z [34mdebug[39m: Volunteer assignment created: {
+2025-04-09T01:59:59.410083+00:00 app[web.1]: "registrationId": "1536",
+2025-04-09T01:59:59.410083+00:00 app[web.1]: "fullName": "Jishean Guvalakrisnan ",
+2025-04-09T01:59:59.410084+00:00 app[web.1]: "isFoodTeam": false,
+2025-04-09T01:59:59.410084+00:00 app[web.1]: "isRegistrationTeam": false,
+2025-04-09T01:59:59.410084+00:00 app[web.1]: "isTreasuryTeam": false,
+2025-04-09T01:59:59.410084+00:00 app[web.1]: "isPrayerTeam": false,
+2025-04-09T01:59:59.410085+00:00 app[web.1]: "isPaAvTeam": true,
+2025-04-09T01:59:59.410085+00:00 app[web.1]: "isEmergencyMedicalTeam": false,
+2025-04-09T01:59:59.410085+00:00 app[web.1]: "isChildrenProgram": false,
+2025-04-09T01:59:59.410085+00:00 app[web.1]: "isUsher": false,
+2025-04-09T01:59:59.410086+00:00 app[web.1]: "registration": {
+2025-04-09T01:59:59.410086+00:00 app[web.1]: "otherConference": "",
+2025-04-09T01:59:59.410086+00:00 app[web.1]: "volunteer": true,
+2025-04-09T01:59:59.410086+00:00 app[web.1]: "hasFamily": false,
+2025-04-09T01:59:59.410087+00:00 app[web.1]: "orderTshirt": true,
+2025-04-09T01:59:59.410087+00:00 app[web.1]: "foodAllergies": false,
+2025-04-09T01:59:59.410087+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-09T01:59:59.410087+00:00 app[web.1]: "healthIssues": false,
+2025-04-09T01:59:59.410087+00:00 app[web.1]: "healthDetails": "",
+2025-04-09T01:59:59.410088+00:00 app[web.1]: "paymentProofUrl": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1744163998/paymentProofs/IMG_9033.png.png",
+2025-04-09T01:59:59.410088+00:00 app[web.1]: "basePrice": 180,
+2025-04-09T01:59:59.410088+00:00 app[web.1]: "familyTotal": 0,
+2025-04-09T01:59:59.410088+00:00 app[web.1]: "tshirtTotal": 30,
+2025-04-09T01:59:59.410089+00:00 app[web.1]: "subtotal": 210,
+2025-04-09T01:59:59.410089+00:00 app[web.1]: "discount": 0,
+2025-04-09T01:59:59.410089+00:00 app[web.1]: "finalTotal": 210,
+2025-04-09T01:59:59.410089+00:00 app[web.1]: "isEarlyBird": false,
+2025-04-09T01:59:59.410089+00:00 app[web.1]: "termsAccepted": true,
+2025-04-09T01:59:59.410096+00:00 app[web.1]: "isConfirmed": false,
+2025-04-09T01:59:59.410096+00:00 app[web.1]: "status": "pending",
+2025-04-09T01:59:59.410096+00:00 app[web.1]: "id": "1536",
+2025-04-09T01:59:59.410096+00:00 app[web.1]: "email": "jishean97@gmail.com",
+2025-04-09T01:59:59.410097+00:00 app[web.1]: "fullName": "Jishean Guvalakrisnan ",
+2025-04-09T01:59:59.410097+00:00 app[web.1]: "dateOfBirth": "2003-09-07",
+2025-04-09T01:59:59.410097+00:00 app[web.1]: "gender": "male",
+2025-04-09T01:59:59.410097+00:00 app[web.1]: "country": "Malaysia",
+2025-04-09T01:59:59.410097+00:00 app[web.1]: "phone": "601126070983",
+2025-04-09T01:59:59.410097+00:00 app[web.1]: "occupationType": "student",
+2025-04-09T01:59:59.410098+00:00 app[web.1]: "conference": "Sabah Mission",
+2025-04-09T01:59:59.410098+00:00 app[web.1]: "church": "PESDAC",
+2025-04-09T01:59:59.410098+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-09T01:59:59.410098+00:00 app[web.1]: "familyDiscount": 0,
+2025-04-09T01:59:59.410098+00:00 app[web.1]: "riceType": "white",
+2025-04-09T01:59:59.410098+00:00 app[web.1]: "portionSize": "big",
+2025-04-09T01:59:59.410099+00:00 app[web.1]: "createdAt": "2025-04-09T01:59:59.369Z",
+2025-04-09T01:59:59.410099+00:00 app[web.1]: "updatedAt": "2025-04-09T01:59:59.369Z",
+2025-04-09T01:59:59.410099+00:00 app[web.1]: "familyDetails": [],
+2025-04-09T01:59:59.410099+00:00 app[web.1]: "tshirtOrders": [
+2025-04-09T01:59:59.410099+00:00 app[web.1]: {
+2025-04-09T01:59:59.410100+00:00 app[web.1]: "id": "a64a33dd-0bb9-41a0-a446-508a125d030f",
+2025-04-09T01:59:59.410100+00:00 app[web.1]: "registrationId": "1536",
+2025-04-09T01:59:59.410100+00:00 app[web.1]: "size": "M",
+2025-04-09T01:59:59.410117+00:00 app[web.1]: "quantity": "1",
+2025-04-09T01:59:59.410117+00:00 app[web.1]: "createdAt": "2025-04-09T01:59:59.369Z",
+2025-04-09T01:59:59.410117+00:00 app[web.1]: "updatedAt": "2025-04-09T01:59:59.369Z"
+2025-04-09T01:59:59.410118+00:00 app[web.1]: }
+2025-04-09T01:59:59.410118+00:00 app[web.1]: ]
+2025-04-09T01:59:59.410118+00:00 app[web.1]: },
+2025-04-09T01:59:59.410118+00:00 app[web.1]: "id": "b3ff05db-83a0-47e5-ac39-76f4b598e50b"
+2025-04-09T01:59:59.410118+00:00 app[web.1]: }
+2025-04-09T01:59:59.425805+00:00 app[web.1]: 2025-04-09T01:59:59.425Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-04-09T01:59:59.425806+00:00 app[web.1]: "registrationId": "1536",
+2025-04-09T01:59:59.425806+00:00 app[web.1]: "hasVolunteer": true,
+2025-04-09T01:59:59.425807+00:00 app[web.1]: "volunteerType": "boolean",
+2025-04-09T01:59:59.425813+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-04-09T01:59:59.425813+00:00 app[web.1]: "familyMembersCount": 0
+2025-04-09T01:59:59.425814+00:00 app[web.1]: }
+2025-04-09T01:59:59.660417+00:00 app[web.1]: 2025-04-09T01:59:59.660Z [32minfo[39m: Confirmation email sent successfully to jishean97@gmail.com (ID: 1536)
+2025-04-09T01:59:59.662440+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=0819305d-6b5b-3120-bb6b-2ce154b05d0d fwd="183.171.96.44" dyno=web.1 connect=7692ms service=983ms status=201 bytes=1100 protocol=http1.1 tls=true tls_version=unknown
+2025-04-09T01:59:59.662595+00:00 app[web.1]: 183.171.96.44 - - [09/Apr/2025:01:59:59 +0000] "POST /api/registration HTTP/1.1" 201 1100 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1"
+2025-04-09T02:35:43.446547+00:00 heroku[web.1]: Idling
+2025-04-09T02:35:43.448961+00:00 heroku[web.1]: State changed from up to down
+2025-04-09T02:35:44.876489+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-04-09T02:35:44.943738+00:00 heroku[web.1]: Process exited with status 143
+2025-04-14T04:13:35.473446+00:00 heroku[web.1]: Unidling
+2025-04-14T04:13:35.525514+00:00 heroku[web.1]: State changed from down to starting
+2025-04-14T04:13:39.720304+00:00 heroku[web.1]: Starting process with command `npm start`
+2025-04-14T04:13:40.533387+00:00 app[web.1]: 
+2025-04-14T04:13:40.533407+00:00 app[web.1]: > backend@1.0.0 start
+2025-04-14T04:13:40.533407+00:00 app[web.1]: > node dist/index.js
+2025-04-14T04:13:40.533408+00:00 app[web.1]: 
+2025-04-14T04:13:40.921025+00:00 app[web.1]: 2025-04-14T04:13:40.919Z [34mdebug[39m: Logger initialized in production mode
+2025-04-14T04:13:41.135685+00:00 app[web.1]: 2025-04-14T04:13:41.135Z [32minfo[39m: Database connected successfully
+2025-04-14T04:13:41.137990+00:00 app[web.1]: 2025-04-14T04:13:41.137Z [32minfo[39m: Server is running on port 47330
+2025-04-14T04:13:41.369870+00:00 heroku[web.1]: State changed from starting to up
+2025-04-14T04:13:42.599892+00:00 app[web.1]: ValidationError: The Express 'trust proxy' setting is true, which allows anyone to trivially bypass IP-based rate limiting. See https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/ for more information.
+2025-04-14T04:13:42.599926+00:00 app[web.1]: at Object.trustProxy (/app/node_modules/express-rate-limit/dist/index.cjs:169:13)
+2025-04-14T04:13:42.599927+00:00 app[web.1]: at wrappedValidations.<computed> [as trustProxy] (/app/node_modules/express-rate-limit/dist/index.cjs:398:22)
+2025-04-14T04:13:42.599927+00:00 app[web.1]: at Object.keyGenerator (/app/node_modules/express-rate-limit/dist/index.cjs:670:20)
+2025-04-14T04:13:42.599928+00:00 app[web.1]: at /app/node_modules/express-rate-limit/dist/index.cjs:724:32
+2025-04-14T04:13:42.599929+00:00 app[web.1]: at async /app/node_modules/express-rate-limit/dist/index.cjs:704:5 {
+2025-04-14T04:13:42.599929+00:00 app[web.1]: code: 'ERR_ERL_PERMISSIVE_TRUST_PROXY',
+2025-04-14T04:13:42.599929+00:00 app[web.1]: help: 'https://express-rate-limit.github.io/ERR_ERL_PERMISSIVE_TRUST_PROXY/'
+2025-04-14T04:13:42.599930+00:00 app[web.1]: }
+2025-04-14T04:13:42.600451+00:00 app[web.1]: Request body: {}
+2025-04-14T04:13:42.600851+00:00 app[web.1]: 2025-04-14T04:13:42.600Z [34mdebug[39m: Registration request body: {
+2025-04-14T04:13:42.600851+00:00 app[web.1]: "body": {}
+2025-04-14T04:13:42.600851+00:00 app[web.1]: }
+2025-04-14T04:13:42.606988+00:00 app[web.1]: 2025-04-14T04:13:42.606Z [34mdebug[39m: Request body before validation: {
+2025-04-14T04:13:42.606988+00:00 app[web.1]: "body": {
+2025-04-14T04:13:42.606988+00:00 app[web.1]: "email": "tony.anhthong@gmail.com",
+2025-04-14T04:13:42.606989+00:00 app[web.1]: "fullName": "Anthony Anh Thong Nguyen",
+2025-04-14T04:13:42.606989+00:00 app[web.1]: "dateOfBirth": "1998-05-09",
+2025-04-14T04:13:42.606989+00:00 app[web.1]: "gender": "male",
+2025-04-14T04:13:42.606989+00:00 app[web.1]: "country": "United States",
+2025-04-14T04:13:42.606989+00:00 app[web.1]: "phone": "19169473281",
+2025-04-14T04:13:42.606990+00:00 app[web.1]: "occupationType": "working_adult",
+2025-04-14T04:13:42.606990+00:00 app[web.1]: "conference": "Other",
+2025-04-14T04:13:42.606992+00:00 app[web.1]: "otherConference": "Pacific Union Conference",
+2025-04-14T04:13:42.606992+00:00 app[web.1]: "church": "Granite Bay Hilltop Church",
+2025-04-14T04:13:42.606992+00:00 app[web.1]: "volunteer": "false",
+2025-04-14T04:13:42.606992+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-14T04:13:42.606993+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-04-14T04:13:42.606993+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-14T04:13:42.606993+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-04-14T04:13:42.606993+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-04-14T04:13:42.606994+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-14T04:13:42.606994+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-14T04:13:42.606994+00:00 app[web.1]: "isUsher": "false",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "riceType": "white",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "portionSize": "big",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "healthIssues": "false",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "healthDetails": "",
+2025-04-14T04:13:42.606995+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-14T04:13:42.606996+00:00 app[web.1]: "hasFamily": "false",
+2025-04-14T04:13:42.606996+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-14T04:13:42.606996+00:00 app[web.1]: "orderTshirt": "false",
+2025-04-14T04:13:42.606996+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-04-14T04:13:42.606996+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-14T04:13:42.606996+00:00 app[web.1]: },
+2025-04-14T04:13:42.606997+00:00 app[web.1]: "occupationType": "working_adult"
+2025-04-14T04:13:42.606997+00:00 app[web.1]: }
+2025-04-14T04:13:42.611865+00:00 app[web.1]: 2025-04-14T04:13:42.611Z [34mdebug[39m: Occupation type validation: {
+2025-04-14T04:13:42.611865+00:00 app[web.1]: "receivedValue": "working_adult",
+2025-04-14T04:13:42.611865+00:00 app[web.1]: "receivedType": "string",
+2025-04-14T04:13:42.611865+00:00 app[web.1]: "validValues": [
+2025-04-14T04:13:42.611865+00:00 app[web.1]: "working_adult",
+2025-04-14T04:13:42.611865+00:00 app[web.1]: "student",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "ministry_salary",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "ministry_stipend",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "walk_in_full",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "walk_in_partial",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "child_5_12",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "child_below_4",
+2025-04-14T04:13:42.611866+00:00 app[web.1]: "homemaker"
+2025-04-14T04:13:42.611867+00:00 app[web.1]: ]
+2025-04-14T04:13:42.611867+00:00 app[web.1]: }
+2025-04-14T04:13:42.614172+00:00 app[web.1]: 2025-04-14T04:13:42.614Z [34mdebug[39m: Request body after validation: {
+2025-04-14T04:13:42.614172+00:00 app[web.1]: "body": {
+2025-04-14T04:13:42.614172+00:00 app[web.1]: "email": "tony.anhthong@gmail.com",
+2025-04-14T04:13:42.614172+00:00 app[web.1]: "fullName": "Anthony Anh Thong Nguyen",
+2025-04-14T04:13:42.614173+00:00 app[web.1]: "dateOfBirth": "1998-05-09",
+2025-04-14T04:13:42.614173+00:00 app[web.1]: "gender": "male",
+2025-04-14T04:13:42.614173+00:00 app[web.1]: "country": "United States",
+2025-04-14T04:13:42.614173+00:00 app[web.1]: "phone": "19169473281",
+2025-04-14T04:13:42.614173+00:00 app[web.1]: "occupationType": "working_adult",
+2025-04-14T04:13:42.614173+00:00 app[web.1]: "conference": "Other",
+2025-04-14T04:13:42.614174+00:00 app[web.1]: "otherConference": "Pacific Union Conference",
+2025-04-14T04:13:42.614174+00:00 app[web.1]: "church": "Granite Bay Hilltop Church",
+2025-04-14T04:13:42.614174+00:00 app[web.1]: "volunteer": "false",
+2025-04-14T04:13:42.614174+00:00 app[web.1]: "isFoodTeam": "false",
+2025-04-14T04:13:42.614174+00:00 app[web.1]: "isRegistrationTeam": "false",
+2025-04-14T04:13:42.614175+00:00 app[web.1]: "isTreasuryTeam": "false",
+2025-04-14T04:13:42.614175+00:00 app[web.1]: "isPrayerTeam": "false",
+2025-04-14T04:13:42.614175+00:00 app[web.1]: "isPaAvTeam": "false",
+2025-04-14T04:13:42.614175+00:00 app[web.1]: "isEmergencyMedicalTeam": "false",
+2025-04-14T04:13:42.614175+00:00 app[web.1]: "isChildrenProgram": "false",
+2025-04-14T04:13:42.614175+00:00 app[web.1]: "isUsher": "false",
+2025-04-14T04:13:42.614176+00:00 app[web.1]: "riceType": "white",
+2025-04-14T04:13:42.614184+00:00 app[web.1]: "portionSize": "big",
+2025-04-14T04:13:42.614185+00:00 app[web.1]: "foodAllergies": "false",
+2025-04-14T04:13:42.614185+00:00 app[web.1]: "allergiesDetails": "",
+2025-04-14T04:13:42.614185+00:00 app[web.1]: "healthIssues": "false",
+2025-04-14T04:13:42.614185+00:00 app[web.1]: "healthDetails": "",
+2025-04-14T04:13:42.614185+00:00 app[web.1]: "paymentMethod": "bank",
+2025-04-14T04:13:42.614185+00:00 app[web.1]: "hasFamily": "false",
+2025-04-14T04:13:42.614186+00:00 app[web.1]: "familyDetails": "[]",
+2025-04-14T04:13:42.614186+00:00 app[web.1]: "orderTshirt": "false",
+2025-04-14T04:13:42.614186+00:00 app[web.1]: "tshirtOrders": "[]",
+2025-04-14T04:13:42.614186+00:00 app[web.1]: "termsAccepted": "true"
+2025-04-14T04:13:42.614186+00:00 app[web.1]: },
+2025-04-14T04:13:42.614186+00:00 app[web.1]: "occupationType": "working_adult"
+2025-04-14T04:13:42.614187+00:00 app[web.1]: }
+2025-04-14T04:13:43.015676+00:00 app[web.1]: 2025-04-14T04:13:43.015Z [32minfo[39m: File uploaded to Cloudinary: {
+2025-04-14T04:13:43.015696+00:00 app[web.1]: "url": "https://res.cloudinary.com/dd4xjt5hc/image/upload/v1744604022/paymentProofs/M2U_20250414_1212.pdf.pdf"
+2025-04-14T04:13:43.015697+00:00 app[web.1]: }
+2025-04-14T04:13:43.015825+00:00 app[web.1]: 2025-04-14T04:13:43.015Z [34mdebug[39m: Parsed familyDetails:
+2025-04-14T04:13:43.016416+00:00 app[web.1]: 2025-04-14T04:13:43.016Z [34mdebug[39m: Price calculation: {
+2025-04-14T04:13:43.016417+00:00 app[web.1]: "basePrice": 240,
+2025-04-14T04:13:43.016417+00:00 app[web.1]: "familyTotal": 0,
+2025-04-14T04:13:43.016417+00:00 app[web.1]: "registrationSubtotal": 240,
+2025-04-14T04:13:43.016417+00:00 app[web.1]: "familyDiscount": 0,
+2025-04-14T04:13:43.016417+00:00 app[web.1]: "tshirtTotal": 0,
+2025-04-14T04:13:43.016418+00:00 app[web.1]: "finalTotal": 240
+2025-04-14T04:13:43.016418+00:00 app[web.1]: }
+2025-04-14T04:13:43.050903+00:00 app[web.1]: 2025-04-14T04:13:43.050Z [34mdebug[39m: Starting email preparation with registration data: {
+2025-04-14T04:13:43.050903+00:00 app[web.1]: "registrationId": "3231",
+2025-04-14T04:13:43.050903+00:00 app[web.1]: "hasVolunteer": false,
+2025-04-14T04:13:43.050904+00:00 app[web.1]: "volunteerType": "boolean",
+2025-04-14T04:13:43.050905+00:00 app[web.1]: "hasFamilyMembers": false,
+2025-04-14T04:13:43.050905+00:00 app[web.1]: "familyMembersCount": 0
+2025-04-14T04:13:43.050905+00:00 app[web.1]: }
+2025-04-14T04:13:43.159491+00:00 app[web.1]: 2025-04-14T04:13:43.159Z [32minfo[39m: Confirmation email sent successfully to tony.anhthong@gmail.com (ID: 3231)
+2025-04-14T04:13:43.161119+00:00 heroku[router]: at=info method=POST path="/api/registration" host=aoy-2025-backend-94dedccd2659.herokuapp.com request_id=9537b6cd-ca1a-a592-6b3c-967298913008 fwd="104.28.66.133" dyno=web.1 connect=7135ms service=566ms status=201 bytes=971 protocol=http1.1 tls=true tls_version=unknown
+2025-04-14T04:13:43.161590+00:00 app[web.1]: 104.28.66.133 - - [14/Apr/2025:04:13:43 +0000] "POST /api/registration HTTP/1.1" 201 971 "https://aoy-registration.netlify.app/" "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1"
+2025-04-14T04:48:32.385290+00:00 heroku[web.1]: Idling
+2025-04-14T04:48:32.438786+00:00 heroku[web.1]: State changed from up to down
+2025-04-14T04:48:32.926023+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2025-04-14T04:48:33.021232+00:00 heroku[web.1]: Process exited with status 143
